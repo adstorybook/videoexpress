@@ -1,0 +1,27 @@
+{
+  "profile_version": "1.0",
+  "channel_name": "TheStorybook_ad",
+  "channel_url": "https://www.youtube.com/@TheStorybook_ad",
+  "approval_status": "draft_pending_user_approval",
+  "audience": "Children and families; final age range to be confirmed per video",
+  "creative_defaults": {
+    "visual_style": "Pixar-inspired 3D animated storybook film",
+    "resolution": "1920x1080",
+    "aspect_ratio": "16:9",
+    "caption_style": "large, high-contrast, readable, within safe margins",
+    "voice_direction": "clear, warm, expressive, consistent, correctly pronounced",
+    "music_direction": "cinematic and emotionally supportive; narration remains intelligible"
+  },
+  "retention_goal": {
+    "target_percent": 80,
+    "status": "aspirational_not_guaranteed",
+    "review_strategy": "Analyze real retention curve and average view duration after publishing; suggest adjustments, never treat one video as proof of a permanent rule."
+  },
+  "publishing_rules": {
+    "full_video_review_required": true,
+    "explicit_user_upload_approval_required": true,
+    "visibility_confirmation_required": true,
+    "verify_upload_result": true
+  },
+  "notes": "Draft defaults. Do not promote to approved profile until the user confirms them."
+}
