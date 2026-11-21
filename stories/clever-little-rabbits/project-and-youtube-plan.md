@@ -21,6 +21,23 @@ Make an original, child-friendly 3D animated storybook video from the supplied n
 - 3:15–4:15: they work together; Mother returns; harmless comic hat tap; wolf escapes safely.
 - 4:15–5:26: warm reunion, carrot soup, and a clear lesson to pause, ask, stay together, and wait for trusted help.
 
+## Scene sequence for the five-minute timeline
+
+1. **0:00–0:15 — The mystery tail:** open on the dark tail under the red door; the kits keep the latch untouched.
+2. **0:15–0:45 — The safe plan:** Mother Rabbit explains the rule at home; show each kit listening.
+3. **0:45–1:10 — The goodbye:** Mother leaves for carrots; the kits watch her white tail disappear.
+4. **1:10–1:45 — A quiet game:** the kits play, tidy, and listen together inside.
+5. **1:45–2:10 — A visitor arrives:** the floppy-hat wolf approaches and knocks.
+6. **2:10–2:35 — A suspicious voice:** the kits listen, exchange looks, and ask for the white-tail check.
+7. **2:35–3:15 — The clue:** the dark shaggy tail appears; use close-ups of their careful inspection.
+8. **3:15–3:40 — The teamwork choice:** the three kits whisper, brace the door, and keep it shut.
+9. **3:40–4:00 — Help returns:** the wolf tugs while Mother hurries back along the path.
+10. **4:00–4:15 — A comic escape:** a light hat tap startles the wolf; he slips free unharmed.
+11. **4:15–4:50 — Home again:** Mother checks each kit; they carry carrots in and make soup.
+12. **4:50–5:26 — The lesson:** cozy cottage ending, then a brief Alex-and-Maya storybook frame as the narration lands.
+
+Add, remove, or replace visual clips to match this beat order. Preserve the narration's planned runtime and check the final assembled duration.
+
 ## YouTube package draft
 **Title:** The Tail Under the Door! 🐰 | A Clever Rabbit Safety Story
 **Thumbnail:** Three curious kits by the red door and one dark tail. Large words: WHOSE TAIL? Keep the wolf comic; no frightened faces.
