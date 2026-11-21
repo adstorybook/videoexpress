@@ -1,13 +1,18 @@
 {
   "project_id": "clever-little-rabbits",
-  "approval_status": "draft_unapproved",
-  "source_verification_required": true,
+  "approval_status": "draft_pending_user_review",
+  "source_pages": [
+    1,
+    2,
+    3
+  ],
+  "visual_reference_note": "The PDF shows white rabbits in bright outfits, and a blue wolf in a brown floppy hat and green outfit. Make source-inspired designs, then lock reference sheets.",
   "scenes": [
     {
       "scene_id": "scene-01",
       "order": 1,
       "duration_seconds": 30,
-      "beat": "Introduce the rabbit siblings and their cozy home",
+      "beat": "Introduce Mother Rabbit and three sweet, clever white rabbit siblings in their cozy cottage and meadow.",
       "characters": [
         "mother-rabbit",
         "rabbit-1",
@@ -15,14 +20,14 @@
         "rabbit-3"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-1",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
     },
     {
       "scene_id": "scene-02",
       "order": 2,
-      "duration_seconds": 35,
-      "beat": "Mother Rabbit gives the siblings a safety reminder before leaving",
+      "duration_seconds": 30,
+      "beat": "Mother Rabbit reminds the children to stay indoors and not open the door to strangers; she leaves.",
       "characters": [
         "mother-rabbit",
         "rabbit-1",
@@ -30,28 +35,29 @@
         "rabbit-3"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-2",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
     },
     {
       "scene_id": "scene-03",
       "order": 3,
       "duration_seconds": 30,
-      "beat": "Mother Rabbit leaves; siblings settle inside",
+      "beat": "A hungry big bad wolf discovers the cottage and knocks while the mother is away.",
       "characters": [
+        "wolf",
         "rabbit-1",
         "rabbit-2",
         "rabbit-3"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-3",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
     },
     {
       "scene_id": "scene-04",
       "order": 4,
       "duration_seconds": 35,
-      "beat": "The wolf approaches and tries to gain entry",
+      "beat": "The wolf imitates Mother Rabbit's voice; the siblings recognize his rough voice and keep the door closed.",
       "characters": [
         "wolf",
         "rabbit-1",
@@ -59,14 +65,14 @@
         "rabbit-3"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-4",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
     },
     {
       "scene_id": "scene-05",
       "order": 5,
-      "duration_seconds": 40,
-      "beat": "Wolf imitates Mother Rabbit's voice; siblings notice something is wrong",
+      "duration_seconds": 35,
+      "beat": "The rabbits ask the wolf to put his tail through the door crack as proof.",
       "characters": [
         "wolf",
         "rabbit-1",
@@ -74,14 +80,14 @@
         "rabbit-3"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-5",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
     },
     {
       "scene_id": "scene-06",
       "order": 6,
-      "duration_seconds": 40,
-      "beat": "Rabbits plan a clever trick and ask wolf to show his tail",
+      "duration_seconds": 35,
+      "beat": "The siblings push together and slam the door, catching the wolf's tail.",
       "characters": [
         "wolf",
         "rabbit-1",
@@ -89,44 +95,30 @@
         "rabbit-3"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-6",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
     },
     {
       "scene_id": "scene-07",
       "order": 7,
-      "duration_seconds": 40,
-      "beat": "Wolf puts tail through doorway; rabbits close door and trap it",
+      "duration_seconds": 30,
+      "beat": "Mother Rabbit returns, sees the wolf trapped, picks up a stick and strikes his head as in the source.",
       "characters": [
+        "mother-rabbit",
         "wolf",
         "rabbit-1",
         "rabbit-2",
         "rabbit-3"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-7",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
     },
     {
       "scene_id": "scene-08",
       "order": 8,
-      "duration_seconds": 25,
-      "beat": "Wolf escapes/retreats in embarrassment",
-      "characters": [
-        "wolf",
-        "rabbit-1",
-        "rabbit-2",
-        "rabbit-3"
-      ],
-      "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
-    },
-    {
-      "scene_id": "scene-09",
-      "order": 9,
-      "duration_seconds": 25,
-      "beat": "Mother returns; family celebrates being safe",
+      "duration_seconds": 30,
+      "beat": "The wolf pulls free, loses the end of his tail and runs away; no graphic injury.",
       "characters": [
         "mother-rabbit",
         "rabbit-1",
@@ -134,8 +126,38 @@
         "rabbit-3"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-8",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
+    },
+    {
+      "scene_id": "scene-09",
+      "order": 9,
+      "duration_seconds": 30,
+      "beat": "Mother Rabbit embraces the three children and praises their caution and teamwork.",
+      "characters": [
+        "mother-rabbit",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration_ref": "script.md#scene-9",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
+    },
+    {
+      "scene_id": "scene-10",
+      "order": 10,
+      "duration_seconds": 15,
+      "beat": "Close on the reunited family and a simple safety lesson.",
+      "characters": [
+        "mother-rabbit",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration_ref": "script.md#scene-10",
+      "transition_notes": "Keep simple, cinematic continuity; avoid overlong shots. No scary/graphic content."
     }
   ]
 }
