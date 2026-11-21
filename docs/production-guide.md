@@ -5,7 +5,7 @@
 - Storyboards contain 10 Rabbit scenes and 9 Magpie scenes.
 - Scene-by-scene visual prompt packs are saved beside each project.
 - Character sheets are being generated in the connected Runway workspace; see task viewers in ChatGPT.
-- Rabbit clips generated and reviewed in VideoExpress: opening reference (6.04s), Scene 2 hug (6.04s), and Scene 3 departure (6.04s), all 1920×1080, 16:9, 24 fps. These are approved partial coverage only; the 30-second scenes remain in progress.
+- Rabbit clips generated and reviewed in VideoExpress: opening reference (6.04s), Scene 2 hug (6.04s), Scene 3 departure (6.04s), and wolf arrival (10.04s), all 1920×1080, 16:9, 24 fps. These are approved partial coverage only; the 30-second scenes remain in progress.
 - No final video has been rendered or assembled. No VideoExpress API credential is available in this project. Do not store API keys in Git.
 - Keep work on `feat/video-pipeline-foundation`; do not merge to main or publish without explicit approval.
 
@@ -20,7 +20,7 @@
 ## Asset progress (2026-11-21)
 - `projects/the-clever-little-rabbits/project.json` records the opening reference, Scene 2 hug, and Scene 3 departure clip IDs and checksums; video files themselves remain outside Git.
 - Keep generated media in a user-controlled storage location and reference it by asset ID, filename, and checksum. Do not add large MP4 files to the repository.
-- Scene 1 opening reference clip: 6.04 seconds; visual reference/partial coverage.\n- Scene 2 hug clip: 6.04 seconds, 1920×1080, 24 fps; mother and three children hugging at the cottage doorway. Safety instruction and departure still need coverage; Scene 2 remains in progress.\n- Scene 3 departure clip: 6.04 seconds, 1920×1080, 24 fps; mother walks away along the flower-lined path and the three children wave from the cottage doorway. Reviewed as visually consistent and approved for partial coverage; Scene 3 remains in progress.
+- Scene 1 opening reference clip: 6.04 seconds; visual reference/partial coverage.\n- Scene 2 hug clip: 6.04 seconds, 1920×1080, 24 fps; mother and three children hugging at the cottage doorway. Safety instruction and departure still need coverage; Scene 2 remains in progress.\n- Scene 3 departure clip: 6.04 seconds, 1920×1080, 24 fps; mother walks away along the flower-lined path and the three children wave from the cottage doorway. Reviewed as visually consistent and approved for partial coverage; Scene 3 remains in progress.\n- Scene 3 wolf arrival clip: 10.04 seconds, 1920×1080, 24 fps; approved wolf design approaches a woodland cottage. Partial Scene 3 coverage. Cottage design differs somewhat from earlier rabbit cottage shots; check/set location continuity in upcoming clips.
 
 ## Efficient generation plan
 1. Make/approve character reference sheets. Treat them as visual reference images, not scene outputs.
