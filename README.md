@@ -13,6 +13,18 @@ GitHub is the versioned **production brain** for the VideoExpress workflow: stor
 - [Reusable project template](projects/_template/)
 
 ## Validation contracts
+
+Validate a project manifest locally (Python 3.12+):
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/validate_project.py projects/the-clever-little-rabbits/project.json
+python scripts/validate_project.py projects/mother-magpie/project.json
+python -m unittest discover -s tests -v
+```
+
+GitHub Actions runs the same checks on pushes to the foundation branch and pull requests to `main`.
+
 - [Project manifest schema](schemas/project.schema.json)
 - [Correction entry schema](schemas/correction.schema.json)
 - [QA report schema](schemas/qa-report.schema.json)
