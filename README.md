@@ -8,8 +8,10 @@ GitHub is the versioned **production brain** for the VideoExpress workflow: stor
 - [Channel publishing, QA and feedback](docs/channel-publishing-and-feedback.md)
 
 ## Project folders
-- [The Clever Little Rabbits](projects/the-clever-little-rabbits/) — 5-minute outline and project manifest; original story must be verified before script approval.
-- [Mother Magpie](projects/mother-magpie/) — 5-minute outline and project manifest; original story must be verified before script approval.
+- [The Clever Little Rabbits](projects/the-clever-little-rabbits/) — source-checked 5-minute script draft, 10-scene storyboard and manifest.
+- [Mother Magpie](projects/mother-magpie/) — source-checked 5-minute script draft, 9-scene storyboard and manifest.
+
+The user's scanned storybook (5 pages) has been inspected. The source PDF is not committed to this repository; projects cite the source page ranges. Both scripts remain drafts awaiting user approval.
 - [Reusable project template](projects/_template/)
 
 ## Validation contracts
