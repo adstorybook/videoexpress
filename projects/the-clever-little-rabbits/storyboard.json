@@ -1,0 +1,141 @@
+{
+  "project_id": "clever-little-rabbits",
+  "approval_status": "draft_unapproved",
+  "source_verification_required": true,
+  "scenes": [
+    {
+      "scene_id": "scene-01",
+      "order": 1,
+      "duration_seconds": 30,
+      "beat": "Introduce the rabbit siblings and their cozy home",
+      "characters": [
+        "mother-rabbit",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-02",
+      "order": 2,
+      "duration_seconds": 35,
+      "beat": "Mother Rabbit gives the siblings a safety reminder before leaving",
+      "characters": [
+        "mother-rabbit",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-03",
+      "order": 3,
+      "duration_seconds": 30,
+      "beat": "Mother Rabbit leaves; siblings settle inside",
+      "characters": [
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-04",
+      "order": 4,
+      "duration_seconds": 35,
+      "beat": "The wolf approaches and tries to gain entry",
+      "characters": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-05",
+      "order": 5,
+      "duration_seconds": 40,
+      "beat": "Wolf imitates Mother Rabbit's voice; siblings notice something is wrong",
+      "characters": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-06",
+      "order": 6,
+      "duration_seconds": 40,
+      "beat": "Rabbits plan a clever trick and ask wolf to show his tail",
+      "characters": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-07",
+      "order": 7,
+      "duration_seconds": 40,
+      "beat": "Wolf puts tail through doorway; rabbits close door and trap it",
+      "characters": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-08",
+      "order": 8,
+      "duration_seconds": 25,
+      "beat": "Wolf escapes/retreats in embarrassment",
+      "characters": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-09",
+      "order": 9,
+      "duration_seconds": 25,
+      "beat": "Mother returns; family celebrates being safe",
+      "characters": [
+        "mother-rabbit",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    }
+  ]
+}
