@@ -20,7 +20,7 @@
 ## Asset progress (2026-11-21)
 - `projects/the-clever-little-rabbits/project.json` records `rabbit-opening-clip-001`; its SHA-256 is tracked, but the video file itself remains outside Git.
 - Keep generated media in a user-controlled storage location and reference it by asset ID, filename, and checksum. Do not add large MP4 files to the repository.
-- Scene 1 still needs approximately 24 seconds of usable coverage or additional shots; the 6-second clip is only an opening visual reference.
+- Scene 1 opening reference clip: 6.04 seconds; it remains a visual reference/partial coverage.\n- Scene 2 hug clip: 6.04 seconds, 1920×1080, 24 fps; user-uploaded and reviewed. It captures the mother and three children hugging at the cottage doorway; the spoken safety instruction and mother departure are not visually represented. Scene 2 remains in progress.
 
 ## Efficient generation plan
 1. Make/approve character reference sheets. Treat them as visual reference images, not scene outputs.
