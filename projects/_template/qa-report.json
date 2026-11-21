@@ -1,0 +1,77 @@
+{
+  "report_id": "qa-report-template",
+  "project_id": "replace",
+  "render_id": "replace",
+  "created_at": "2026-11-21T00:00:00Z",
+  "reviewer": "",
+  "checks": [
+    {
+      "check_id": "story_fidelity",
+      "result": "not_checked",
+      "notes": "Verify against original source story."
+    },
+    {
+      "check_id": "full_video_watch",
+      "result": "not_checked",
+      "notes": "Watch the complete export, not a sample."
+    },
+    {
+      "check_id": "runtime_and_resolution",
+      "result": "not_checked",
+      "notes": "Confirm target duration and 1920x1080 Full HD."
+    },
+    {
+      "check_id": "character_continuity",
+      "result": "not_checked",
+      "notes": "Compare each character against approved bible/reference."
+    },
+    {
+      "check_id": "visual_artifacts",
+      "result": "not_checked",
+      "notes": "Check glitches, flicker, missing assets, unintended cuts."
+    },
+    {
+      "check_id": "audio_and_voice",
+      "result": "not_checked",
+      "notes": "Check voice clarity, consistency, pronunciation, clipping, mix, and sync."
+    },
+    {
+      "check_id": "music_and_sfx",
+      "result": "not_checked",
+      "notes": "Check volume, transitions, appropriateness, and rights."
+    },
+    {
+      "check_id": "captions",
+      "result": "not_checked",
+      "notes": "Verify text, timing, readability and safe placement."
+    },
+    {
+      "check_id": "rights_and_licenses",
+      "result": "not_checked",
+      "notes": "Confirm all generated/sourced assets are permitted for use."
+    },
+    {
+      "check_id": "title_thumbnail_metadata",
+      "result": "not_checked",
+      "notes": "Confirm packaging is accurate and suitable for intended audience."
+    }
+  ],
+  "overall_status": "incomplete",
+  "full_watch_completed": false,
+  "approval": {
+    "approved": false,
+    "approved_by": null,
+    "approved_at": null,
+    "notes": "Approval must be explicit from user."
+  },
+  "export": {
+    "container": "mp4",
+    "codec": "h264",
+    "resolution": "1920x1080",
+    "aspect_ratio": "16:9",
+    "frame_rate": 24,
+    "duration_seconds": 0,
+    "file_ref": null,
+    "checksum": null
+  }
+}
