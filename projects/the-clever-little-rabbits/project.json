@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "project_id": "clever-little-rabbits",
+  "title": "The Clever Little Rabbits",
+  "source_story_ref": "User-supplied storybook attachment; source file not currently present in this repository. Verify against original before final script approval.",
+  "channel": "TheStorybook_ad",
+  "brief": {
+    "audience": "Children and families",
+    "format": "5-minute animated story film",
+    "tone": "warm, expressive, age-appropriate; gentle suspense with a satisfying ending",
+    "goal": "Faithful adaptation of supplied story; entertaining and emotionally clear",
+    "retention_goal_percent": 80,
+    "retention_goal_note": "Aspirational target, not guaranteed. Review actual retention analytics after publication.",
+    "adaptation_summary": "Three little rabbits stay home while their mother is away. A wolf attempts to trick them by imitating their mother's voice; the rabbits devise a door-and-tail trick, trap him, and are reunited safely with their mother.",
+    "source_verification_required": true
+  },
+  "settings": {
+    "runtime_seconds": 300,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080",
+    "frame_rate": null,
+    "visual_style": "Pixar-inspired 3D animated storybook film",
+    "language": "English",
+    "voice_profile_id": null,
+    "music_direction": "Cinematic storybook score; tension and emotion supported but narration clear",
+    "caption_enabled": true
+  },
+  "workflow": {
+    "status": "idea",
+    "updated_at": "2026-11-21T14:00:00Z",
+    "history": [
+      {
+        "status": "idea",
+        "at": "2026-11-21T14:00:00Z",
+        "note": "Project created from story outline previously summarized in chat; original attachment must be checked before script approval.",
+        "actor": "assistant"
+      }
+    ]
+  },
+  "script_ref": "script.md",
+  "storyboard_ref": "storyboard.json",
+  "characters": [
+    {
+      "character_id": "mother-rabbit",
+      "name": "Mother Rabbit",
+      "canonical_description": "Character appearance, outfit/accessories, voice, and proportions to be designed from the original illustrations and then locked; avoid changing across scenes.",
+      "continuity_notes": [
+        "Protective, gentle mother; voice warm and clear."
+      ]
+    },
+    {
+      "character_id": "rabbit-1",
+      "name": "Rabbit sibling 1",
+      "canonical_description": "One of the three white rabbit siblings; individual distinguishing design to be confirmed from source illustrations before generation.",
+      "continuity_notes": [
+        "Keep sibling identity/design consistent."
+      ]
+    },
+    {
+      "character_id": "rabbit-2",
+      "name": "Rabbit sibling 2",
+      "canonical_description": "One of the three white rabbit siblings; individual distinguishing design to be confirmed from source illustrations before generation.",
+      "continuity_notes": [
+        "Keep sibling identity/design consistent."
+      ]
+    },
+    {
+      "character_id": "rabbit-3",
+      "name": "Rabbit sibling 3",
+      "canonical_description": "One of the three white rabbit siblings; individual distinguishing design to be confirmed from source illustrations before generation.",
+      "continuity_notes": [
+        "Keep sibling identity/design consistent."
+      ]
+    },
+    {
+      "character_id": "wolf",
+      "name": "Wolf",
+      "canonical_description": "Story antagonist; appearance, clothing, proportions and voice design to be confirmed from source and approved before generation.",
+      "continuity_notes": [
+        "Comic, mildly threatening but child-safe; consistent design and voice."
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene-01",
+      "order": 1,
+      "target_duration_seconds": 30,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "mother-rabbit",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Introduce the rabbit siblings and their cozy home",
+      "notes": "Establish clear setting and family warmth; avoid slow intro."
+    },
+    {
+      "scene_id": "scene-02",
+      "order": 2,
+      "target_duration_seconds": 35,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "mother-rabbit",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Mother Rabbit gives the siblings a safety reminder before leaving",
+      "notes": "Adapt exact dialogue from original source after verification."
+    },
+    {
+      "scene_id": "scene-03",
+      "order": 3,
+      "target_duration_seconds": 30,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Mother Rabbit leaves; siblings settle inside",
+      "notes": "Show the door and tail-trap setup clearly in visual geography."
+    },
+    {
+      "scene_id": "scene-04",
+      "order": 4,
+      "target_duration_seconds": 35,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "The wolf approaches and tries to gain entry",
+      "notes": "Gentle suspense, not frightening for young children."
+    },
+    {
+      "scene_id": "scene-05",
+      "order": 5,
+      "target_duration_seconds": 40,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Wolf imitates Mother Rabbit's voice; siblings notice something is wrong",
+      "notes": "Distinct voice contrast; rabbits stay safely behind the closed door."
+    },
+    {
+      "scene_id": "scene-06",
+      "order": 6,
+      "target_duration_seconds": 40,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Rabbits plan a clever trick and ask wolf to show his tail",
+      "notes": "Build curiosity; make plan understandable."
+    },
+    {
+      "scene_id": "scene-07",
+      "order": 7,
+      "target_duration_seconds": 40,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Wolf puts tail through doorway; rabbits close door and trap it",
+      "notes": "Comedic, non-graphic slapstick; show cause and effect."
+    },
+    {
+      "scene_id": "scene-08",
+      "order": 8,
+      "target_duration_seconds": 25,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "wolf",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Wolf escapes/retreats in embarrassment",
+      "notes": "Keep safe and nonviolent; do not imply lasting injury."
+    },
+    {
+      "scene_id": "scene-09",
+      "order": 9,
+      "target_duration_seconds": 25,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "mother-rabbit",
+        "rabbit-1",
+        "rabbit-2",
+        "rabbit-3"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Mother returns; family celebrates being safe",
+      "notes": "Warm resolution and concise moral about caution."
+    }
+  ],
+  "assets": [],
+  "corrections_ref": "corrections.json",
+  "qa_report_ref": null,
+  "render": null,
+  "publishing": {
+    "approval_required": true,
+    "approved": false,
+    "youtube_video_id": null,
+    "youtube_url": null,
+    "visibility": null,
+    "published_at": null
+  },
+  "analytics": []
+}
