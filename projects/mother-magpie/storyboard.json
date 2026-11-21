@@ -1,98 +1,103 @@
 {
   "project_id": "mother-magpie",
-  "approval_status": "draft_unapproved",
-  "source_verification_required": true,
+  "approval_status": "draft_pending_user_review",
+  "source_pages": [
+    3,
+    4,
+    5
+  ],
+  "visual_reference_note": "The storybook depicts two neighboring nests, two chicks per mother, a blue eagle, and colorful chicks (purple/yellow/pink). Match approved designs and keep nest locations consistent.",
   "scenes": [
     {
       "scene_id": "scene-01",
       "order": 1,
-      "duration_seconds": 30,
-      "beat": "Establish the tree and the two magpie families",
+      "duration_seconds": 35,
+      "beat": "Establish the large tree with two neighboring magpie nests; each mother has exactly two chicks.",
       "characters": [
         "magpie-mother-a",
+        "magpie-mother-b",
         "magpie-chick-a1",
         "magpie-chick-a2",
-        "magpie-mother-b",
         "magpie-chick-b1",
         "magpie-chick-b2"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-1",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
     },
     {
       "scene_id": "scene-02",
       "order": 2,
-      "duration_seconds": 35,
-      "beat": "Mother Magpie A leaves to find food",
+      "duration_seconds": 30,
+      "beat": "One mother leaves her nest to find food after telling her two chicks to stay put.",
       "characters": [
         "magpie-mother-a",
         "magpie-chick-a1",
         "magpie-chick-a2"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-2",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
     },
     {
       "scene_id": "scene-03",
       "order": 3,
       "duration_seconds": 35,
-      "beat": "Eagle swoops and carries mother magpie away",
+      "beat": "A blue eagle swoops down and carries away the mother; non-graphic, brief depiction.",
       "characters": [
         "magpie-mother-a",
         "eagle"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-3",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
     },
     {
       "scene_id": "scene-04",
       "order": 4,
-      "duration_seconds": 40,
-      "beat": "Chicks realize mother is gone and cry for help",
+      "duration_seconds": 30,
+      "beat": "The two chicks cry in their nest, frightened and hungry.",
       "characters": [
         "magpie-chick-a1",
         "magpie-chick-a2"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-4",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
     },
     {
       "scene_id": "scene-05",
       "order": 5,
       "duration_seconds": 35,
-      "beat": "Neighboring mother magpie hears the cries",
-      "characters": [
-        "magpie-mother-b",
-        "magpie-chick-b1",
-        "magpie-chick-b2"
-      ],
-      "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
-    },
-    {
-      "scene_id": "scene-06",
-      "order": 6,
-      "duration_seconds": 40,
-      "beat": "Neighbor goes to the orphaned chicks and brings them to safety",
+      "beat": "The neighboring mother hears the cries and flies to the distressed nest.",
       "characters": [
         "magpie-mother-b",
         "magpie-chick-a1",
         "magpie-chick-a2"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-5",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
+    },
+    {
+      "scene_id": "scene-06",
+      "order": 6,
+      "duration_seconds": 35,
+      "beat": "She comforts the two chicks, gently strokes their heads and reassures them.",
+      "characters": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2"
+      ],
+      "visual_prompt": null,
+      "narration_ref": "script.md#scene-6",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
     },
     {
       "scene_id": "scene-07",
       "order": 7,
-      "duration_seconds": 40,
-      "beat": "She comforts the rescued chicks at her nest",
+      "duration_seconds": 35,
+      "beat": "She promises to mother them too and brings them to her own nest.",
       "characters": [
         "magpie-mother-b",
         "magpie-chick-a1",
@@ -101,14 +106,14 @@
         "magpie-chick-b2"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-7",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
     },
     {
       "scene_id": "scene-08",
       "order": 8,
-      "duration_seconds": 30,
-      "beat": "Her own chicks welcome the newcomers",
+      "duration_seconds": 35,
+      "beat": "Her two chicks welcome the rescued chicks; all four settle together.",
       "characters": [
         "magpie-mother-b",
         "magpie-chick-a1",
@@ -117,14 +122,14 @@
         "magpie-chick-b2"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-8",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
     },
     {
       "scene_id": "scene-09",
       "order": 9,
-      "duration_seconds": 15,
-      "beat": "End with both families together in a safe, happy home",
+      "duration_seconds": 30,
+      "beat": "Show the kind mother and four chicks living happily together; kindness moral.",
       "characters": [
         "magpie-mother-b",
         "magpie-chick-a1",
@@ -133,8 +138,8 @@
         "magpie-chick-b2"
       ],
       "visual_prompt": null,
-      "narration": null,
-      "transition_notes": null
+      "narration_ref": "script.md#scene-9",
+      "transition_notes": "Gentle family-friendly storytelling; no graphic predation. Maintain same tree/nest layout."
     }
   ]
 }
