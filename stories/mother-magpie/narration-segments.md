@@ -1,0 +1,57 @@
+# Mother Magpie — narration segments
+
+Use one segment per narration clip. VideoExpress test: Jenny, Friendly, speed 0.7; a 254-character sample rendered as 22 seconds. These chunks stay at or below 320 characters for margin. Verify each generated clip in the editor and split any result that exceeds 30 seconds.
+
+## Segment 01 — 302 characters
+
+High in a broad old tree, two magpie families lived in neighboring nests. One evening, two small chicks called into an empty sky. Their mother had disappeared beyond the hills, and the nest beside them was suddenly quiet. Then a gentle voice answered from the neighboring branches: "You are not alone."
+
+## Segment 02 — 268 characters
+
+How did a family grow from that moment? Let's rewind to the bright morning. One bright day, the purple-and-blue mother magpie told her two little ones that she would fly over the meadow to find food. “Stay in the nest, keep close, and call if you need help,” she said.
+
+## Segment 03 — 320 characters
+
+The chicks nodded and watched her lift into the sky. She glided beyond the treetops, searching the fields and hedgerows for berries and seeds. Then a large eagle appeared above the distant ridge. With a rush of wings, it swooped down and carried the magpie mother away beyond the hills. The scene was quick and far away.
+
+## Segment 04 — 261 characters
+
+The chicks could only see their mother disappear into the wide blue sky. They huddled together in their nest, frightened and hungry, and called for her again and again. Their cries floated through the branches. In the neighboring nest, Mother Magpie heard them.
+
+## Segment 05 — 317 characters
+
+She looked toward the empty place in the sky, then at her own two chicks. “Those little ones need us,” she said. Her children listened and nodded. The mother magpie flew carefully across to the other nest. She settled beside the two frightened chicks and gently stroked their heads with the soft feathers of her wing.
+
+## Segment 06 — 274 characters
+
+“You are not alone,” she told them. “I will care for you. Come with me, and we will make a home together.” The little chicks were still sad, but the kind voice and warm wing helped them feel safe enough to listen. Mother Magpie waited until the frightened chicks were ready.
+
+## Segment 07 — 292 characters
+
+Then she guided them from their old nest to her own, one short, careful hop and flutter at a time. Her two children shuffled aside to make room. They shared the softest nesting grass, and they showed the new chicks where the warmest spot was when the evening breeze passed through the leaves.
+
+## Segment 08 — 163 characters
+
+The first night, the newcomers missed their mother. They peeped softly and stared through the branches, hoping to see her return. Mother Magpie stayed beside them.
+
+## Segment 09 — 251 characters
+
+She tucked them under her wing and told them a gentle story about the great tree: how it stood through storms, how its branches held many nests, and how no family in the tree had to face a hard day alone. In the morning, the four chicks woke together.
+
+## Segment 10 — 317 characters
+
+The two older nestmates invited the new arrivals to practice balancing on a low branch. They showed them how to hop without bumping, how to listen for friendly calls, and how to spot a shiny seed among the leaves. Soon all four were chirping and playing, and the nest that had felt unfamiliar began to feel like home.
+
+## Segment 11 — 235 characters
+
+Mother Magpie cared for every chick with the same patience. She brought food, kept them warm, and listened when one of them felt sad. The chicks learned that a family can grow when someone opens a kind heart and makes room for another.
+
+## Segment 12 — 306 characters
+
+Their old mother was still remembered, and their new home was full of gentle voices, shared meals, and helping wings. As the sun set behind the hills, the four chicks nestled close beneath Mother Magpie’s feathers. The tree glowed with golden light, and nearby nests answered one another with sleepy songs.
+
+## Segment 13 — 201 characters
+
+The chicks were safe, loved, and together. And whenever another bird in the great tree needed help, this family remembered how kindness had welcomed them in—and they were ready to welcome someone, too.
+
+
