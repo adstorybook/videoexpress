@@ -21,6 +21,23 @@ Make an original, child-friendly 3D animated storybook video from the supplied n
 - 2:50–4:05: the chicks carefully move nests; the family makes room and shares soft grass.
 - 4:05–5:15: first-night comfort leads to morning play, shared food, and four chicks safe under one wing.
 
+## Scene sequence for the five-minute timeline
+
+1. **0:00–0:18 — An empty sky:** two little chicks call from their nest; the neighboring mother answers, “You are not alone.”
+2. **0:18–0:45 — Two nests:** establish both families and the great old tree in warm morning light.
+3. **0:45–1:05 — A food flight:** the mother leaves her two chicks and flies over the meadow.
+4. **1:05–1:35 — Beyond the ridge:** show the eagle far away; keep the separation brief, distant, and non-graphic.
+5. **1:35–1:55 — The calls continue:** the chicks huddle together and call into the wide sky.
+6. **1:55–2:20 — A neighbor listens:** the neighboring mother turns toward the cries and checks with her own chicks.
+7. **2:20–2:50 — A warm wing:** she comforts the pair and waits until they are ready to follow.
+8. **2:50–3:25 — Room in the nest:** the chicks move carefully; the original nestmates make space and share soft grass.
+9. **3:25–4:05 — The first night:** the newcomers miss their mother; the neighbor stays beside them under one wing.
+10. **4:05–4:40 — A new morning:** the four chicks practice balancing and discover the new nest can feel like home.
+11. **4:40–5:00 — Shared care:** show food, gentle play, and the mother caring for every chick.
+12. **5:00–5:16 — Belonging:** golden-evening family image, then a brief Alex-and-Maya storybook frame as the narration lands.
+
+Add, remove, or replace visual clips to match this beat order. Preserve the narration's planned runtime and check the final assembled duration.
+
 ## YouTube package draft
 **Title:** You Are Not Alone 🐦 | Mother Magpie's Gentle Story of Kindness
 **Thumbnail:** A caring magpie opens one wing around four distinct chicks in a glowing nest. Large words: ROOM FOR ONE MORE. Keep the empty nest soft in the background.
