@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/adstorybook/videoexpress/schemas/correction.schema.json",
+  "title": "VideoExpress correction and feedback entry",
+  "type": "object",
+  "required": ["correction_id", "date", "scope", "category", "issue", "requested_change", "status"],
+  "properties": {
+    "correction_id": {"type": "string"},
+    "date": {"type": "string", "format": "date"},
+    "scope": {"type": "string", "enum": ["project", "channel"]},
+    "project_id": {"type": ["string", "null"]},
+    "category": {"type": "string", "enum": ["voice", "pronunciation", "pacing", "emotion", "character_continuity", "visual_style", "prompt", "editing", "music", "sound_effect", "caption", "story", "branding", "technical", "other"]},
+    "scene_id": {"type": ["string", "null"]},
+    "timecode": {"type": ["string", "null"]},
+    "issue": {"type": "string"},
+    "requested_change": {"type": "string"},
+    "applied_change": {"type": ["string", "null"]},
+    "evidence_ref": {"type": ["string", "null"]},
+    "status": {"type": "string", "enum": ["proposed", "approved", "rejected", "applied", "verified"]},
+    "approved_by": {"type": ["string", "null"]},
+    "approved_at": {"type": ["string", "null"], "format": "date-time"},
+    "reuse_as_rule": {"type": "boolean", "default": false},
+    "rule_text": {"type": ["string", "null"]},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
