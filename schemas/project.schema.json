@@ -3,60 +3,531 @@
   "$id": "https://github.com/adstorybook/videoexpress/schemas/project.schema.json",
   "title": "VideoExpress project manifest",
   "type": "object",
-  "required": ["schema_version", "project_id", "title", "channel", "settings", "workflow", "scenes", "characters", "corrections_ref"],
+  "required": [
+    "schema_version",
+    "project_id",
+    "title",
+    "channel",
+    "settings",
+    "workflow",
+    "scenes",
+    "characters",
+    "corrections_ref"
+  ],
   "properties": {
-    "schema_version": {"type": "string", "const": "1.0"},
-    "project_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
-    "title": {"type": "string", "minLength": 1},
-    "source_story_ref": {"type": ["string", "null"]},
-    "channel": {"type": "string"},
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "project_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_story_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "channel": {
+      "type": "string"
+    },
     "brief": {
       "type": "object",
       "properties": {
-        "audience": {"type": "string"},
-        "format": {"type": "string"},
-        "tone": {"type": "string"},
-        "goal": {"type": "string"},
-        "retention_goal_percent": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
-        "retention_goal_note": {"type": "string"}
+        "audience": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string"
+        },
+        "tone": {
+          "type": "string"
+        },
+        "goal": {
+          "type": "string"
+        },
+        "retention_goal_percent": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "retention_goal_note": {
+          "type": "string"
+        },
+        "adaptation_summary": {
+          "type": "string"
+        },
+        "source_verification_required": {
+          "type": "boolean"
+        }
       },
       "additionalProperties": true
     },
     "settings": {
       "type": "object",
-      "required": ["runtime_seconds", "aspect_ratio", "resolution", "visual_style", "language"],
+      "required": [
+        "runtime_seconds",
+        "aspect_ratio",
+        "resolution",
+        "visual_style",
+        "language"
+      ],
       "properties": {
-        "runtime_seconds": {"type": "integer", "minimum": 1},
-        "aspect_ratio": {"type": "string"},
-        "resolution": {"type": "string"},
-        "frame_rate": {"type": ["number", "null"], "minimum": 1},
-        "visual_style": {"type": "string"},
-        "language": {"type": "string"},
-        "voice_profile_id": {"type": ["string", "null"]},
-        "music_direction": {"type": ["string", "null"]},
-        "caption_enabled": {"type": "boolean"}
+        "runtime_seconds": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "aspect_ratio": {
+          "type": "string"
+        },
+        "resolution": {
+          "type": "string"
+        },
+        "frame_rate": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "visual_style": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "voice_profile_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "music_direction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "caption_enabled": {
+          "type": "boolean"
+        }
       },
       "additionalProperties": true
     },
     "workflow": {
       "type": "object",
-      "required": ["status", "updated_at", "history"],
+      "required": [
+        "status",
+        "updated_at",
+        "history"
+      ],
       "properties": {
-        "status": {"type": "string", "enum": ["idea", "script_draft", "script_approved", "storyboard_draft", "storyboard_approved", "assets_generating", "assets_ready", "assembly", "render_preview", "review", "approved", "export_ready", "upload_pending_approval", "published", "analytics", "blocked"]},
-        "updated_at": {"type": "string", "format": "date-time"},
-        "history": {"type": "array", "items": {"type": "object", "required": ["status", "at", "note"], "properties": {"status": {"type": "string"}, "at": {"type": "string", "format": "date-time"}, "note": {"type": "string"}, "actor": {"type": "string"}}}
+        "status": {
+          "type": "string",
+          "enum": [
+            "idea",
+            "script_draft",
+            "script_approved",
+            "storyboard_draft",
+            "storyboard_approved",
+            "assets_generating",
+            "assets_ready",
+            "assembly",
+            "render_preview",
+            "review",
+            "approved",
+            "export_ready",
+            "upload_pending_approval",
+            "published",
+            "analytics",
+            "blocked"
+          ]
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "status",
+              "at",
+              "note"
+            ],
+            "properties": {
+              "status": {
+                "type": "string"
+              },
+              "at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "note": {
+                "type": "string"
+              },
+              "actor": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "script_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "storyboard_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/character"
       }
     },
-    "script_ref": {"type": ["string", "null"]},
-    "storyboard_ref": {"type": ["string", "null"]},
-    "characters": {"type": "array", "items": {"type": "object", "required": ["character_id", "name", "canonical_description"], "properties": {"character_id": {"type": "string"}, "name": {"type": "string"}, "canonical_description": {"type": "string"}, "reference_asset_ids": {"type": "array", "items": {"type": "string"}}, "continuity_notes": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": true}},
-    "scenes": {"type": "array", "items": {"type": "object", "required": ["scene_id", "order", "target_duration_seconds", "status"], "properties": {"scene_id": {"type": "string"}, "order": {"type": "integer", "minimum": 1}, "target_duration_seconds": {"type": "number", "minimum": 0}, "narration_ref": {"type": ["string", "null"]}, "visual_prompt": {"type": ["string", "null"]}, "character_ids": {"type": "array", "items": {"type": "string"}}, "asset_ids": {"type": "array", "items": {"type": "string"}}, "status": {"type": "string", "enum": ["planned", "prompt_approved", "generating", "generated", "selected", "rejected", "needs_correction"]}}, "additionalProperties": true}},
-    "assets": {"type": "array", "items": {"type": "object", "required": ["asset_id", "type", "status"], "properties": {"asset_id": {"type": "string"}, "type": {"type": "string", "enum": ["image", "video", "voice", "music", "sfx", "caption", "thumbnail", "other"]}, "status": {"type": "string"}, "provider": {"type": ["string", "null"]}, "model": {"type": ["string", "null"]}, "prompt": {"type": ["string", "null"]}, "source_uri": {"type": ["string", "null"]}, "storage_ref": {"type": ["string", "null"]}, "checksum": {"type": ["string", "null"]}, "rights_note": {"type": ["string", "null"]}, "created_at": {"type": ["string", "null"], "format": "date-time"}}, "additionalProperties": true}},
-    "corrections_ref": {"type": "string"},
-    "qa_report_ref": {"type": ["string", "null"]},
-    "render": {"type": ["object", "null"], "properties": {"render_id": {"type": "string"}, "version": {"type": "integer"}, "provider": {"type": ["string", "null"]}, "output_ref": {"type": ["string", "null"]}, "duration_seconds": {"type": ["number", "null"]}, "created_at": {"type": ["string", "null"], "format": "date-time"}, "approved_at": {"type": ["string", "null"], "format": "date-time"}}, "additionalProperties": true},
-    "publishing": {"type": ["object", "null"], "properties": {"approval_required": {"type": "boolean", "default": true}, "approved": {"type": "boolean", "default": false}, "youtube_video_id": {"type": ["string", "null"]}, "youtube_url": {"type": ["string", "null"]}, "visibility": {"type": ["string", "null"]}, "published_at": {"type": ["string", "null"], "format": "date-time"}}, "additionalProperties": true},
-    "analytics": {"type": "array", "items": {"type": "object", "properties": {"captured_at": {"type": "string", "format": "date-time"}, "days_after_publish": {"type": "integer"}, "average_view_duration_seconds": {"type": ["number", "null"]}, "retention_percent": {"type": ["number", "null"]}, "ctr_percent": {"type": ["number", "null"]}, "notes": {"type": "string"}, "proposed_rules": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": true}}
+    "scenes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/scene"
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "corrections_ref": {
+      "type": "string"
+    },
+    "qa_report_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "render": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "render_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "integer"
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "output_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "duration_seconds": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "approved_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "publishing": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "approval_required": {
+          "type": "boolean",
+          "default": true
+        },
+        "approved": {
+          "type": "boolean",
+          "default": false
+        },
+        "youtube_video_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "youtube_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "visibility": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "published_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    },
+    "analytics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "captured_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "days_after_publish": {
+            "type": "integer"
+          },
+          "average_view_duration_seconds": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "retention_percent": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "ctr_percent": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          },
+          "proposed_rules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "$defs": {
+    "character": {
+      "type": "object",
+      "required": [
+        "character_id",
+        "name",
+        "canonical_description"
+      ],
+      "properties": {
+        "character_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "canonical_description": {
+          "type": "string"
+        },
+        "reference_asset_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "continuity_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "scene": {
+      "type": "object",
+      "required": [
+        "scene_id",
+        "order",
+        "target_duration_seconds",
+        "status"
+      ],
+      "properties": {
+        "scene_id": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "target_duration_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "narration_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "visual_prompt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "character_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "asset_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "planned",
+            "prompt_approved",
+            "generating",
+            "generated",
+            "selected",
+            "rejected",
+            "needs_correction"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "asset": {
+      "type": "object",
+      "required": [
+        "asset_id",
+        "type",
+        "status"
+      ],
+      "properties": {
+        "asset_id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "image",
+            "video",
+            "voice",
+            "music",
+            "sfx",
+            "caption",
+            "thumbnail",
+            "other"
+          ]
+        },
+        "status": {
+          "type": "string"
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prompt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_uri": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "storage_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "checksum": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rights_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "created_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": true
+    }
   },
   "additionalProperties": true
 }
