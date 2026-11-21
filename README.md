@@ -9,6 +9,6 @@ Both scripts use an opening curiosity hook, quick visual changes, and a warm res
 
 Both project briefs also include the user's Alex and Maya reference characters as consistent storybook hosts in the opening and closing frames; the rabbit and magpie characters remain the fables' protagonists.
 
-VideoExpress currently limits imported audio in its old lipsync creation window to 30 seconds on this account. The long-form story export therefore still needs a full-length assembly path. Promo pages are drafts; YouTube links are placeholders until an approved upload exists.
+VideoExpress currently limits imported audio to 30 seconds in its old lipsync window on this account. Its upgrade dialog says an upgrade allows audio up to 300 seconds. Neither story has a finished MP4 yet; the saved 32-second travel clip is unrelated. Promo pages are drafts; YouTube links are placeholders until an approved upload exists. The YouTube channel is not connected to the publishing workspace.
 
 
