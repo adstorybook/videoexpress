@@ -7,6 +7,8 @@ Separate project briefs, narration drafts, and promo pages for the two stories i
 
 Both scripts use an opening curiosity hook, quick visual changes, and a warm resolution. Target runtime is approximately 5:16–5:26 at the slow narration pace already used in VideoExpress. Retention above 80% is an aim to test against channel analytics; it cannot be promised in advance.
 
+Both project briefs also include the user's Alex and Maya reference characters as consistent storybook hosts in the opening and closing frames; the rabbit and magpie characters remain the fables' protagonists.
+
 VideoExpress currently limits imported audio in its old lipsync creation window to 30 seconds on this account. The long-form story export therefore still needs a full-length assembly path. Promo pages are drafts; YouTube links are placeholders until an approved upload exists.
 
 
