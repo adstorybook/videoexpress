@@ -11,4 +11,5 @@ Both project briefs also include the user's Alex and Maya reference characters a
 
 VideoExpress currently limits imported audio to 30 seconds in its old lipsync window on this account. Its upgrade dialog says an upgrade allows audio up to 300 seconds. Neither story has a finished MP4 yet; the saved 32-second travel clip is unrelated. Promo pages are drafts; YouTube links are placeholders until an approved upload exists. The YouTube channel is not connected to the publishing workspace.
 
+Reusable editor notes, observed limits, and the scene-by-scene workflow are in [VideoExpress workflow notes](videoexpress-workflow-and-limitations.md).
 
