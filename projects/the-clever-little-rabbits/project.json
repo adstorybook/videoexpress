@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "assets_generating",
-    "updated_at": "2026-11-21T15:05:00Z",
+    "updated_at": "2026-11-21T16:43:00Z",
     "history": [
       {
         "status": "idea",
@@ -52,6 +52,12 @@
         "at": "2026-11-21T15:05:00Z",
         "note": "User uploaded second 6.04-second clip: mother rabbit and three children hugging at the cottage doorway. Logged as partial coverage for Scene 2.",
         "actor": "user"
+      },
+      {
+        "status": "assets_generating",
+        "at": "2026-11-21T16:43:00Z",
+        "note": "Third user-uploaded Rabbit clip reviewed: mother walks away from the cottage while the three children wave; 6.04s, 1920x1080, 24fps. Logged as partial coverage of Scene 3.",
+        "actor": "assistant"
       }
     ]
   },
@@ -161,8 +167,10 @@
         "rabbit-2",
         "rabbit-3"
       ],
-      "asset_ids": [],
-      "status": "planned",
+      "asset_ids": [
+        "rabbit-scene3-departure-001"
+      ],
+      "status": "generating",
       "beat": "A hungry big bad wolf discovers the cottage and knocks while the mother is away.",
       "notes": "Follow source story; retain character continuity and gentle family-friendly tone."
     },
@@ -316,6 +324,23 @@
       "checksum": "sha256:ab16a177afd38ff3376989060f8742b7abbb1bda40360b85ee2ca7ebe6e86f3d",
       "rights_note": "User-generated VideoExpress clip. Reviewed; visually approved for a partial Scene 2 hug shot, not complete scene coverage.",
       "created_at": "2026-11-21T15:05:00Z",
+      "duration_seconds": 6.041667,
+      "resolution": "1920x1080",
+      "aspect_ratio": "16:9",
+      "frame_rate": 24
+    },
+    {
+      "asset_id": "rabbit-scene3-departure-001",
+      "type": "video",
+      "status": "approved_partial_scene_coverage",
+      "provider": "VideoExpress",
+      "model": "VideoExpress 3.5",
+      "prompt": "Cinematic 3D animated children's story. The same white mother rabbit wearing her blue dress and cream apron walks away from the cozy wooden cottage along a flower-lined garden path. The three small white rabbit children in their red-orange, yellow, and green outfits stand safely inside the cottage doorway, waving goodbye to their mother. Mother turns back, smiles warmly and waves before continuing down the path. The wooden cottage door then closes gently. Beautiful soft morning sunlight, colorful flowers, fluffy fur, expressive faces, family-friendly animated film quality. Medium-wide shot, gentle camera movement following the mother briefly. Preserve the exact character designs, clothing, cottage, and visual style of the reference clips. No text, no subtitles, no new characters.",
+      "source_uri": null,
+      "storage_ref": "Uploaded MP4 (local conversation attachment; not stored in Git)",
+      "checksum": "sha256:24a13c7d7d821c1929bc8a57fe610dc4f490f9a21618d82b33846e51fd90cb28",
+      "rights_note": "User-generated VideoExpress clip; reviewed and approved as partial coverage of Scene 3, showing departure and children waving.",
+      "created_at": "2026-11-21T16:43:00Z",
       "duration_seconds": 6.041667,
       "resolution": "1920x1080",
       "aspect_ratio": "16:9",
