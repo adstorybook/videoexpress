@@ -1,0 +1,140 @@
+{
+  "project_id": "mother-magpie",
+  "approval_status": "draft_unapproved",
+  "source_verification_required": true,
+  "scenes": [
+    {
+      "scene_id": "scene-01",
+      "order": 1,
+      "duration_seconds": 30,
+      "beat": "Establish the tree and the two magpie families",
+      "characters": [
+        "magpie-mother-a",
+        "magpie-chick-a1",
+        "magpie-chick-a2",
+        "magpie-mother-b",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-02",
+      "order": 2,
+      "duration_seconds": 35,
+      "beat": "Mother Magpie A leaves to find food",
+      "characters": [
+        "magpie-mother-a",
+        "magpie-chick-a1",
+        "magpie-chick-a2"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-03",
+      "order": 3,
+      "duration_seconds": 35,
+      "beat": "Eagle swoops and carries mother magpie away",
+      "characters": [
+        "magpie-mother-a",
+        "eagle"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-04",
+      "order": 4,
+      "duration_seconds": 40,
+      "beat": "Chicks realize mother is gone and cry for help",
+      "characters": [
+        "magpie-chick-a1",
+        "magpie-chick-a2"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-05",
+      "order": 5,
+      "duration_seconds": 35,
+      "beat": "Neighboring mother magpie hears the cries",
+      "characters": [
+        "magpie-mother-b",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-06",
+      "order": 6,
+      "duration_seconds": 40,
+      "beat": "Neighbor goes to the orphaned chicks and brings them to safety",
+      "characters": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-07",
+      "order": 7,
+      "duration_seconds": 40,
+      "beat": "She comforts the rescued chicks at her nest",
+      "characters": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-08",
+      "order": 8,
+      "duration_seconds": 30,
+      "beat": "Her own chicks welcome the newcomers",
+      "characters": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    },
+    {
+      "scene_id": "scene-09",
+      "order": 9,
+      "duration_seconds": 15,
+      "beat": "End with both families together in a safe, happy home",
+      "characters": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "visual_prompt": null,
+      "narration": null,
+      "transition_notes": null
+    }
+  ]
+}
