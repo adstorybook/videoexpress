@@ -17,7 +17,9 @@
 | Media Library | Folders include **My AI Audio**, **My AI Images**, **My AI Videos**, and **Videos**. Generated images can be selected from **My AI Images** for Image To Video. | The app says project files are hosted for up to 50 days; download final outputs promptly. |
 | Text to Speech | A 553-character sample with Emotion Jenny, Friendly, speed 0.7 generated 42 seconds of audio and saved to **My AI Audio**. The text box limit shown was 600 characters. | The generated duration depends on wording and voice speed. Measure each chunk; for sub-30-second lipsync audio, use a safe margin (roughly 300–350 characters at this voice setting, then verify). |
 | Lipsync Video (Old Algorithm) | It accepts a generated image plus speech and offers consistent-character controls. The UI says it works best with a centered waist-up actor and a 16:9 or 9:16 image. | This is a talking-presenter/lip-sync tool, not a story montage tool. A 42-second audio sample was rejected: the current account showed a 30-second maximum and an upgrade prompt for audio up to 300 seconds. Do not upgrade or top up without explicit approval. |
-| Image To Video (Old Algorithm) | It accepts a still plus a **Video Action Prompt**, with style choices including **3D**. A rabbit-family still was accepted and a short scene entered the background queue. | Set style to **3D**; the default was Human. The sample 1920×1088 landscape image triggered an aspect-ratio warning, so create/choose exact 1920×1080 or 1080×1920 source frames where possible. The queued sample still needs review. |
+| Image To Video (Old Algorithm) | It accepts a still plus a **Video Action Prompt**, with style choices including **3D**. With the Video Length Booster off, the first rabbit scene completed as a 4-second, 1920×1080 MP4. | Set style to **3D**; the default was Human. The sample 1920×1088 landscape image triggered an aspect-ratio warning, so create/choose exact 1920×1080 or 1080×1920 source frames where possible. A second prompt with the Video Length Booster on is still rendering; do not assume the booster produces a particular duration until the clip is previewed. |
+| Timeline assembly | Dragging the completed first rabbit MP4 from **My AI Videos** onto video track 1 worked; the editor showed one clip and a 4-second project duration. | This verifies a single-clip placement only. A full multi-scene story, narration alignment, and export have not been completed. |
+| My AI Videos | The gallery shows render progress on the pending boosted scene. The completed test clip is listed as 1920×1080. | Gallery timestamps and thumbnail progress are not clip durations. Open **Play** or preview each completed file to verify its actual length and content. |
 | Generated media | The UI said completed clips appear under **Media Library → My Media**. | A queued job is not a finished project. Confirm it appears and preview the actual clip before using it. |
 | Export Video / My Videos | The editor has **Export Video** and **My Videos**. One unrelated travel render preview was 32 seconds. | Do not treat that travel clip as either story. The HD export setting and complete story export are not yet verified. |
 
@@ -26,16 +28,16 @@
 1. Start or open a clearly named project for one story; do not leave it titled with an unrelated example-project name.
 2. Set landscape 16:9 and save. Turn off public-gallery sharing.
 3. Create/check a landscape character guide and key story frames first. Review character counts, clothing, and continuity before animating; the generated rabbit images looked warm and polished but did not always match every clothing detail in the written prompt.
-4. Generate visual clips with **Image To Video (Old Algorithm)**, choosing **3D** and using one focused action per clip. Keep each visual beat short and relevant to the narration. Check queue completion in **My Media**, then preview it.
+4. Generate visual clips with **Image To Video (Old Algorithm)**, choosing **3D** and using one focused action per clip. The first booster-off sample was only 4 seconds, so test the booster and preview a sample before planning the number of clips. Check queue completion in **My Media**, then preview each result.
 5. Create or import narration separately. Split TTS text at sentence boundaries under 600 characters; verify the resulting duration and avoid clips longer than 30 seconds if sending them through Lipsync.
 6. Assemble the visual clips in order on the video track and narration pieces in order on the audio track. Check total runtime, transitions, sound levels, captions, opening hook, and closing lesson. Save the project.
 7. Export once the full timeline has been previewed. Verify actual duration, 16:9 aspect, Full HD resolution, audio, and visual coverage before calling it upload-ready.
 
-This segmented assembly path has not yet been completed end to end. The first rabbit Image To Video sample is the current test; the Magpie project and final exports remain pending.
+This segmented assembly path has not yet been completed end to end. One 4-second rabbit clip was generated and placed on the video track; the boosted rabbit shot is still rendering. The Magpie project, narration alignment, and final exports remain pending.
 
 ## Managing scenes
 
-The user confirmed that scenes can be added and deleted in the editor. Treat each generated visual clip as an editable beat: add scenes to cover a missing story moment, remove a scene that changes character counts or continuity, and replace it with a focused prompt. Keep every added scene tied to the approved narration and retention outline. The narration drafts already target five minutes, so use scene additions to improve visual coverage and pacing rather than adding filler words. Before bulk editing, verify how the current editor places a new clip on the timeline and how deletion affects neighboring clips.
+The user confirmed that scenes can be added and deleted in the editor. Treat each generated visual clip as an editable beat: add scenes to cover a missing story moment, remove a scene that changes character counts or continuity, and replace it with a focused prompt. Keep every added scene tied to the approved narration and retention outline. The narration drafts already target five minutes, so use scene additions to improve visual coverage and pacing rather than adding filler words. Dragging the first completed clip from **My AI Videos** onto track 1 worked. Multi-scene placement, clip duration adjustment, and deletion effects still need verification before bulk assembly.
 
 ## Reusable image-to-video action prompt
 
@@ -46,14 +48,14 @@ Add a specific action and setting for each shot; do not reuse the generic prompt
 ## Positive points observed
 
 - The media library already contains the Alex/Maya references and several 3D rabbit and magpie guide images, so the story work can reuse those assets.
-- Image To Video separates scene animation from narration and accepted the landscape rabbit still without requesting the long-audio upgrade.
+- Image To Video separates scene animation from narration and accepted the landscape rabbit still without requesting the long-audio upgrade; a completed booster-off sample is 4 seconds at 1920×1080.
 - The editor has a multitrack timeline, save control, captions tool, and a visible video export path.
 
 ## Negative points and unresolved checks
 
 - Lipsync is easy to confuse with cinematic scene generation; its guidance favors a waist-up talking actor, and the current account blocks speech over 30 seconds.
 - Approximate 16:9 dimensions can still trigger the app's ratio warning; prepare exact aspect ratios.
-- Generation is asynchronous; a toast only means a job was queued, not that a usable clip was made.
+- Generation is asynchronous; a toast only means a job was queued, not that a usable clip was made. The gallery may show percentage progress while rendering.
 - The full-length edit, HD export, transition workflow, and sub-30-second segmented final assembly still need a successful end-to-end test.
 - A YouTube channel is not connected to the publishing workspace. Connect it and choose privacy only when the reviewed final MP4 exists.
 
