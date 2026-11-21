@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "project_id": "mother-magpie",
+  "title": "Mother Magpie",
+  "source_story_ref": "User-supplied storybook attachment; source file not currently present in this repository. Verify against original before final script approval.",
+  "channel": "TheStorybook_ad",
+  "brief": {
+    "audience": "Children and families",
+    "format": "5-minute animated story film",
+    "tone": "warm, expressive, age-appropriate; gentle suspense with a satisfying ending",
+    "goal": "Faithful adaptation of supplied story; entertaining and emotionally clear",
+    "retention_goal_percent": 80,
+    "retention_goal_note": "Aspirational target, not guaranteed. Review actual retention analytics after publication.",
+    "adaptation_summary": "Two magpie families live in a tree. A mother magpie goes for food and is carried away by an eagle. Her chicks cry; a neighboring mother hears, rescues and cares for them, and the chicks are welcomed by her own children.",
+    "source_verification_required": true
+  },
+  "settings": {
+    "runtime_seconds": 300,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080",
+    "frame_rate": null,
+    "visual_style": "Pixar-inspired 3D animated storybook film",
+    "language": "English",
+    "voice_profile_id": null,
+    "music_direction": "Cinematic storybook score; tension and emotion supported but narration clear",
+    "caption_enabled": true
+  },
+  "workflow": {
+    "status": "idea",
+    "updated_at": "2026-11-21T14:00:00Z",
+    "history": [
+      {
+        "status": "idea",
+        "at": "2026-11-21T14:00:00Z",
+        "note": "Project created from story outline previously summarized in chat; original attachment must be checked before script approval.",
+        "actor": "assistant"
+      }
+    ]
+  },
+  "script_ref": "script.md",
+  "storyboard_ref": "storyboard.json",
+  "characters": [
+    {
+      "character_id": "magpie-mother-a",
+      "name": "Mother Magpie A",
+      "canonical_description": "Magpie mother from original story; exact feather markings, proportions, accessories, and voice to be captured from source illustration and approved.",
+      "continuity_notes": [
+        "Keep nest and bird markings consistent."
+      ]
+    },
+    {
+      "character_id": "magpie-chick-a1",
+      "name": "Chick A1",
+      "canonical_description": "One of the first mother's chicks; design to be distinguished and locked after source illustration review.",
+      "continuity_notes": [
+        "Maintain relative size, markings and identity."
+      ]
+    },
+    {
+      "character_id": "magpie-chick-a2",
+      "name": "Chick A2",
+      "canonical_description": "Sibling chick; design to be distinguished and locked after source illustration review.",
+      "continuity_notes": [
+        "Maintain relative size, markings and identity."
+      ]
+    },
+    {
+      "character_id": "magpie-mother-b",
+      "name": "Neighbor Mother Magpie",
+      "canonical_description": "Kind neighboring mother; appearance and voice to be defined from source illustrations and approved.",
+      "continuity_notes": [
+        "Kind, compassionate, calm."
+      ]
+    },
+    {
+      "character_id": "magpie-chick-b1",
+      "name": "Neighbor Chick B1",
+      "canonical_description": "Neighbor family's chick; design to be distinguished and locked after source illustration review.",
+      "continuity_notes": [
+        "Welcoming temperament."
+      ]
+    },
+    {
+      "character_id": "magpie-chick-b2",
+      "name": "Neighbor Chick B2",
+      "canonical_description": "Neighbor family's chick; design to be distinguished and locked after source illustration review.",
+      "continuity_notes": [
+        "Welcoming temperament."
+      ]
+    },
+    {
+      "character_id": "eagle",
+      "name": "Eagle",
+      "canonical_description": "Eagle from story; non-graphic portrayal appropriate for young viewers; design to be confirmed from source.",
+      "continuity_notes": [
+        "Use consistent silhouette and markings; avoid frightening realism."
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene-01",
+      "order": 1,
+      "target_duration_seconds": 30,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-a",
+        "magpie-chick-a1",
+        "magpie-chick-a2",
+        "magpie-mother-b",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Establish the tree and the two magpie families",
+      "notes": "Introduce families clearly; verify exact chick count from source."
+    },
+    {
+      "scene_id": "scene-02",
+      "order": 2,
+      "target_duration_seconds": 35,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-a",
+        "magpie-chick-a1",
+        "magpie-chick-a2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Mother Magpie A leaves to find food",
+      "notes": "Gentle foreshadowing; establish nest location."
+    },
+    {
+      "scene_id": "scene-03",
+      "order": 3,
+      "target_duration_seconds": 35,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-a",
+        "eagle"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Eagle swoops and carries mother magpie away",
+      "notes": "Non-graphic, suitable for children; follow source accurately."
+    },
+    {
+      "scene_id": "scene-04",
+      "order": 4,
+      "target_duration_seconds": 40,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-chick-a1",
+        "magpie-chick-a2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Chicks realize mother is gone and cry for help",
+      "notes": "Emotional but not distressing for long; maintain continuity."
+    },
+    {
+      "scene_id": "scene-05",
+      "order": 5,
+      "target_duration_seconds": 35,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-b",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Neighboring mother magpie hears the cries",
+      "notes": "Show her noticing and deciding to help."
+    },
+    {
+      "scene_id": "scene-06",
+      "order": 6,
+      "target_duration_seconds": 40,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Neighbor goes to the orphaned chicks and brings them to safety",
+      "notes": "Clear rescue action and spatial continuity."
+    },
+    {
+      "scene_id": "scene-07",
+      "order": 7,
+      "target_duration_seconds": 40,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "She comforts the rescued chicks at her nest",
+      "notes": "Warm caregiving and soft emotional beat."
+    },
+    {
+      "scene_id": "scene-08",
+      "order": 8,
+      "target_duration_seconds": 30,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "Her own chicks welcome the newcomers",
+      "notes": "Show inclusion and kindness."
+    },
+    {
+      "scene_id": "scene-09",
+      "order": 9,
+      "target_duration_seconds": 15,
+      "narration_ref": null,
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2",
+        "magpie-chick-b1",
+        "magpie-chick-b2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "End with both families together in a safe, happy home",
+      "notes": "Short final payoff; verify original ending."
+    }
+  ],
+  "assets": [],
+  "corrections_ref": "corrections.json",
+  "qa_report_ref": null,
+  "render": null,
+  "publishing": {
+    "approval_required": true,
+    "approved": false,
+    "youtube_video_id": null,
+    "youtube_url": null,
+    "visibility": null,
+    "published_at": null
+  },
+  "analytics": []
+}
