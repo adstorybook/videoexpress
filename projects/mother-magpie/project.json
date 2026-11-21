@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "project_id": "mother-magpie",
   "title": "Mother Magpie",
-  "source_story_ref": "User-supplied storybook attachment; source file not currently present in this repository. Verify against original before final script approval.",
+  "source_story_ref": "story book1(1).pdf pages 3-5 (user-uploaded scan)",
   "channel": "TheStorybook_ad",
   "brief": {
     "audience": "Children and families",
@@ -11,8 +11,8 @@
     "goal": "Faithful adaptation of supplied story; entertaining and emotionally clear",
     "retention_goal_percent": 80,
     "retention_goal_note": "Aspirational target, not guaranteed. Review actual retention analytics after publication.",
-    "adaptation_summary": "Two magpie families live in a tree. A mother magpie goes for food and is carried away by an eagle. Her chicks cry; a neighboring mother hears, rescues and cares for them, and the chicks are welcomed by her own children.",
-    "source_verification_required": true
+    "adaptation_summary": "Source-faithful: two magpie families share a tree, each with two chicks; eagle carries off one mother; neighboring mother rescues and adopts the two chicks; her own chicks welcome them; they live happily.",
+    "source_verification_required": false
   },
   "settings": {
     "runtime_seconds": 300,
@@ -26,13 +26,19 @@
     "caption_enabled": true
   },
   "workflow": {
-    "status": "idea",
-    "updated_at": "2026-11-21T14:00:00Z",
+    "status": "script_draft",
+    "updated_at": "2026-11-21T15:00:00Z",
     "history": [
       {
         "status": "idea",
         "at": "2026-11-21T14:00:00Z",
         "note": "Project created from story outline previously summarized in chat; original attachment must be checked before script approval.",
+        "actor": "assistant"
+      },
+      {
+        "status": "script_draft",
+        "at": "2026-11-21T15:00:00Z",
+        "note": "Updated from the uploaded source scan; script is a five-minute draft awaiting user approval.",
         "actor": "assistant"
       }
     ]
@@ -43,57 +49,64 @@
     {
       "character_id": "magpie-mother-a",
       "name": "Mother Magpie A",
-      "canonical_description": "Magpie mother from original story; exact feather markings, proportions, accessories, and voice to be captured from source illustration and approved.",
+      "canonical_description": "Mother from the first nest; colorful magpie as shown in source, assign locked plumage palette, markings and proportions from approved reference.",
+      "reference_asset_ids": [],
       "continuity_notes": [
-        "Keep nest and bird markings consistent."
+        "Her disappearance is not followed by a return in the source; do not invent one."
       ]
     },
     {
       "character_id": "magpie-chick-a1",
       "name": "Chick A1",
-      "canonical_description": "One of the first mother's chicks; design to be distinguished and locked after source illustration review.",
+      "canonical_description": "One of the two chicks in Mother A's nest. Lock color and unique markings from source-inspired character sheet.",
+      "reference_asset_ids": [],
       "continuity_notes": [
-        "Maintain relative size, markings and identity."
+        "Small baby bird; nest A before rescue, nest B afterward."
       ]
     },
     {
       "character_id": "magpie-chick-a2",
       "name": "Chick A2",
-      "canonical_description": "Sibling chick; design to be distinguished and locked after source illustration review.",
+      "canonical_description": "Sibling of Chick A1, visually distinct but same family palette; lock markings from character sheet.",
+      "reference_asset_ids": [],
       "continuity_notes": [
-        "Maintain relative size, markings and identity."
+        "Small baby bird; nest A before rescue, nest B afterward."
       ]
     },
     {
       "character_id": "magpie-mother-b",
       "name": "Neighbor Mother Magpie",
-      "canonical_description": "Kind neighboring mother; appearance and voice to be defined from source illustrations and approved.",
+      "canonical_description": "Kind mother from neighboring nest; purple magpie with gentle expression and source-inspired markings. Maintain her design throughout.",
+      "reference_asset_ids": [],
       "continuity_notes": [
-        "Kind, compassionate, calm."
+        "Warm, reassuring voice; adopts the other two chicks."
       ]
     },
     {
       "character_id": "magpie-chick-b1",
       "name": "Neighbor Chick B1",
-      "canonical_description": "Neighbor family's chick; design to be distinguished and locked after source illustration review.",
+      "canonical_description": "One of the neighbor mother's two chicks, purple-toned in source illustration; unique marking/outfit-free bird design locked.",
+      "reference_asset_ids": [],
       "continuity_notes": [
-        "Welcoming temperament."
+        "Welcomes the two rescued chicks."
       ]
     },
     {
       "character_id": "magpie-chick-b2",
       "name": "Neighbor Chick B2",
-      "canonical_description": "Neighbor family's chick; design to be distinguished and locked after source illustration review.",
+      "canonical_description": "Second neighbor chick, yellow-toned in source illustration; distinctive markings locked.",
+      "reference_asset_ids": [],
       "continuity_notes": [
-        "Welcoming temperament."
+        "Welcomes the two rescued chicks."
       ]
     },
     {
       "character_id": "eagle",
       "name": "Eagle",
-      "canonical_description": "Eagle from story; non-graphic portrayal appropriate for young viewers; design to be confirmed from source.",
+      "canonical_description": "Blue eagle with large wings and orange beak/feet as depicted in source illustration; stylized and non-graphic.",
+      "reference_asset_ids": [],
       "continuity_notes": [
-        "Use consistent silhouette and markings; avoid frightening realism."
+        "Swoops, carries away Mother A; no violence shown."
       ]
     }
   ],
@@ -101,27 +114,27 @@
     {
       "scene_id": "scene-01",
       "order": 1,
-      "target_duration_seconds": 30,
-      "narration_ref": null,
+      "target_duration_seconds": 35,
+      "narration_ref": "script.md#scene-1",
       "visual_prompt": null,
       "character_ids": [
         "magpie-mother-a",
+        "magpie-mother-b",
         "magpie-chick-a1",
         "magpie-chick-a2",
-        "magpie-mother-b",
         "magpie-chick-b1",
         "magpie-chick-b2"
       ],
       "asset_ids": [],
       "status": "planned",
-      "beat": "Establish the tree and the two magpie families",
-      "notes": "Introduce families clearly; verify exact chick count from source."
+      "beat": "Establish the large tree with two neighboring magpie nests; each mother has exactly two chicks.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
     },
     {
       "scene_id": "scene-02",
       "order": 2,
-      "target_duration_seconds": 35,
-      "narration_ref": null,
+      "target_duration_seconds": 30,
+      "narration_ref": "script.md#scene-2",
       "visual_prompt": null,
       "character_ids": [
         "magpie-mother-a",
@@ -130,14 +143,14 @@
       ],
       "asset_ids": [],
       "status": "planned",
-      "beat": "Mother Magpie A leaves to find food",
-      "notes": "Gentle foreshadowing; establish nest location."
+      "beat": "One mother leaves her nest to find food after telling her two chicks to stay put.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
     },
     {
       "scene_id": "scene-03",
       "order": 3,
       "target_duration_seconds": 35,
-      "narration_ref": null,
+      "narration_ref": "script.md#scene-3",
       "visual_prompt": null,
       "character_ids": [
         "magpie-mother-a",
@@ -145,14 +158,14 @@
       ],
       "asset_ids": [],
       "status": "planned",
-      "beat": "Eagle swoops and carries mother magpie away",
-      "notes": "Non-graphic, suitable for children; follow source accurately."
+      "beat": "A blue eagle swoops down and carries away the mother; non-graphic, brief depiction.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
     },
     {
       "scene_id": "scene-04",
       "order": 4,
-      "target_duration_seconds": 40,
-      "narration_ref": null,
+      "target_duration_seconds": 30,
+      "narration_ref": "script.md#scene-4",
       "visual_prompt": null,
       "character_ids": [
         "magpie-chick-a1",
@@ -160,30 +173,14 @@
       ],
       "asset_ids": [],
       "status": "planned",
-      "beat": "Chicks realize mother is gone and cry for help",
-      "notes": "Emotional but not distressing for long; maintain continuity."
+      "beat": "The two chicks cry in their nest, frightened and hungry.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
     },
     {
       "scene_id": "scene-05",
       "order": 5,
       "target_duration_seconds": 35,
-      "narration_ref": null,
-      "visual_prompt": null,
-      "character_ids": [
-        "magpie-mother-b",
-        "magpie-chick-b1",
-        "magpie-chick-b2"
-      ],
-      "asset_ids": [],
-      "status": "planned",
-      "beat": "Neighboring mother magpie hears the cries",
-      "notes": "Show her noticing and deciding to help."
-    },
-    {
-      "scene_id": "scene-06",
-      "order": 6,
-      "target_duration_seconds": 40,
-      "narration_ref": null,
+      "narration_ref": "script.md#scene-5",
       "visual_prompt": null,
       "character_ids": [
         "magpie-mother-b",
@@ -192,14 +189,30 @@
       ],
       "asset_ids": [],
       "status": "planned",
-      "beat": "Neighbor goes to the orphaned chicks and brings them to safety",
-      "notes": "Clear rescue action and spatial continuity."
+      "beat": "The neighboring mother hears the cries and flies to the distressed nest.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
+    },
+    {
+      "scene_id": "scene-06",
+      "order": 6,
+      "target_duration_seconds": 35,
+      "narration_ref": "script.md#scene-6",
+      "visual_prompt": null,
+      "character_ids": [
+        "magpie-mother-b",
+        "magpie-chick-a1",
+        "magpie-chick-a2"
+      ],
+      "asset_ids": [],
+      "status": "planned",
+      "beat": "She comforts the two chicks, gently strokes their heads and reassures them.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
     },
     {
       "scene_id": "scene-07",
       "order": 7,
-      "target_duration_seconds": 40,
-      "narration_ref": null,
+      "target_duration_seconds": 35,
+      "narration_ref": "script.md#scene-7",
       "visual_prompt": null,
       "character_ids": [
         "magpie-mother-b",
@@ -210,14 +223,14 @@
       ],
       "asset_ids": [],
       "status": "planned",
-      "beat": "She comforts the rescued chicks at her nest",
-      "notes": "Warm caregiving and soft emotional beat."
+      "beat": "She promises to mother them too and brings them to her own nest.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
     },
     {
       "scene_id": "scene-08",
       "order": 8,
-      "target_duration_seconds": 30,
-      "narration_ref": null,
+      "target_duration_seconds": 35,
+      "narration_ref": "script.md#scene-8",
       "visual_prompt": null,
       "character_ids": [
         "magpie-mother-b",
@@ -228,14 +241,14 @@
       ],
       "asset_ids": [],
       "status": "planned",
-      "beat": "Her own chicks welcome the newcomers",
-      "notes": "Show inclusion and kindness."
+      "beat": "Her two chicks welcome the rescued chicks; all four settle together.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
     },
     {
       "scene_id": "scene-09",
       "order": 9,
-      "target_duration_seconds": 15,
-      "narration_ref": null,
+      "target_duration_seconds": 30,
+      "narration_ref": "script.md#scene-9",
       "visual_prompt": null,
       "character_ids": [
         "magpie-mother-b",
@@ -246,8 +259,8 @@
       ],
       "asset_ids": [],
       "status": "planned",
-      "beat": "End with both families together in a safe, happy home",
-      "notes": "Short final payoff; verify original ending."
+      "beat": "Show the kind mother and four chicks living happily together; kindness moral.",
+      "notes": "Source story, gentle emotion and continuity; no invented mother return."
     }
   ],
   "assets": [],
