@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "project_id": "replace-with-project-id",
+  "title": "Replace with story title",
+  "source_story_ref": null,
+  "channel": "TheStorybook_ad",
+  "brief": {
+    "audience": "Children and families",
+    "format": "short animated story film",
+    "tone": "warm, expressive, age-appropriate",
+    "goal": "Tell the supplied story faithfully and entertain",
+    "retention_goal_percent": 80,
+    "retention_goal_note": "Aspirational; not guaranteed. Optimize pacing and evaluate actual analytics."
+  },
+  "settings": {
+    "runtime_seconds": 300,
+    "aspect_ratio": "16:9",
+    "resolution": "1920x1080",
+    "frame_rate": null,
+    "visual_style": "Pixar-inspired 3D animated storybook film",
+    "language": "English",
+    "voice_profile_id": null,
+    "music_direction": "Cinematic, supportive, no narration masking",
+    "caption_enabled": true
+  },
+  "workflow": {
+    "status": "idea",
+    "updated_at": "2026-11-21T00:00:00Z",
+    "history": [{"status": "idea", "at": "2026-11-21T00:00:00Z", "note": "Project initialized from template", "actor": "system"}]
+  },
+  "script_ref": null,
+  "storyboard_ref": null,
+  "characters": [],
+  "scenes": [],
+  "assets": [],
+  "corrections_ref": "corrections.json",
+  "qa_report_ref": null,
+  "render": null,
+  "publishing": {
+    "approval_required": true,
+    "approved": false,
+    "youtube_video_id": null,
+    "youtube_url": null,
+    "visibility": null,
+    "published_at": null
+  },
+  "analytics": []
+}
