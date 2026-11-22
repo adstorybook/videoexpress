@@ -1,6 +1,6 @@
 # VideoExpress workflow foundation
 
-This repository is currently an empty project (initial README only). This document defines a practical, provider-neutral MVP so implementation can proceed without committing to a framework before one is selected.
+This repository now contains the workflow documentation, project/schema templates, two story project manifests, a manifest validator, unit tests, and GitHub Actions validation. It is still a foundation—not a working web app or automatic VideoExpress renderer. This document describes the provider-neutral MVP and remaining implementation work.
 
 ## Goal
 
@@ -17,7 +17,7 @@ Turn a brief or script into a reviewed, rendered video with traceable assets and
 7. **Review** — provide preview, validation checks (duration, missing media, audio clipping, caption alignment), and an approval gate.
 8. **Export** — save final video plus project manifest and captions.
 
-## Suggested interfaces
+## Implemented foundation\n\nThe current Python validator checks JSON Schema compliance, scene order and runtime totals, unique scene/character/asset IDs, character IDs used by scenes, and asset IDs referenced by scenes or character reference sheets. Unit tests cover the two seed projects and invalid-reference cases. GitHub Actions runs these checks on feature/main pushes and pull requests.\n\n## Suggested interfaces
 
 Keep provider implementations behind adapters so a provider can be changed without redesigning the workflow:
 
