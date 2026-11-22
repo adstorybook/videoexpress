@@ -25,7 +25,7 @@ python scripts/validate_project.py projects/mother-magpie/project.json
 python -m unittest discover -s tests -v
 ```
 
-GitHub Actions runs the same checks on pushes to the foundation branch and pull requests to `main`.
+The validator also checks duplicate scene/character/asset IDs and catches broken character or scene references to assets. GitHub Actions runs the tests and validates both seed projects on pushes to `main` or `feat/**`, pull requests to `main`, and manual runs.
 
 - [Project manifest schema](schemas/project.schema.json)
 - [Correction entry schema](schemas/correction.schema.json)
