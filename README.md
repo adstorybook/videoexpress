@@ -6,6 +6,7 @@ GitHub is the versioned **production brain** for the VideoExpress workflow: stor
 - [Production brain architecture](docs/production-brain.md)
 - [Workflow foundation](docs/workflow-foundation.md)
 - [Channel publishing, QA and feedback](docs/channel-publishing-and-feedback.md)
+- [Provider integration readiness](docs/provider-integration-readiness.md)
 
 ## Project folders
 - [The Clever Little Rabbits](projects/the-clever-little-rabbits/) — source-checked 5-minute script draft, 10-scene storyboard and manifest.
