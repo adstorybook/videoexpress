@@ -27,3 +27,30 @@ Family-friendly cinematic 3D storybook animation, soft fluffy fur, expressive ey
 
 ## Continuity / editing
 Use consistent cottage door direction, interior layout, outfit colors, and wolf tail. Scene 6 must show rabbits inside and wolf outside. Scene 7 mother is outside. Avoid frightening teeth close-ups. Clip lengths may be 5–10 seconds; use multiple coverage shots per scene and assemble to target timing.
+
+## Shot-level generation queue (tracked 2026-11-22)
+
+### Reviewed generated coverage
+- Scene 1: `rabbit-opening-clip-001` — 6.04s family opening reference; approved as reference/partial coverage, not a finished scene.
+- Scene 2: `rabbit-scene2-hug-001` — 6.04s mother/children hug, partial coverage.
+- Scene 2: `rabbit-scene2-departure-001` — 6.04s mother leaves and children wave, partial coverage.
+- Scene 3: `rabbit-scene3-wolf-arrival-001` — 10.04s wolf approaches the woodland cottage, partial coverage. The cottage differs somewhat from the earlier family shots; reuse a cottage frame as an additional reference if the UI supports it.
+- Wolf character reference: `wolf-character-reference-001` — approved visual reference in VideoExpress; original reference image is not separately stored in this repository.
+
+All four clips are 1920x1080, 16:9, 24fps. No full scene is complete yet.
+
+### Next clip — Wolf knocks (10 seconds)
+Use the approved wolf reference. If the optional second reference slot is available, use a still from the established rabbit cottage exterior to anchor the door and location.
+
+Cinematic 3D animated children's story. The same blue-violet furry wolf wearing his brown floppy hat and green clothes stands outside the rabbits' cozy wooden cottage. He raises his paw and knocks on the wooden door three times. He pauses, listens carefully, tilts his head, and gives a mischievous smile. He leans toward the door as if preparing to speak. Colorful flowers, warm daylight, soft shadows, expressive cartoon animation, gentle suspense, family-friendly polished storybook movie quality. Medium shot focused on the wolf and cottage door. Preserve the wolf's exact appearance, clothing, colors, and proportions from the reference image. Maintain the cottage exterior and door continuity. No frightening imagery, no text, no subtitles, no extra characters.
+
+### After the knock — Rabbits hear it (10 seconds)
+Use the three-rabbit reference. Inside the cozy cottage, the three white rabbit siblings hear three knocks from the closed front door. They stop what they are doing, turn their ears toward the door, exchange surprised and cautious looks, and move close together. The rabbit in red-orange steps slightly forward; yellow looks worried; green raises a paw to signal quiet. Medium interior shot, warm cottage lighting, gentle suspense, family-friendly animation. Preserve the exact three rabbit designs and red-orange, yellow, green outfits. The door stays closed; no wolf visible; no text or subtitles.
+
+### Wolf imitation — exterior (10 seconds)
+Use the approved wolf reference and, if possible, the cottage exterior frame. Outside the closed cottage door, the blue-violet wolf in the brown floppy hat and green clothes tries to imitate a sweet motherly voice. He straightens up, clears his throat, puts on an exaggerated gentle smile, and calls toward the door as if he is Mother Rabbit. His fake sweetness slips into a sly impatient expression as he waits. Medium shot; same door and path; playful suspense, not scary. Keep exact character continuity. No text, no subtitles, no other characters visible.
+
+### Rabbit refusal — interior (10 seconds)
+Use the three-rabbit reference. The three little white rabbits hear the wolf's rough, growly voice through the closed door. They exchange knowing looks, shake their heads, whisper that it does not sound like their mother, and hold the door shut together. One rabbit points toward the door while another gently signals the others to stay back. Medium interior shot, warm lighting, gentle suspense, teamwork, family-friendly. Keep exact outfits (red-orange, yellow, green), no door opening, no wolf visible, no text/subtitles.
+
+**Assembly reminder:** Each 10-second clip is coverage, not a full scene. Add narration/audio separately in the edit and use cutaways/reaction shots to reach the storyboard timing without stretching or looping visibly.
