@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "assets_generating",
-    "updated_at": "2026-11-21T16:43:00Z",
+    "updated_at": "2026-11-22T08:52:00Z",
     "history": [
       {
         "status": "idea",
@@ -63,6 +63,12 @@
         "status": "assets_generating",
         "at": "2026-11-21T16:43:00Z",
         "note": "Fourth Rabbit clip uploaded and reviewed: wolf approaches a woodland cottage, 10.04 seconds, Full HD, 24 fps; approved partial Scene 3 coverage. Character design matches approved wolf reference.",
+        "actor": "assistant"
+      },
+      {
+        "status": "assets_generating",
+        "at": "2026-11-22T08:52:00Z",
+        "note": "Daily tracker reconciliation: corrected the mother-departure clip to Scene 2; confirmed Scene 3 currently has wolf-arrival coverage only. Added the approved wolf character reference metadata. Knock and rabbit reaction shots remain pending user generation.",
         "actor": "assistant"
       }
     ]
@@ -113,8 +119,10 @@
     {
       "character_id": "wolf",
       "name": "Wolf",
-      "canonical_description": "Blue furry cartoon wolf with a long muzzle, brown floppy pointed hat and green clothes, as shown in source illustrations. Friendly-to-sneaky expressions; comedic rather than frightening.",
-      "reference_asset_ids": [],
+      "canonical_description": "Friendly-mischievous blue-violet furry wolf with long expressive muzzle, large eyes and pointed ears, fluffy tail, brown floppy hat, and green outfit; source-inspired and approved reference shown in VideoExpress. Keep cartoon, not frightening.",
+      "reference_asset_ids": [
+        "wolf-character-reference-001"
+      ],
       "continuity_notes": [
         "Keep blue fur, brown hat and green outfit consistent.",
         "Voice rough and growly when imitating mother.",
@@ -155,11 +163,12 @@
         "rabbit-3"
       ],
       "asset_ids": [
-        "rabbit-scene2-hug-001"
+        "rabbit-scene2-hug-001",
+        "rabbit-scene2-departure-001"
       ],
       "status": "generating",
       "beat": "Mother Rabbit reminds the children to stay indoors and not open the door to strangers; she leaves.",
-      "notes": "Follow source story; retain character continuity and gentle family-friendly tone."
+      "notes": "Partial coverage only: hug clip plus mother walking away/waving; the safety instruction is in the narration plan but not reliably shown by the generated hug video. Continue generating short coverage and assemble."
     },
     {
       "scene_id": "scene-03",
@@ -174,12 +183,11 @@
         "rabbit-3"
       ],
       "asset_ids": [
-        "rabbit-scene3-departure-001",
         "rabbit-scene3-wolf-arrival-001"
       ],
       "status": "generating",
       "beat": "A hungry big bad wolf discovers the cottage and knocks while the mother is away.",
-      "notes": "Follow source story; retain character continuity and gentle family-friendly tone."
+      "notes": "Partial coverage: wolf arrival/approach clip only. Knocking and rabbit reaction shots still need generation; cottage visual varies slightly from the earlier family clips, so use a cottage frame as a second reference when possible."
     },
     {
       "scene_id": "scene-04",
@@ -337,7 +345,7 @@
       "frame_rate": 24
     },
     {
-      "asset_id": "rabbit-scene3-departure-001",
+      "asset_id": "rabbit-scene2-departure-001",
       "type": "video",
       "status": "approved_partial_scene_coverage",
       "provider": "VideoExpress",
@@ -369,6 +377,18 @@
       "resolution": "1920x1080",
       "aspect_ratio": "16:9",
       "frame_rate": 24
+    },
+    {
+      "asset_id": "wolf-character-reference-001",
+      "type": "image",
+      "status": "approved_character_reference",
+      "provider": "VideoExpress",
+      "model": null,
+      "prompt": "Full-body 3D children's-story character reference: blue-violet wolf, long expressive muzzle, pointed ears, big cartoon eyes, fluffy tail, brown floppy hat, simple green outfit; playful sneaky grin but not frightening; neutral studio background; no text.",
+      "source_uri": null,
+      "storage_ref": "Reference image is in the VideoExpress Consistent Character slot; user screenshot shows the generated image preview. Original image remains in VideoExpress, not separately uploaded as an image file.",
+      "rights_note": "User generated in VideoExpress and confirmed use as the wolf reference; visual identity approved. Screenshot evidence only; no original image checksum available.",
+      "created_at": "2026-11-21T20:22:00+02:00"
     }
   ],
   "corrections_ref": "corrections.json",
