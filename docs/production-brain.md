@@ -65,7 +65,7 @@ Use provider-neutral interfaces (script/storyboard, image/video, voice, music, r
 ## Next implementation steps
 1. Add schemas and sample/template project records (this commit).
 2. Implement validator and tests for project/correction/QA JSON.
-3. Add a CLI or API for initializing projects, validating manifests, and applying approved rules.
+3. Add project initialization and workflow-state/scene update commands; correction capture and approved-rule listing are implemented.
 4. Build UI for script/storyboard approval, scene tracking, correction capture, QA and export.
 5. Connect a verified provider adapter only after docs/credentials and capability checks.
 6. Add YouTube/vidIQ analytics/publishing adapter, with approval gate and readback verification.
