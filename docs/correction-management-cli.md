@@ -25,15 +25,15 @@ Approval must be explicit and the approver must be supplied. An applied correcti
 
 ## Channel-wide reusable rules
 
-Record channel rules in `defaults/correction-rules.json` with `--scope channel`, `--reuse-as-rule`, and a plain-language `--rule-text`. They remain inactive until explicitly approved:
+Record channel rules in `defaults/channel-corrections.json` with `--scope channel`, `--reuse-as-rule`, and a plain-language `--rule-text`. They remain inactive until explicitly approved:
 
 ```bash
-python scripts/manage_corrections.py defaults/correction-rules.json add --scope channel \
+python scripts/manage_corrections.py defaults/channel-corrections.json add --scope channel \
   --category pacing --issue "Narration consistently feels rushed" \
   --requested-change "Use a calmer delivery" --reuse-as-rule \
   --rule-text "Use a slightly slower, warm narration pace; keep words clear."
-python scripts/manage_corrections.py defaults/correction-rules.json approve corr-XXXXXXXXXXXX --approved-by user
-python scripts/manage_corrections.py defaults/correction-rules.json rules
+python scripts/manage_corrections.py defaults/channel-corrections.json approve corr-XXXXXXXXXXXX --approved-by user
+python scripts/manage_corrections.py defaults/channel-corrections.json rules
 ```
 
 `rules` outputs only approved/verified channel entries explicitly marked reusable. Rejected entries never become rules. Use `list --status proposed` to review outstanding feedback and `reject <id> --reason ...` to keep rejected suggestions documented.
