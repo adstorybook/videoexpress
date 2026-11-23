@@ -17,7 +17,11 @@ Turn a brief or script into a reviewed, rendered video with traceable assets and
 7. **Review** — provide preview, validation checks (duration, missing media, audio clipping, caption alignment), and an approval gate.
 8. **Export** — save final video plus project manifest and captions.
 
-## Implemented foundation\n\nThe current Python validator checks JSON Schema compliance, scene order and runtime totals, unique scene/character/asset IDs, character IDs used by scenes, and asset IDs referenced by scenes or character reference sheets. Unit tests cover the two seed projects and invalid-reference cases. GitHub Actions runs these checks on feature/main pushes and pull requests.\n\n## Suggested interfaces
+## Implemented foundation\n\nThe current Python validator checks JSON Schema compliance, scene order and runtime totals, unique scene/character/asset IDs, character IDs used by scenes, and asset IDs referenced by scenes or character reference sheets. Unit tests cover the two seed projects and invalid-reference cases. GitHub Actions runs these checks on feature/main pushes and pull requests.\n\n## Correction management implementation
+
+A standard-library CLI is now available at `scripts/manage_corrections.py`. It records proposed feedback, marks corrections applied, supports explicit approval or rejection, and lists only approved reusable channel rules. New correction entries are never auto-approved. See [correction management](correction-management-cli.md) for examples.
+
+## Suggested interfaces
 
 Keep provider implementations behind adapters so a provider can be changed without redesigning the workflow:
 
