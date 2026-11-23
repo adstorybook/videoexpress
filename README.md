@@ -7,6 +7,7 @@ GitHub is the versioned **production brain** for the VideoExpress workflow: stor
 - [Workflow foundation](docs/workflow-foundation.md)
 - [Channel publishing, QA and feedback](docs/channel-publishing-and-feedback.md)
 - [Provider integration readiness](docs/provider-integration-readiness.md)
+- [Correction manager CLI](docs/correction-management-cli.md)
 
 ## Project folders
 - [The Clever Little Rabbits](projects/the-clever-little-rabbits/) — source-checked 5-minute script draft, 10-scene storyboard and manifest.
@@ -32,8 +33,21 @@ The validator also checks duplicate scene/character/asset IDs and catches broken
 - [Correction entry schema](schemas/correction.schema.json)
 - [QA report schema](schemas/qa-report.schema.json)
 
+## Correction management
+
+Capture production feedback in versioned JSON instead of relying on chat memory. The standard-library CLI supports project/channel logs, proposed/applied/approved/rejected status, and a gate that exposes reusable channel rules only after explicit approval.
+
+```bash
+python scripts/manage_corrections.py projects/the-clever-little-rabbits/corrections.json add \
+  --category voice --scene-id scene-04 --issue "Narration too fast" \
+  --requested-change "Reduce speed by about 10%"
+python scripts/manage_corrections.py projects/the-clever-little-rabbits/corrections.json list --status proposed
+```
+
+See [CLI usage and approval workflow](docs/correction-management-cli.md). Approved channel rules are kept in `defaults/channel-corrections.json`.
+
 ## Current scope
-This branch contains workflow documentation, schemas, templates, and initial project plans. It is not yet a working web app or automatic VideoExpress renderer. VideoExpress API availability is unverified; production integrations should only use documented/authorized APIs. Media files should be stored outside Git and referenced with metadata/checksums.
+This branch contains workflow documentation, schemas, templates, initial project plans, a project validator, and a correction-management CLI. It is not yet a working web app or automatic VideoExpress renderer. VideoExpress API availability is unverified; production integrations should only use documented/authorized APIs. Media files should be stored outside Git and referenced with metadata/checksums.
 
 ## Safety and approval
 Never commit credentials. The final video must be watched end-to-end and checked before approval. Publishing, visibility, or scheduling require explicit user approval and upload readback verification.
