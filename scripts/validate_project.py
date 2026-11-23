@@ -59,6 +59,18 @@ def validate_project(project_path: Path, schema_path: Path) -> list[str]:
         if unknown:
             errors.append(f"{scene.get('scene_id')}: unknown character IDs: {', '.join(sorted(unknown))}")
 
+    assets = project.get("assets", [])
+    asset_ids = [asset.get("asset_id") for asset in assets]
+    if len(asset_ids) != len(set(asset_ids)):
+        errors.append("Asset IDs must be unique.")
+    known_assets = set(asset_ids)
+    for scene in scenes:
+        missing_assets = set(scene.get("asset_ids", [])) - known_assets
+        if missing_assets:
+            errors.append(
+                f"{scene.get('scene_id')}: unknown asset IDs: {', '.join(sorted(missing_assets))}"
+            )
+
     if not project.get("corrections_ref"):
         errors.append("A correction log reference is required so feedback can be retained.")
     return errors
