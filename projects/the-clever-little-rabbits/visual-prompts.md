@@ -44,13 +44,13 @@ Use the approved wolf reference. If the optional second reference slot is availa
 
 Cinematic 3D animated children's story. The same blue-violet furry wolf wearing his brown floppy hat and green clothes stands outside the rabbits' cozy wooden cottage. He raises his paw and knocks on the wooden door three times. He pauses, listens carefully, tilts his head, and gives a mischievous smile. He leans toward the door as if preparing to speak. Colorful flowers, warm daylight, soft shadows, expressive cartoon animation, gentle suspense, family-friendly polished storybook movie quality. Medium shot focused on the wolf and cottage door. Preserve the wolf's exact appearance, clothing, colors, and proportions from the reference image. Maintain the cottage exterior and door continuity. No frightening imagery, no text, no subtitles, no extra characters.
 
-### After the knock — Rabbits hear it (10 seconds)
+### Generation order — do not skip beats\n1. Wolf knocks (pending; prompt shared).\n2. Rabbits hear the knock (pending; prompt shared).\n3. Wolf imitation (pending; prompt shared).\n4. Rabbits refuse (pending; prompt shared). Generate and review each in order to preserve cause-and-effect.\n\n## After the knock — Rabbits hear it (10 seconds)
 Use the three-rabbit reference. Inside the cozy cottage, the three white rabbit siblings hear three knocks from the closed front door. They stop what they are doing, turn their ears toward the door, exchange surprised and cautious looks, and move close together. The rabbit in red-orange steps slightly forward; yellow looks worried; green raises a paw to signal quiet. Medium interior shot, warm cottage lighting, gentle suspense, family-friendly animation. Preserve the exact three rabbit designs and red-orange, yellow, green outfits. The door stays closed; no wolf visible; no text or subtitles.
 
-### Wolf imitation — exterior (10 seconds)
+## Wolf imitation — exterior (10 seconds)
 Use the approved wolf reference and, if possible, the cottage exterior frame. Outside the closed cottage door, the blue-violet wolf in the brown floppy hat and green clothes tries to imitate a sweet motherly voice. He straightens up, clears his throat, puts on an exaggerated gentle smile, and calls toward the door as if he is Mother Rabbit. His fake sweetness slips into a sly impatient expression as he waits. Medium shot; same door and path; playful suspense, not scary. Keep exact character continuity. No text, no subtitles, no other characters visible.
 
-### Rabbit refusal — interior (10 seconds)
+## Rabbit refusal — interior (10 seconds)
 Use the three-rabbit reference. The three little white rabbits hear the wolf's rough, growly voice through the closed door. They exchange knowing looks, shake their heads, whisper that it does not sound like their mother, and hold the door shut together. One rabbit points toward the door while another gently signals the others to stay back. Medium interior shot, warm lighting, gentle suspense, teamwork, family-friendly. Keep exact outfits (red-orange, yellow, green), no door opening, no wolf visible, no text/subtitles.
 
 **Assembly reminder:** Each 10-second clip is coverage, not a full scene. Add narration/audio separately in the edit and use cutaways/reaction shots to reach the storyboard timing without stretching or looping visibly.
