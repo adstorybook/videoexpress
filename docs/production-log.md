@@ -30,3 +30,12 @@ Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress 
 - A separate expanded story workflow document exists in the user's Library with different character names and 14-scene retellings. It is not yet reconciled with the GitHub drafts; do not mix versions silently.
 - The original scanned story PDF was not found in the Library search. Existing drafts were previously source-checked, but re-verification requires the source file.
 - VideoExpress API remains unverified. No credits were spent, no final render exists, and nothing was published.
+
+
+## 2026-11-23 — Automation progress and branch safety
+- Recompared development branch with `main`: **56 commits ahead and 2 behind** (diverged). The two main-only commits add `docs/FIVE_STORY_SERIES_HANDLER.md` and `docs/VIDEOEXPRESS_WORKFLOW.md` about a separate Hare-and-Tortoise workflow and future five-story slate. Reviewed them; they do not change the two current story manifests. No merge/cherry-pick performed.
+- Extended `scripts/validate_project.py` to reject duplicate asset IDs and unknown scene-to-asset references; added unit tests for both failure cases.
+- Clarified the Rabbit shot queue order: Wolf knock → rabbits react → Wolf imitation → rabbits refuse. Prompts exist for all; no new clip has been received/generated during this run.
+- Current next shot remains the 10-second knock clip. VideoExpress generation is manual/user-driven; no credits spent.
+- CI cannot be confirmed for the branch head via the available connector during this run; prior audit's successful workflow is noted, but the latest validation is pending status readback.
+- Mother Magpie remains unchanged; character/location references and first establishing shot are next when the Rabbit sequence advances.
