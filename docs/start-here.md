@@ -11,7 +11,7 @@ This is the current source of truth for restarting the production workflow from 
 
 - The foundation branch contains story manifests, scripts, storyboards, scene prompts, schemas, validation, tests, workflow documentation, and GitHub Actions.
 - The latest manifest-validation workflow checked during this audit completed successfully.
-- `main` is still the initial repository branch; production work is on the feature branch.
+- **Branch safety:** the development branch is now diverged from `main` (56 commits ahead, 2 behind as checked 2026-11-23). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
 - VideoExpress 3.5 is available through the signed-in browser editor. A field labelled API key is not proof of a documented API; the API integration remains unverified.
 - The original scanned story PDF is not currently available in the Library search. Existing GitHub scripts were previously source-checked; if exact source re-verification is needed, re-upload the PDF.
 - A separate user workflow document contains expanded 14-scene retellings and character names (e.g. Mama Hazel/Pip/Clover/Nutmeg/Grizzle and Mama Nell/Tilly/Dot/Dash/Pebble/Button). It differs from the GitHub drafts' scene counts and some character descriptions. **Do not silently mix these versions.** The GitHub source-checked drafts remain the working canon until the user approves a reconciliation.
@@ -38,7 +38,7 @@ Reviewed partial assets in VideoExpress:
 4. `rabbit-scene3-wolf-arrival-001` — 10.04 sec wolf approaches cottage; partial Scene 3
 5. `wolf-character-reference-001` — approved Wolf reference stored in VideoExpress; original file/checksum unavailable
 
-**Next shot to generate:** 10-second Wolf knocks at the cottage door. Use the approved Wolf reference; if available, add an approved cottage frame as a second reference. Then generate the rabbits hearing the knock/reaction and the Wolf's voice-imitation/refusal beats.
+**Next shot to generate (sequence order):** (1) 10-second Wolf knocks at the cottage door; (2) rabbits hear/react to the knock; (3) Wolf imitates Mother Rabbit's voice; (4) rabbits refuse and recognize the voice. Prompts have been shared for all four, but **no clips are logged for these shots yet**. Use the approved Wolf reference for Wolf shots; rabbit group reference for interior reaction shots; if available, add a cottage frame to anchor exterior location. Do not skip the knock/reaction beats.
 
 The four video clips are partial coverage only. Do not stretch them to fill long scenes or claim any scene is complete.
 
@@ -71,6 +71,6 @@ Until VideoExpress provides official API documentation and support confirms the 
 
 ## 6. Current handoff
 
-- **Rabbit:** generate the 10-second Wolf-knocking shot next.
+- **Rabbit:** generate the 10-second Wolf-knocking shot next; continue in strict sequence with rabbit reaction, wolf imitation, and refusal. The prompts have been shared, but those clips are not yet received.
 - **Magpie:** begin character references and establishing-tree shot once the character design/canon is reconciled.
 - **Repository:** record every generated/reviewed asset in the manifest and production log; run validation after edits.
