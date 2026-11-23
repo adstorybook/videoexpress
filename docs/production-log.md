@@ -18,3 +18,15 @@
 
 ## Next user action
 Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress using the Wolf reference. If an optional second reference is available, use a still from the previously approved cottage exterior to help keep the cottage consistent. Upload the MP4 here for review and metadata/checksum tracking.
+
+
+## 2026-11-23 — Restart audit
+- Reopened the repository and audited the active foundation branch from the start. The latest validation workflow run checked during this audit completed successfully.
+- Added `docs/start-here.md` as the durable restart guide and linked it from README.
+- Refreshed `docs/production-guide.md` with the current status of both stories.
+- Corrected the departure clip metadata: `rabbit-scene2-departure-001` is partial coverage of Scene 2, not Scene 3.
+- Confirmed the next Rabbit shot remains the Wolf knocking at the cottage door (10 seconds); no new VideoExpress generation was performed during this audit.
+- Mother Magpie remains at script/storyboard draft with no generated assets recorded; next step is character references and the two-nest establishing shot.
+- A separate expanded story workflow document exists in the user's Library with different character names and 14-scene retellings. It is not yet reconciled with the GitHub drafts; do not mix versions silently.
+- The original scanned story PDF was not found in the Library search. Existing drafts were previously source-checked, but re-verification requires the source file.
+- VideoExpress API remains unverified. No credits were spent, no final render exists, and nothing was published.
