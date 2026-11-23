@@ -1,7 +1,8 @@
 # Production guide and handoff — TheStorybook_ad
 
 **Last audited:** 2026-11-23  
-**Active branch:** `feat/video-pipeline-foundation`
+**Active branch:** `feat/video-pipeline-foundation`  
+**Branch relationship:** diverged from `main`; 56 ahead, 2 behind. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
 
 See [Start here](start-here.md) for the complete reset audit and next-shot handoff.
 
@@ -16,7 +17,7 @@ See [Start here](start-here.md) for the complete reset audit and next-shot hando
   - `rabbit-scene2-departure-001` — 6.04 seconds, mother leaves and children wave; **Scene 2**.
   - `rabbit-scene3-wolf-arrival-001` — 10.04 seconds, wolf approaches cottage; **Scene 3**.
 - `wolf-character-reference-001` — approved reference in VideoExpress; source image is not separately available in Git.
-- Next shot: 10-second Wolf knock at the cottage door, using Wolf reference and (if available) cottage frame.
+- Next shot in order: 10-second Wolf knock at the cottage door, using Wolf reference and (if available) cottage frame. Rabbit reaction, Wolf imitation, and refusal prompts are queued, but those clips are not logged yet.
 - No scene is complete; no final video is assembled or rendered.
 
 ### Mother Magpie
