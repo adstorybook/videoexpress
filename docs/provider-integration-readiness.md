@@ -1,25 +1,26 @@
 # Provider integration readiness
 
-Status checked: 2026-11-22
+Status checked: 2026-11-23
 
 ## VideoExpress 3.5
 
-The user can operate the VideoExpress 3.5 browser editor. Its Profile screen shows a field labelled "VideoExpress API key", but that field alone does not establish a documented API endpoint, authentication flow, permissions, job lifecycle, rate limits, or supported export methods.
+The user can operate the VideoExpress 3.5 browser editor. Its Profile screen shows a field labelled "VideoExpress API key", but this field alone does not establish a documented external API endpoint, authentication flow, permissions, job lifecycle, rate limits, or supported export methods. A search of official documentation and product pages did not locate a public developer API reference.
 
 Until official API documentation or vendor support confirms those details:
 - Use the browser editor with user-guided steps for production.
-- Do not reverse-engineer undocumented endpoints or use browser session cookies as API credentials.
+- Do not reverse-engineer undocumented endpoints, scrape the app, or use browser session cookies as API credentials. The official Terms prohibit reverse engineering, scraping, and extracting system logic.
 - Do not commit keys, tokens, or account data to this repository.
 - If an official API is confirmed, store its key as a server-side secret (e.g. `VIDEOEXPRESS_API_KEY`) and implement an adapter behind the provider-neutral `VideoProvider` interface.
 
 Official product site: https://videoexpress.ai/  
-Editor: https://app.videoexpress.ai/
+Editor: https://app.videoexpress.ai/  
+Official Terms: https://videoexpress.ai/terms/terms.php
 
 ## Runway
 
 Runway can be used as an optional provider through the connected ChatGPT integration when the current workspace exposes video-generation capability. Availability must be checked at runtime; do not assume that the tool schema or a connected account guarantees video access.
 
-The connected integration was checked on 2026-11-22. It authenticated, but its available video-model list was empty, so video generation could not be invoked from this workspace during this check. Image-generation models were available. No generation job was submitted.
+The connected integration was checked on 2026-11-23. It authenticated in the pinned personal workspace, but `availableVideoModels` was empty. Image models were available; speech, music, sound-effect, and video-tool model lists were empty. The connection reports the video/audio capabilities as plan-gated. No generation job was submitted. Recheck availability before any future provider work.
 
 ## Integration acceptance checklist
 
