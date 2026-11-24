@@ -1,7 +1,8 @@
 # Start here — VideoExpress production reset and audit
 
-**Audited:** 2026-11-24  
-**Active development branch:** `feat/video-pipeline-foundation`  
+**Audited:** 2026-11-24 10:37 +02  
+**Production development branch:** `feat/video-pipeline-foundation`  
+**Current workflow-state increment:** `feat/project-workflow-state-cli` (branched from the development branch; not merged)  
 **Repository:** https://github.com/adstorybook/videoexpress  
 **Channel:** TheStorybook_ad
 
@@ -13,7 +14,7 @@ This is the current source of truth for restarting the production workflow from 
 - The last confirmed successful manifest-validation workflow was recorded in the 2026-11-23 audit. The push-triggered status for the current branch head is not readable through the available workflow-run connector.
 - **Branch safety:** the development branch is now diverged from `main` (2 commits behind as checked 2026-11-24; the development branch remains ahead and diverged). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
 - VideoExpress 3.5 is available through the signed-in browser editor. A field labelled API key is not proof of a documented API; the API integration remains unverified.
-- The original scanned story PDF is not currently available in the Library search. Existing GitHub scripts were previously source-checked; if exact source re-verification is needed, re-upload the PDF.
+- The 5-page scanned story PDF was reattached and inspected in the 2026-11-24 conversation. It is not committed to GitHub. Existing GitHub scripts remain drafts pending user approval.
 - A separate user workflow document contains expanded 14-scene retellings and character names (e.g. Mama Hazel/Pip/Clover/Nutmeg/Grizzle and Mama Nell/Tilly/Dot/Dash/Pebble/Button). It differs from the GitHub drafts' scene counts and some character descriptions. **Do not silently mix these versions.** The GitHub source-checked drafts remain the working canon until the user approves a reconciliation.
 
 ## 1. Locked output targets
@@ -75,3 +76,27 @@ Until VideoExpress provides official API documentation and support confirms the 
 - **Magpie:** begin character references and establishing-tree shot once the character design/canon is reconciled.
 - **Repository:** record every generated/reviewed asset in the manifest and production log; run validation after edits.
 - **Validation:** the manifest validator now checks character reference asset IDs against the asset registry. CI push-run status is not readable through the connected GitHub workflow-run action, so do not assume it passed.
+
+
+## 7. Workflow-state CLI update — 2026-11-24 10:37 +02
+
+A separate working branch, **feat/project-workflow-state-cli**, now adds:
+
+- Project initialization from the repository template, refusing to overwrite an existing project.
+- Workflow and per-scene status reporting.
+- Asset registration and scene attachment with provider, model, prompt, storage reference, checksum, duration, resolution, frame rate, rights note, and coverage metadata.
+- A safe default of partial coverage; partial clips and character references cannot mark a scene selected.
+- Ordered workflow transitions with timestamped history, blocker/resume support, full-watch QA approval gates, and explicit YouTube approval/readback gates.
+- 12 focused unit tests.
+- GitHub Actions push validation configured for all feat/** branches, not only the original development branch.
+
+The CLI changes project records only. It does not call VideoExpress, Runway, YouTube, or paid generation endpoints. No media assets or existing story manifests were changed in this increment. The 12 focused tests passed locally; GitHub Actions completion for this branch has not yet been verified.
+
+## 8. Current provider availability
+
+- VideoExpress 3.5 remains available in the signed-in editor; no verified official API contract has been established. Continue with the supported UI and do not use undocumented endpoints or session cookies.
+- Runway authentication is valid, but the pinned workspace currently exposes no video, speech, music, or sound-effect generation models. Image models are available. No generation job was submitted and no credits were consumed in this audit.
+
+## 9. Next engineering step
+
+Add an export-inspection/QA utility that reads an actual MP4 with ffprobe when a rendered file is available, verifies duration, 1920×1080 resolution, aspect ratio, audio stream presence, and checksum, and writes a structured QA report. In parallel, continue user-guided VideoExpress generation from the next pending Rabbit shot; do not mark partial coverage as a completed scene.
