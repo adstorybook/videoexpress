@@ -26,3 +26,24 @@ Family-friendly cinematic 3D storybook animation, detailed soft feathers, expres
 
 ## Continuity / editing
 Never accidentally show more than four chicks; never swap the two nests or chick identities. Keep the eagle blue with orange beak. The story does not include Mother A returning. Generate 5–10 second coverage shots and assemble to scene lengths with narration and music.
+
+## Character and location reference-image prompts
+Generate and approve these still references before producing Magpie video clips. Use the same polished family-friendly 3D storybook look, soft feather detail, warm studio lighting, full subject visible, clean neutral background, and no text/watermarks. Keep the images as references; do not use them as scene footage.
+
+### Mother A — isolated character reference
+A full-body adult magpie character standing in a calm three-quarter view, glossy black/navy head and wings, white shoulder patches, subtle purple-blue iridescent sheen, gentle expressive eyes, natural orange beak and feet, wings folded, elegant but friendly proportions. Neutral light background, polished 3D animated storybook character design. One bird only.
+
+### Mother B — isolated character reference
+A full-body adult neighbor magpie in a calm three-quarter view, same species and general scale as Mother A, slightly lighter blue-violet feather sheen, a small neat crest and subtly distinct eye shape, warm reassuring expression, natural orange beak and feet, wings folded. Neutral light background, polished 3D animated storybook character design. One bird only. Do not copy Mother A's exact crest/eye details.
+
+### Nest A chicks — pair reference
+Exactly two tiny black-and-white magpie chicks side by side, both with a subtle purple sheen. Chick A1 has a small blue tuft on the crown; Chick A2 has a rounder face and no blue tuft. Both have soft down, tiny orange beaks, expressive gentle eyes, clearly different silhouettes. Neutral light background, polished 3D animated storybook character design. Exactly two chicks, no adult birds.
+
+### Nest B chicks — pair reference
+Exactly two tiny magpie chicks side by side. Chick B1 has a distinct yellow chest tint; Chick B2 has a pink-purple chest tint. Give them different but harmonious face shapes so they remain easy to tell apart. Soft down, tiny orange beaks, expressive gentle eyes. Neutral light background, polished 3D animated storybook character design. Exactly two chicks, no adult birds.
+
+### Eagle — isolated character reference
+A full-body stylized blue-feathered eagle in a calm three-quarter standing pose, broad wings partly open, clearly visible orange-yellow beak and feet, strong but kind-neutral eyes, non-threatening children's storybook proportions. Neutral light background, polished 3D animated storybook character design. One eagle only; no prey and no attack.
+
+### Tree and two-nest location reference
+A wide cinematic view of one large old leafy tree in a bright woodland clearing. Show exactly two sturdy nests: Nest A on a left branch and Nest B slightly higher and to the right. Each nest contains exactly two small chicks; include Mother A at Nest A and Mother B at Nest B. Clearly show the branch geometry and relative nest positions for reuse in every scene. Warm morning light, gentle leaves, family-friendly 3D storybook environment, no extra birds, no text.
