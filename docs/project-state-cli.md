@@ -77,7 +77,7 @@ Stages advance one step at a time. The CLI records timestamp, actor, and note in
 - **approved**, **export_ready**, or **upload_pending_approval** without a passing QA report, a complete end-to-end watch, explicit QA approval, and a render reference;
 - **published** without explicit publishing approval metadata and YouTube ID, URL, visibility, and publication timestamp readback.
 
-The CLI never uploads or publishes. Publishing approval must be recorded explicitly, and the actual YouTube upload/readback remains a separate authorized step.
+The CLI never uploads or publishes. Publishing approval must be recorded explicitly, and the actual YouTube upload/readback remains a separate authorized step. QA approval also checks that the report belongs to the current project and render, preventing an older render's passing report from approving a newer export.
 
 ## Record and resume a blocker
 
