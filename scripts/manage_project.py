@@ -129,7 +129,11 @@ def require_scene_visual(project: dict[str, Any], scene: dict[str, Any], *, sele
     if not linked_ids:
         raise ValueError(f"{scene.get('scene_id')}: add at least one visual asset before marking it generated/selected.")
     assets = [find_asset(project, asset_id) for asset_id in linked_ids]
-    visuals = [asset for asset in assets if asset.get("type") in {"image", "video"}]
+    visuals = [
+        asset for asset in assets
+        if asset.get("type") in {"image", "video"}
+        and str(asset.get("status", "")).lower() not in {"failed", "rejected", "error"}
+    ]
     if not visuals:
         raise ValueError(f"{scene.get('scene_id')}: linked assets contain no image/video coverage.")
     if selected and not any(is_approved_full_visual(asset) for asset in visuals):
@@ -155,6 +159,11 @@ def require_qa_approval(project: dict[str, Any], project_dir: Path) -> None:
     if not report_path.is_file():
         raise ValueError(f"QA report file does not exist: {reference}")
     report = read_json(report_path)
+    if report.get("project_id") not in {None, project.get("project_id")}:
+        raise ValueError("QA report project_id does not match this project.")
+    render_id = (project.get("render") or {}).get("render_id")
+    if render_id and report.get("render_id") != render_id:
+        raise ValueError("QA report render_id does not match the current render.")
     approval = report.get("approval", {})
     if report.get("overall_status") != "pass":
         raise ValueError("QA report overall_status must be 'pass'.")
@@ -165,6 +174,10 @@ def require_qa_approval(project: dict[str, Any], project_dir: Path) -> None:
 
 
 def initialize_project(args: argparse.Namespace) -> int:
+    if not args.title.strip() or not args.channel.strip():
+        raise ValueError("Project title and channel must be non-empty.")
+    if args.runtime_seconds < 1:
+        raise ValueError("Runtime must be at least one second.")
     if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", args.slug):
         raise ValueError("Project slug must use lowercase letters, numbers, and single hyphens.")
     template_dir = args.template_dir
@@ -312,6 +325,12 @@ def update_scene_status(args: argparse.Namespace) -> int:
 
 
 def add_asset(args: argparse.Namespace) -> int:
+    if not args.asset_id.strip() or not args.status.strip():
+        raise ValueError("Asset ID and status must be non-empty.")
+    if args.duration_seconds is not None and args.duration_seconds < 0:
+        raise ValueError("Asset duration cannot be negative.")
+    if args.frame_rate is not None and args.frame_rate <= 0:
+        raise ValueError("Asset frame rate must be greater than zero.")
     project, manifest, _ = load_project(args.project)
     if any(asset.get("asset_id") == args.asset_id for asset in project.get("assets", [])):
         raise ValueError(f"Asset ID already exists: {args.asset_id}")
@@ -360,6 +379,8 @@ def stage_gate(project: dict[str, Any], project_dir: Path, target: str) -> None:
         scenes = project.get("scenes", [])
         if not scenes or any(scene.get("status") != "selected" for scene in scenes):
             raise ValueError("Every scene must have approved full-coverage assets and status 'selected' before assembly.")
+        for scene in scenes:
+            require_scene_visual(project, scene, selected=True)
     if target == "review":
         render = project.get("render") or {}
         if not render.get("output_ref"):
