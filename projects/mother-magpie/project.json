@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "script_draft",
-    "updated_at": "2026-11-21T15:00:00Z",
+    "updated_at": "2026-11-24T08:03:53Z",
     "history": [
       {
         "status": "idea",
@@ -40,6 +40,12 @@
         "at": "2026-11-21T15:00:00Z",
         "note": "Updated from the uploaded source scan; script is a five-minute draft awaiting user approval.",
         "actor": "assistant"
+      },
+      {
+        "status": "script_draft",
+        "at": "2026-11-24T08:03:53Z",
+        "note": "Prepared a dedicated character and location reference-image prompt sequence and aligned the character bible with the visual prompt pack. No images or videos have been generated; all reference IDs remain unassigned until user-approved assets are received.",
+        "actor": "assistant"
       }
     ]
   },
@@ -49,7 +55,7 @@
     {
       "character_id": "magpie-mother-a",
       "name": "Mother Magpie A",
-      "canonical_description": "Mother from the first nest; colorful magpie as shown in source, assign locked plumage palette, markings and proportions from approved reference.",
+      "canonical_description": "Adult magpie from nest A; glossy black/navy head and wings, white shoulder patches, subtle purple-blue sheen, gentle expressive eyes. Keep the same plumage and proportions in every shot.",
       "reference_asset_ids": [],
       "continuity_notes": [
         "Her disappearance is not followed by a return in the source; do not invent one."
@@ -58,7 +64,7 @@
     {
       "character_id": "magpie-chick-a1",
       "name": "Chick A1",
-      "canonical_description": "One of the two chicks in Mother A's nest. Lock color and unique markings from source-inspired character sheet.",
+      "canonical_description": "One of the two tiny black-and-white chicks from nest A, with a soft purple sheen and a small blue crown tuft; keep this marking stable before and after adoption.",
       "reference_asset_ids": [],
       "continuity_notes": [
         "Small baby bird; nest A before rescue, nest B afterward."
@@ -67,7 +73,7 @@
     {
       "character_id": "magpie-chick-a2",
       "name": "Chick A2",
-      "canonical_description": "Sibling of Chick A1, visually distinct but same family palette; lock markings from character sheet.",
+      "canonical_description": "Sibling of Chick A1; tiny black-and-white chick with a soft purple sheen and a slightly rounder face, no blue tuft; keep visually distinct from A1.",
       "reference_asset_ids": [],
       "continuity_notes": [
         "Small baby bird; nest A before rescue, nest B afterward."
@@ -76,7 +82,7 @@
     {
       "character_id": "magpie-mother-b",
       "name": "Neighbor Mother Magpie",
-      "canonical_description": "Kind mother from neighboring nest; purple magpie with gentle expression and source-inspired markings. Maintain her design throughout.",
+      "canonical_description": "Kind adult neighbor magpie from nest B; same species palette with a slightly lighter blue-violet sheen and a small crest/distinct eye shape; gentle reassuring expression.",
       "reference_asset_ids": [],
       "continuity_notes": [
         "Warm, reassuring voice; adopts the other two chicks."
@@ -85,7 +91,7 @@
     {
       "character_id": "magpie-chick-b1",
       "name": "Neighbor Chick B1",
-      "canonical_description": "One of the neighbor mother's two chicks, purple-toned in source illustration; unique marking/outfit-free bird design locked.",
+      "canonical_description": "One of the neighbor mother's two chicks; small magpie chick with a distinct yellow chest tint and stable face markings.",
       "reference_asset_ids": [],
       "continuity_notes": [
         "Welcomes the two rescued chicks."
@@ -94,7 +100,7 @@
     {
       "character_id": "magpie-chick-b2",
       "name": "Neighbor Chick B2",
-      "canonical_description": "Second neighbor chick, yellow-toned in source illustration; distinctive markings locked.",
+      "canonical_description": "Second neighbor chick; small magpie chick with a pink-purple chest tint and stable face markings, distinct from B1.",
       "reference_asset_ids": [],
       "continuity_notes": [
         "Welcomes the two rescued chicks."
@@ -103,7 +109,7 @@
     {
       "character_id": "eagle",
       "name": "Eagle",
-      "canonical_description": "Blue eagle with large wings and orange beak/feet as depicted in source illustration; stylized and non-graphic.",
+      "canonical_description": "Large stylized blue-feathered eagle with orange-yellow beak and feet, broad wings and a strong but non-frightening expression; capture is brief and non-graphic.",
       "reference_asset_ids": [],
       "continuity_notes": [
         "Swoops, carries away Mother A; no violence shown."
