@@ -39,3 +39,14 @@ Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress 
 - Current next shot remains the 10-second knock clip. VideoExpress generation is manual/user-driven; no credits spent.
 - CI cannot be confirmed for the branch head via the available connector during this run; prior audit's successful workflow is noted, but the latest validation is pending status readback.
 - Mother Magpie remains unchanged; character/location references and first establishing shot are next when the Rabbit sequence advances.
+
+
+## 2026-11-24 — Daily production audit and reference validation
+- Recompared `feat/video-pipeline-foundation` with `main`: **63 commits ahead, 2 behind**; branch remains diverged. The two main-only commits are separate Hare-and-Tortoise/five-story workflow documents. No merge, cherry-pick, or main-branch change was made.
+- Reconciled current asset state: Rabbit has four reviewed partial video clips (opening reference, Scene 2 hug, Scene 2 departure, Scene 3 wolf arrival) and one approved Wolf character reference. No new user-uploaded knock, rabbit-reaction, imitation, or refusal clip is present in the repository.
+- Confirmed Rabbit manifest references: mother departure belongs to Scene 2; wolf arrival belongs to Scene 3. Scene 2 still needs a clear visual safety-instruction shot; Scene 3 still needs knocking and rabbit reaction coverage.
+- Added a validator check and regression test so every character reference asset ID must resolve to a declared asset. Existing Wolf reference ID resolves in the Rabbit manifest.
+- Expanded Mother Magpie's prompt pack with isolated reference prompts for both mothers, both chick pairs, the eagle, and the two-nest tree layout; aligned the manifest character descriptions to those visual locks. No Magpie assets have been generated or logged.
+- Corrected a literal escaped newline in the Rabbit prompt queue and refreshed the production handoff/branch counts.
+- GitHub Actions workflow is configured for pushes to this branch, but the available workflow-run connector only returns pull-request-triggered runs; no push-run result could be verified. Do not claim CI passed.
+- No VideoExpress credits spent, no final render, no merge/deploy/publish, and no changes to `main`.
