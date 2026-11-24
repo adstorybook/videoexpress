@@ -10,8 +10,8 @@ This is the current source of truth for restarting the production workflow from 
 ## 0. Project audit
 
 - The foundation branch contains story manifests, scripts, storyboards, scene prompts, schemas, validation, tests, workflow documentation, and GitHub Actions.
-- The latest manifest-validation workflow checked during this audit completed successfully.
-- **Branch safety:** the development branch is now diverged from `main` (63 commits ahead, 2 behind as checked 2026-11-24). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
+- The last confirmed successful manifest-validation workflow was recorded in the 2026-11-23 audit. The push-triggered status for the current branch head is not readable through the available workflow-run connector.
+- **Branch safety:** the development branch is now diverged from `main` (2 commits behind as checked 2026-11-24; the development branch remains ahead and diverged). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
 - VideoExpress 3.5 is available through the signed-in browser editor. A field labelled API key is not proof of a documented API; the API integration remains unverified.
 - The original scanned story PDF is not currently available in the Library search. Existing GitHub scripts were previously source-checked; if exact source re-verification is needed, re-upload the PDF.
 - A separate user workflow document contains expanded 14-scene retellings and character names (e.g. Mama Hazel/Pip/Clover/Nutmeg/Grizzle and Mama Nell/Tilly/Dot/Dash/Pebble/Button). It differs from the GitHub drafts' scene counts and some character descriptions. **Do not silently mix these versions.** The GitHub source-checked drafts remain the working canon until the user approves a reconciliation.
