@@ -42,6 +42,18 @@ class ProjectManifestTests(unittest.TestCase):
         finally:
             temporary.unlink(missing_ok=True)
 
+    def test_unknown_character_reference_asset_is_detected(self):
+        source = ROOT / "projects" / "the-clever-little-rabbits" / "project.json"
+        project = json.loads(source.read_text(encoding="utf-8"))
+        project["characters"][-1]["reference_asset_ids"].append("missing-reference")
+        temporary = ROOT / "tests" / "_invalid-project-fixture.json"
+        try:
+            temporary.write_text(json.dumps(project), encoding="utf-8")
+            errors = validate_project(temporary, SCHEMA)
+            self.assertTrue(any("unknown reference asset IDs" in error for error in errors))
+        finally:
+            temporary.unlink(missing_ok=True)
+
     def test_duplicate_asset_id_is_detected(self):
         source = ROOT / "projects" / "the-clever-little-rabbits" / "project.json"
         project = json.loads(source.read_text(encoding="utf-8"))
