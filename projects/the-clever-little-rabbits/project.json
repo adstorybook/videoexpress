@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "assets_generating",
-    "updated_at": "2026-11-22T08:52:00Z",
+    "updated_at": "2026-11-24T08:03:53Z",
     "history": [
       {
         "status": "idea",
@@ -69,6 +69,12 @@
         "status": "assets_generating",
         "at": "2026-11-22T08:52:00Z",
         "note": "Daily tracker reconciliation: corrected the mother-departure clip to Scene 2; confirmed Scene 3 currently has wolf-arrival coverage only. Added the approved wolf character reference metadata. Knock and rabbit reaction shots remain pending user generation.",
+        "actor": "assistant"
+      },
+      {
+        "status": "assets_generating",
+        "at": "2026-11-24T08:03:53Z",
+        "note": "Daily audit: development branch is diverged from main (63 ahead, 2 behind); no merge performed. Four user-generated video clips remain partial coverage, plus the approved Wolf character reference. No new knock, rabbit-reaction, imitation, or refusal clips have been received since the last audit. Scene 2 still needs clear visual coverage of the safety instruction; Scene 3 still needs the knock and rabbit reaction beats.",
         "actor": "assistant"
       }
     ]
@@ -168,7 +174,7 @@
       ],
       "status": "generating",
       "beat": "Mother Rabbit reminds the children to stay indoors and not open the door to strangers; she leaves.",
-      "notes": "Partial coverage only: hug clip plus mother walking away/waving; the safety instruction is in the narration plan but not reliably shown by the generated hug video. Continue generating short coverage and assemble."
+      "notes": "Partial coverage only: hug and mother-departure clips. The safety instruction is in the narration plan but is not reliably shown visually; generate a short instruction/listening shot before assembly."
     },
     {
       "scene_id": "scene-03",
@@ -187,7 +193,7 @@
       ],
       "status": "generating",
       "beat": "A hungry big bad wolf discovers the cottage and knocks while the mother is away.",
-      "notes": "Partial coverage: wolf arrival/approach clip only. Knocking and rabbit reaction shots still need generation; cottage visual varies slightly from the earlier family clips, so use a cottage frame as a second reference when possible."
+      "notes": "Partial coverage: wolf arrival/approach only. Knock and rabbit reaction shots are still pending; use a cottage frame as a second reference when possible."
     },
     {
       "scene_id": "scene-04",
@@ -204,7 +210,7 @@
       "asset_ids": [],
       "status": "planned",
       "beat": "The wolf imitates Mother Rabbit's voice; the siblings recognize his rough voice and keep the door closed.",
-      "notes": "Follow source story; retain character continuity and gentle family-friendly tone."
+      "notes": "Generate after the Scene 3 knock and rabbit-reaction beats. Keep the wolf's attempted motherly voice visibly false; generated dialogue is not relied upon for final audio."
     },
     {
       "scene_id": "scene-05",
