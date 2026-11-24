@@ -2,7 +2,7 @@
 
 **Last audited:** 2026-11-24  
 **Active branch:** `feat/video-pipeline-foundation`  
-**Branch relationship:** diverged from `main`; 63 ahead, 2 behind (checked 2026-11-24). Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
+**Branch relationship:** diverged from `main`; 2 commits behind at the 2026-11-24 audit. No merge or cherry-pick was performed. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
 
 See [Start here](start-here.md) for the complete reset audit and next-shot handoff.
 
