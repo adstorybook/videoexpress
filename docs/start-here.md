@@ -1,6 +1,6 @@
 # Start here — VideoExpress production reset and audit
 
-**Audited:** 2026-11-24 10:37 +02  
+**Audited:** 2026-11-24 10:47 +02  
 **Production development branch:** `feat/video-pipeline-foundation`  
 **Current workflow-state increment:** `feat/project-workflow-state-cli` (branched from the development branch; not merged)  
 **Repository:** https://github.com/adstorybook/videoexpress  
@@ -11,7 +11,7 @@ This is the current source of truth for restarting the production workflow from 
 ## 0. Project audit
 
 - The foundation branch contains story manifests, scripts, storyboards, scene prompts, schemas, validation, tests, workflow documentation, and GitHub Actions.
-- The last confirmed successful manifest-validation workflow was recorded in the 2026-11-23 audit. The push-triggered status for the current branch head is not readable through the available workflow-run connector.
+- GitHub Actions validation run #57 completed successfully on 2026-11-24 for the current workflow-state increment: all 21 unit tests and both seed-project manifest validations passed.
 - **Branch safety:** the development branch is now diverged from `main` (2 commits behind as checked 2026-11-24; the development branch remains ahead and diverged). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
 - VideoExpress 3.5 is available through the signed-in browser editor. A field labelled API key is not proof of a documented API; the API integration remains unverified.
 - The 5-page scanned story PDF was reattached and inspected in the 2026-11-24 conversation. It is not committed to GitHub. Existing GitHub scripts remain drafts pending user approval.
@@ -90,7 +90,7 @@ A separate working branch, **feat/project-workflow-state-cli**, now adds:
 - 12 focused unit tests.
 - GitHub Actions push validation configured for all feat/** branches, not only the original development branch.
 
-The CLI changes project records only. It does not call VideoExpress, Runway, YouTube, or paid generation endpoints. No media assets or existing story manifests were changed in this increment. The 12 focused tests passed locally. GitHub Actions run #53 completed successfully for commit 23b820ae8d46b124589b9e933b02e3fe9dff0f61; the unit-test step and both seed-project manifest validations passed.
+The CLI changes project records only. It does not call VideoExpress, Runway, YouTube, or paid generation endpoints. No media assets or existing story manifests were changed in this increment. The 16 focused project-state tests passed locally. GitHub Actions run #57 completed successfully for commit 277f79946c114ad78806380e813f0b7a0cf22324; all 21 repository unit tests and both seed-project manifest validations passed.
 
 ## 8. Current provider availability
 
