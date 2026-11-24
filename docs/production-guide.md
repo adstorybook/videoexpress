@@ -1,8 +1,8 @@
 # Production guide and handoff — TheStorybook_ad
 
-**Last audited:** 2026-11-23  
+**Last audited:** 2026-11-24  
 **Active branch:** `feat/video-pipeline-foundation`  
-**Branch relationship:** diverged from `main`; 56 ahead, 2 behind. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
+**Branch relationship:** diverged from `main`; 63 ahead, 2 behind (checked 2026-11-24). Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
 
 See [Start here](start-here.md) for the complete reset audit and next-shot handoff.
 
@@ -17,14 +17,14 @@ See [Start here](start-here.md) for the complete reset audit and next-shot hando
   - `rabbit-scene2-departure-001` — 6.04 seconds, mother leaves and children wave; **Scene 2**.
   - `rabbit-scene3-wolf-arrival-001` — 10.04 seconds, wolf approaches cottage; **Scene 3**.
 - `wolf-character-reference-001` — approved reference in VideoExpress; source image is not separately available in Git.
-- Next shot in order: 10-second Wolf knock at the cottage door, using Wolf reference and (if available) cottage frame. Rabbit reaction, Wolf imitation, and refusal prompts are queued, but those clips are not logged yet.
+- Next shot in order: 10-second Wolf knock at the cottage door, using Wolf reference and (if available) cottage frame. Rabbit reaction, Wolf imitation, and refusal prompts are queued, but no uploaded clips are logged for these shots as of 2026-11-24. Scene 2 also still needs a clear visual safety-instruction shot.
 - No scene is complete; no final video is assembled or rendered.
 
 ### Mother Magpie
 - Script/storyboard: source-checked draft; 9 scenes, target 300 seconds.
 - Workflow: `script_draft`.
-- No generated assets are logged yet.
-- Next: character references, then establishing shot of the large tree with two neighboring nests and exactly two chicks in each.
+- No generated assets are logged yet. The visual prompt pack now includes isolated reference prompts for both mothers, both chick pairs, the eagle, and the two-nest tree layout.
+- Next: approve the character/location references, then generate the establishing shot of the large tree with two neighboring nests and exactly two chicks in each.
 
 ## Render target
 - 1920×1080, 16:9, 24 fps where supported; confirm actual export metadata.
@@ -71,3 +71,9 @@ See [Start here](start-here.md) for the complete reset audit and next-shot hando
 
 ## VideoExpress integration
 Use the signed-in browser editor while API support remains unverified. Do not use undocumented endpoints, browser cookies, or credentials in Git. Paid generation should be explicitly confirmed; record credits/costs where shown.
+
+
+## Validation update (2026-11-24)
+- Manifest validator now checks that every character `reference_asset_ids` entry resolves to a declared asset, in addition to scene asset references.
+- A regression test covers missing character reference assets.
+- The branch's push workflow is configured to run on development-branch updates; the connector cannot read push-triggered run status, so CI completion is not claimed in this audit.
