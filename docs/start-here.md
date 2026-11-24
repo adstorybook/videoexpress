@@ -90,7 +90,9 @@ A separate working branch, **feat/project-workflow-state-cli**, now adds:
 - 12 focused unit tests.
 - GitHub Actions push validation configured for all feat/** branches, not only the original development branch.
 
-The CLI changes project records only. It does not call VideoExpress, Runway, YouTube, or paid generation endpoints. No media assets or existing story manifests were changed in this increment. The 16 focused project-state tests passed locally. GitHub Actions run #57 completed successfully for commit 277f79946c114ad78806380e813f0b7a0cf22324; all 21 repository unit tests and both seed-project manifest validations passed.
+The CLI changes project records only. It does not call VideoExpress, Runway, YouTube, or paid generation endpoints. No media assets or existing story manifests were changed in this increment. The 16 focused project-state tests passed locally. GitHub Actions run #58 completed successfully for commit 8feada2e33e7847ed774c0f1c71428bd1b250802; all 21 repository unit tests and both seed-project manifest validations passed.
+
+The correction-management CLI remains on the separate branch feat/correction-management-cli. That branch is diverged from feat/video-pipeline-foundation (16 commits ahead, 28 behind); it was not merged or copied into this branch. The new state CLI therefore does not yet invoke the correction manager.
 
 ## 8. Current provider availability
 
@@ -99,4 +101,4 @@ The CLI changes project records only. It does not call VideoExpress, Runway, You
 
 ## 9. Next engineering step
 
-Add an export-inspection/QA utility that reads an actual MP4 with ffprobe when a rendered file is available, verifies duration, 1920×1080 resolution, aspect ratio, audio stream presence, and checksum, and writes a structured QA report. In parallel, continue user-guided VideoExpress generation from the next pending Rabbit shot; do not mark partial coverage as a completed scene.
+Port and reconcile the correction-management CLI and its tests from the diverged feature branch into this working branch as a reviewed, file-level change (not a branch merge). Then add an export-inspection/QA utility using ffprobe when an actual MP4 is available. In parallel, continue user-guided VideoExpress generation from the next pending Rabbit shot; do not mark partial coverage as a completed scene.
