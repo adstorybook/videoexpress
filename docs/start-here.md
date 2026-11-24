@@ -90,7 +90,7 @@ A separate working branch, **feat/project-workflow-state-cli**, now adds:
 - 12 focused unit tests.
 - GitHub Actions push validation configured for all feat/** branches, not only the original development branch.
 
-The CLI changes project records only. It does not call VideoExpress, Runway, YouTube, or paid generation endpoints. No media assets or existing story manifests were changed in this increment. The 12 focused tests passed locally; GitHub Actions completion for this branch has not yet been verified.
+The CLI changes project records only. It does not call VideoExpress, Runway, YouTube, or paid generation endpoints. No media assets or existing story manifests were changed in this increment. The 12 focused tests passed locally. GitHub Actions run #53 completed successfully for commit 23b820ae8d46b124589b9e933b02e3fe9dff0f61; the unit-test step and both seed-project manifest validations passed.
 
 ## 8. Current provider availability
 
