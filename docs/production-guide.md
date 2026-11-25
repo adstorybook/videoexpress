@@ -1,8 +1,8 @@
 # Production guide and handoff — TheStorybook_ad
 
-**Last audited:** 2026-11-24  
+**Last audited:** 2026-11-25  
 **Active branch:** `feat/video-pipeline-foundation`  
-**Branch relationship:** diverged from `main`; 2 commits behind at the 2026-11-24 audit. No merge or cherry-pick was performed. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
+**Branch relationship:** diverged from `main`; 75 commits ahead and 2 commits behind at the 2026-11-25 audit. No merge or cherry-pick was performed. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
 
 See [Start here](start-here.md) for the complete reset audit and next-shot handoff.
 
@@ -73,7 +73,7 @@ See [Start here](start-here.md) for the complete reset audit and next-shot hando
 Use the signed-in browser editor while API support remains unverified. Do not use undocumented endpoints, browser cookies, or credentials in Git. Paid generation should be explicitly confirmed; record credits/costs where shown.
 
 
-## Validation update (2026-11-24)
+## Validation update (2026-11-25)
 - Manifest validator now checks that every character `reference_asset_ids` entry resolves to a declared asset, in addition to scene asset references.
-- A regression test covers missing character reference assets.
+- Regression tests cover missing character references and reject a video asset used as a character reference; character references must resolve to declared image assets.
 - The branch's push workflow is configured to run on development-branch updates; the connector cannot read push-triggered run status, so CI completion is not claimed in this audit.
