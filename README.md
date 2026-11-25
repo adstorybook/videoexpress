@@ -8,6 +8,7 @@ GitHub is the versioned **production brain** for the VideoExpress workflow: stor
 - [Workflow foundation](docs/workflow-foundation.md)
 - [Channel publishing, QA and feedback](docs/channel-publishing-and-feedback.md)
 - [Project initialization and workflow-state CLI](docs/project-state-cli.md)
+- [Correction management CLI](docs/correction-management-cli.md) — record scene feedback and explicitly approve reusable channel rules
 
 ## Projects
 - [The Clever Little Rabbits](projects/the-clever-little-rabbits/) — source-checked 5-minute draft, 10-scene storyboard and partial generated assets.
@@ -40,6 +41,15 @@ The standard-library CLI initializes new project folders from the template and r
     python scripts/manage_project.py --help
 
 See [CLI commands and safety gates](docs/project-state-cli.md). The CLI records metadata only; generated media stays in VideoExpress or approved external storage.
+
+## Correction history and reusable rules
+
+Record feedback against a project or the channel without promoting it automatically:
+
+    python scripts/manage_corrections.py projects/the-clever-little-rabbits/corrections.json add --project-id clever-little-rabbits --category voice --scene-id scene-04 --issue "Narration is too fast" --requested-change "Reduce delivery speed by about 10%"
+    python scripts/manage_corrections.py projects/the-clever-little-rabbits/corrections.json list --status proposed
+
+Channel-wide rules are kept in `defaults/channel-corrections.json` and remain inactive until explicitly approved. See [Correction management CLI](docs/correction-management-cli.md).
 
 ## Scope and safety
 
