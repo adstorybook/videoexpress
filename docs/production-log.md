@@ -50,3 +50,13 @@ Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress 
 - Corrected a literal escaped newline in the Rabbit prompt queue and refreshed the production handoff/branch counts.
 - GitHub Actions workflow is configured for pushes to this branch, but the available workflow-run connector only returns pull-request-triggered runs; no push-run result could be verified. Do not claim CI passed.
 - No VideoExpress credits spent, no final render, no merge/deploy/publish, and no changes to `main`.
+
+
+## 2026-11-25 — Daily production audit and validator hardening
+- Rechecked the development branch against `main`: **75 commits ahead and 2 behind**; it remains diverged. No merge, cherry-pick, or main-branch write was performed.
+- Reconciled current assets from the Rabbit manifest: four reviewed partial video clips (opening, Scene 2 hug, Scene 2 departure, Scene 3 wolf arrival) plus one approved Wolf character reference. No new knock, rabbit-reaction, imitation, or refusal clip has been received; the next generation remains the 10-second Wolf-knocking shot.
+- Confirmed Mother Magpie remains at script/storyboard draft with seven character designs and no generated assets. Reference images and the two-nest establishing shot remain the next Magpie production step.
+- Hardened manifest validation: every character reference must resolve to a declared asset of type `image`. Added a regression test that rejects a video asset used as a character reference.
+- Fixed literal escaped newline sequences in the Rabbit shot-generation queue and refreshed audit dates/branch divergence in the handoff documents.
+- Readback verification is required after these commits. The available connector does not provide a confirmed push-triggered Actions result for the branch head; CI is not claimed as passing.
+- No VideoExpress generation or credit use, final render, merge, deployment, or publication occurred.
