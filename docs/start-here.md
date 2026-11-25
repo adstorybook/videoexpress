@@ -111,4 +111,4 @@ A new branch, `feat/correction-cli-on-workflow-state`, was created from the succ
 - `docs/correction-management-cli.md`
 - `defaults/channel-corrections.json`
 
-New entries default to `proposed`; only explicitly approved channel-scoped entries flagged for reuse appear in the reusable-rules output. Project corrections remain in each story's own `corrections.json`. GitHub Actions run #62 completed successfully on 2026-11-25 for the commit adding the correction manager and tests: the unit-test step and both seed-project manifest validations passed. Run #66 also completed successfully after the README and handoff updates.
+New entries default to `proposed`; only explicitly approved channel-scoped entries flagged for reuse appear in the reusable-rules output. Project corrections remain in each story's own `corrections.json`. GitHub Actions run #68 completed successfully on 2026-11-25 for the integrated correction CLI and documentation: all 28 unit tests and both seed-project manifest validations passed.
