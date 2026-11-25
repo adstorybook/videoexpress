@@ -54,6 +54,22 @@ class ProjectManifestTests(unittest.TestCase):
         finally:
             temporary.unlink(missing_ok=True)
 
+    def test_character_reference_must_be_image(self):
+        source = ROOT / "projects" / "the-clever-little-rabbits" / "project.json"
+        project = json.loads(source.read_text(encoding="utf-8"))
+        wolf_reference = next(
+            asset for asset in project["assets"]
+            if asset["asset_id"] == "wolf-character-reference-001"
+        )
+        wolf_reference["type"] = "video"
+        temporary = ROOT / "tests" / "_invalid-project-fixture.json"
+        try:
+            temporary.write_text(json.dumps(project), encoding="utf-8")
+            errors = validate_project(temporary, SCHEMA)
+            self.assertTrue(any("must be an image asset" in error for error in errors))
+        finally:
+            temporary.unlink(missing_ok=True)
+
     def test_duplicate_asset_id_is_detected(self):
         source = ROOT / "projects" / "the-clever-little-rabbits" / "project.json"
         project = json.loads(source.read_text(encoding="utf-8"))
