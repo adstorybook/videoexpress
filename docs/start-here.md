@@ -2,7 +2,7 @@
 
 **Audited:** 2026-11-24 10:47 +02  
 **Production development branch:** `feat/video-pipeline-foundation`  
-**Current workflow-state increment:** `feat/project-workflow-state-cli` (branched from the development branch; not merged)  
+**Current integration branch:** `feat/correction-cli-on-workflow-state` (based on `feat/project-workflow-state-cli`; not merged)  
 **Repository:** https://github.com/adstorybook/videoexpress  
 **Channel:** TheStorybook_ad
 
@@ -11,7 +11,7 @@ This is the current source of truth for restarting the production workflow from 
 ## 0. Project audit
 
 - The foundation branch contains story manifests, scripts, storyboards, scene prompts, schemas, validation, tests, workflow documentation, and GitHub Actions.
-- GitHub Actions validation run #57 completed successfully on 2026-11-24 for the current workflow-state increment: all 21 unit tests and both seed-project manifest validations passed.
+- GitHub Actions validation run #59 completed successfully on 2026-11-24 for the workflow-state increment: all 21 unit tests and both seed-project manifest validations passed.
 - **Branch safety:** the development branch is now diverged from `main` (2 commits behind as checked 2026-11-24; the development branch remains ahead and diverged). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
 - VideoExpress 3.5 is available through the signed-in browser editor. A field labelled API key is not proof of a documented API; the API integration remains unverified.
 - The 5-page scanned story PDF was reattached and inspected in the 2026-11-24 conversation. It is not committed to GitHub. Existing GitHub scripts remain drafts pending user approval.
@@ -92,7 +92,7 @@ A separate working branch, **feat/project-workflow-state-cli**, now adds:
 
 The CLI changes project records only. It does not call VideoExpress, Runway, YouTube, or paid generation endpoints. No media assets or existing story manifests were changed in this increment. The 16 focused project-state tests passed locally. GitHub Actions run #58 completed successfully for commit 8feada2e33e7847ed774c0f1c71428bd1b250802; all 21 repository unit tests and both seed-project manifest validations passed.
 
-The correction-management CLI remains on the separate branch feat/correction-management-cli. That branch is diverged from feat/video-pipeline-foundation (16 commits ahead, 28 behind); it was not merged or copied into this branch. The new state CLI therefore does not yet invoke the correction manager.
+The original correction-management branch remains separate and was not merged. Its standalone manager, tests, documentation, and empty channel-level log have now been copied file-by-file into feat/correction-cli-on-workflow-state; the correction CLI remains a separate command rather than a manage_project subcommand.
 
 ## 8. Current provider availability
 
@@ -101,4 +101,14 @@ The correction-management CLI remains on the separate branch feat/correction-man
 
 ## 9. Next engineering step
 
-Port and reconcile the correction-management CLI and its tests from the diverged feature branch into this working branch as a reviewed, file-level change (not a branch merge). Then add an export-inspection/QA utility using ffprobe when an actual MP4 is available. In parallel, continue user-guided VideoExpress generation from the next pending Rabbit shot; do not mark partial coverage as a completed scene.
+Add an export-inspection/QA utility using ffprobe when an actual MP4 is available. It should verify duration, 1920×1080 resolution, 16:9 aspect ratio, audio presence, and checksum, then write a structured report without marking a render approved. In parallel, continue user-guided VideoExpress generation from the next pending Rabbit shot; do not mark partial coverage as a completed scene.
+
+## 10. Correction CLI integration — 2026-11-25
+
+A new branch, `feat/correction-cli-on-workflow-state`, was created from the successful workflow-state branch. The correction manager was ported as a file-level change (no branch merge):
+- `scripts/manage_corrections.py`
+- `tests/test_manage_corrections.py`
+- `docs/correction-management-cli.md`
+- `defaults/channel-corrections.json`
+
+New entries default to `proposed`; only explicitly approved channel-scoped entries flagged for reuse appear in the reusable-rules output. Project corrections remain in each story's own `corrections.json`. GitHub Actions is expected to run the complete test suite on this feature-branch push; record its actual result before treating the integration as verified.
