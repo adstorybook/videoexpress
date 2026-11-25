@@ -29,7 +29,8 @@ schemas/
   qa-report.schema.json
 defaults/
   channel-profile.json       # reusable channel defaults; approval metadata
-  correction-rules.json      # only user-approved reusable rules
+  channel-corrections.json   # correction log; CLI exposes only explicitly approved reusable rules
+  correction-rules.json      # legacy placeholder; do not use as the active correction log
 docs/
   ...
 ```
@@ -40,9 +41,11 @@ Large generated media should live in VideoExpress or a storage provider, not Git
 1. Load channel profile + reusable approved rules.
 2. Load project manifest, story/script, characters, storyboard, and project corrections.
 3. Apply rules when generating scripts, prompts, narration, editing and QA.
-4. Record each new correction with scope (project/channel), status (proposed/approved/rejected), what changed, and evidence (scene/timecode).
+4. Record each new correction with scope (project/channel), status (proposed/approved/rejected), what changed, and evidence (scene/timecode) using `scripts/manage_corrections.py`.
 5. Only promote a correction to reusable channel defaults after user approval; retain its provenance.
 6. At final review, store QA report, render version, approval and export reference.
+
+The correction CLI is documented in [correction-management-cli.md](correction-management-cli.md). Project corrections live in each project's `corrections.json`; channel-wide proposals live in `defaults/channel-corrections.json`. Only explicitly approved/verified channel entries marked `reuse_as_rule` are returned as reusable rules.
 7. After publishing approval and verified upload, record video URL/ID and analytics checkpoints/insights; use those insights as proposals, not automatic global rules.
 
 ## Workflow status
