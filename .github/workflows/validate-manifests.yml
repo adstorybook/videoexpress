@@ -2,9 +2,11 @@ name: Validate production manifests
 
 on:
   push:
-    branches: ["main", "feat/video-pipeline-foundation"]
+    branches:
+      - "main"
+      - "feat/**"
   pull_request:
-    branches: ["main"]
+    branches: ["main", "feat/video-pipeline-foundation"]
 
 jobs:
   validate:

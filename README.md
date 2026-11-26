@@ -13,7 +13,10 @@ GitHub is the versioned **production brain** for the VideoExpress workflow: stor
 - [Mother Magpie](projects/mother-magpie/) — source-checked 5-minute draft, 9-scene storyboard; assets not yet generated.
 - [Reusable project template](projects/_template/)
 
-The original scanned storybook was inspected previously, but the source PDF is not currently available in the Library search. Existing scripts remain drafts. A separate expanded workflow document has alternate character names and 14-scene versions; do not mix it with the GitHub source-checked drafts without reconciliation/approval.
+## Expanded production packs
+- [Expanded story production packs](production-packs/expanded-retellings/) — 14-scene retellings with per-scene still-reference prompts, VideoExpress prompts, narration, optional dialogue, voice direction and audio cues.
+
+**Canon warning:** the expanded packs use alternate character names/designs and remain separate from the source-checked project manifests. Do not replace the canonical project scripts or asset records until the user approves a reconciliation. The original scanned PDF was not re-verified in this update.
 
 ## Validation
 Python 3.12+:
