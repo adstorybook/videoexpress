@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "assets_generating",
-    "updated_at": "2026-11-24T08:03:53Z",
+    "updated_at": "2026-11-26T08:40:04Z",
     "history": [
       {
         "status": "idea",
@@ -75,6 +75,12 @@
         "status": "assets_generating",
         "at": "2026-11-24T08:03:53Z",
         "note": "Daily audit: development branch is diverged from main (63 ahead, 2 behind); no merge performed. Four user-generated video clips remain partial coverage, plus the approved Wolf character reference. No new knock, rabbit-reaction, imitation, or refusal clips have been received since the last audit. Scene 2 still needs clear visual coverage of the safety instruction; Scene 3 still needs the knock and rabbit reaction beats.",
+        "actor": "assistant"
+      },
+      {
+        "status": "assets_generating",
+        "at": "2026-11-26T08:40:04Z",
+        "note": "Daily audit: no new Wolf-knock or subsequent rabbit-reaction/imitation/refusal clip was received in this run. Four existing user-generated videos remain partial coverage; the Wolf character reference remains approved. Added a pre-render QA baseline. Next required clip remains the 10-second Wolf knock, using the approved Wolf reference and an established cottage exterior still if available.",
         "actor": "assistant"
       }
     ]
@@ -398,7 +404,7 @@
     }
   ],
   "corrections_ref": "corrections.json",
-  "qa_report_ref": null,
+  "qa_report_ref": "qa-report.json",
   "render": null,
   "publishing": {
     "approval_required": true,
