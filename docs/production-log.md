@@ -70,3 +70,13 @@ Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress 
 - Created pre-render QA baseline reports for both films and linked them through each manifest's `qa_report_ref`. Both reports are `incomplete`, have `render_id=not-rendered-yet`, no export, no full watch and no approval. They are tracking baselines only.
 - Readback and schema-shape checks are performed after writes. No validator/test code changed in this run, and no CI success is claimed because a current push-run result is not available from the connector.
 - No VideoExpress generation, credit use, final render, merge, deployment, or publication occurred.
+
+
+## 2026-11-26 — Expanded scene production packs
+- Added a separately versioned expanded-retelling package for both children's films. Each 14-scene pack contains a scene-specific still-reference prompt, VideoExpress motion prompt, narration, optional dialogue, voice direction, and music/SFX cues.
+- Runtime is explicitly budgeted to 300 seconds per film: 5-second title card, 290 seconds of scenes (10 × 21 seconds and 4 × 20 seconds), and 5-second end card.
+- Kept these packs outside the source-checked `projects/` manifests because the expanded workflow uses alternate character names/designs. The canonical 10-scene Rabbit and 9-scene Magpie drafts, existing asset records, and approved references were not overwritten. The original scanned PDF was not re-verified in this run.
+- Added structural tests for 14 scenes, required prompt/script/audio fields, and exact 300-second timing. Updated CI to run on all `feat/**` branches and PRs targeting the foundation branch.
+- GitHub Actions run #84 passed for commit `820635a`; a draft PR (#1) is open from `feat/expanded-production-packs` to `feat/video-pipeline-foundation`. No merge performed.
+- Runway connection is authenticated; image models are available, but video, speech, music, and sound-effect models are currently unavailable and no saved workflows exist. No credits were spent.
+- Browser read access to the open VideoExpress tab was unavailable in this chat context, so no editor navigation or generation was performed. No final render, deployment, publishing, or `main` update occurred.
