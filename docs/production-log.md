@@ -60,3 +60,13 @@ Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress 
 - Fixed literal escaped newline sequences in the Rabbit shot-generation queue and refreshed audit dates/branch divergence in the handoff documents.
 - Readback verification is required after these commits. The available connector does not provide a confirmed push-triggered Actions result for the branch head; CI is not claimed as passing.
 - No VideoExpress generation or credit use, final render, merge, deployment, or publication occurred.
+
+
+## 2026-11-26 — Daily production and QA baseline audit
+- Compared `feat/video-pipeline-foundation` with `main`: the branch is diverged; the pre-update comparison reported 81 commits ahead and 2 behind. This audit adds commits only to the development branch. No merge, cherry-pick, or `main` update was performed.
+- Re-read both project manifests, storyboards, scripts, prompt packs, validator, regression tests, schema and CI workflow.
+- Rabbit: four registered partial video clips (opening, Scene 2 hug, Scene 2 departure, Scene 3 Wolf arrival) plus one approved Wolf character reference remain the complete tracked generated-asset inventory. No Wolf-knock, rabbit-reaction, imitation, or refusal MP4 was received in this run. The Wolf-knocking shot remains next; reuse an established cottage exterior still if VideoExpress supports a second reference.
+- Magpie: nine storyboard scenes total 300 seconds; no generated images or videos are registered. Character and two-nest location reference images remain the first production task.
+- Created pre-render QA baseline reports for both films and linked them through each manifest's `qa_report_ref`. Both reports are `incomplete`, have `render_id=not-rendered-yet`, no export, no full watch and no approval. They are tracking baselines only.
+- Readback and schema-shape checks are performed after writes. No validator/test code changed in this run, and no CI success is claimed because a current push-run result is not available from the connector.
+- No VideoExpress generation, credit use, final render, merge, deployment, or publication occurred.
