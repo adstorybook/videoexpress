@@ -1,8 +1,8 @@
 # Production guide and handoff — TheStorybook_ad
 
-**Last audited:** 2026-11-25  
+**Last audited:** 2026-11-26  
 **Active branch:** `feat/video-pipeline-foundation`  
-**Branch relationship:** diverged from `main`; 75 commits ahead and 2 commits behind at the 2026-11-25 audit. No merge or cherry-pick was performed. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
+**Branch relationship:** diverged from `main`; the 2026-11-26 pre-update comparison showed 81 commits ahead and 2 behind. This audit adds further commits, so refresh the live comparison before any integration. No merge or cherry-pick was performed. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
 
 See [Start here](start-here.md) for the complete reset audit and next-shot handoff.
 
@@ -77,3 +77,11 @@ Use the signed-in browser editor while API support remains unverified. Do not us
 - Manifest validator now checks that every character `reference_asset_ids` entry resolves to a declared asset, in addition to scene asset references.
 - Regression tests cover missing character references and reject a video asset used as a character reference; character references must resolve to declared image assets.
 - The branch's push workflow is configured to run on development-branch updates; the connector cannot read push-triggered run status, so CI completion is not claimed in this audit.
+
+
+## Pre-render QA baseline (2026-11-26)
+- Added `projects/the-clever-little-rabbits/qa-report.json` and `projects/mother-magpie/qa-report.json`; both are explicitly `incomplete`, have no render/export, and carry no approval.
+- Linked each baseline from its project manifest via `qa_report_ref`.
+- Rabbit baseline records four partial video clips plus the approved Wolf reference; the cottage-location mismatch remains a warning. The next required clip is still the 10-second Wolf knock.
+- Magpie baseline records a valid 300-second/9-scene plan but no generated image/video assets; create and approve character/location references before Scene 1 footage.
+- These are pre-render tracking reports, not a claim that a final video has passed QA.
