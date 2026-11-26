@@ -28,7 +28,7 @@ Family-friendly cinematic 3D storybook animation, soft fluffy fur, expressive ey
 ## Continuity / editing
 Use consistent cottage door direction, interior layout, outfit colors, and wolf tail. Scene 6 must show rabbits inside and wolf outside. Scene 7 mother is outside. Avoid frightening teeth close-ups. Clip lengths may be 5–10 seconds; use multiple coverage shots per scene and assemble to target timing.
 
-## Shot-level generation queue (audited 2026-11-25)
+## Shot-level generation queue (audited 2026-11-26)
 
 ### Reviewed generated coverage
 - Scene 1: `rabbit-opening-clip-001` — 6.04s family opening reference; approved as reference/partial coverage, not a finished scene.
@@ -63,4 +63,4 @@ Use the three-rabbit reference. The three little white rabbits hear the wolf's r
 
 
 ### Review gate
-A clip is not a completed scene. Keep every newly generated 5–10 second shot in pending review until the user uploads it and its metadata/frames are inspected. Mark a scene complete only after approved coverage is assembled to its target duration and reviewed in sequence with narration. As of 2026-11-24, no uploaded clips are logged for the knock, rabbit-reaction, wolf-imitation, or rabbit-refusal queue.
+A clip is not a completed scene. Keep every newly generated 5–10 second shot in pending review until the user uploads it and its metadata/frames are inspected. Mark a scene complete only after approved coverage is assembled to its target duration and reviewed in sequence with narration. As of the 2026-11-26 audit, no uploaded clips are logged for the knock, rabbit-reaction, wolf-imitation, or rabbit-refusal queue. The next user action remains generating the 10-second Wolf-knocking shot.
