@@ -1,0 +1,116 @@
+{
+  "report_id": "magpie-pre-render-baseline-2026-11-26",
+  "project_id": "mother-magpie",
+  "render_id": "not-rendered-yet",
+  "created_at": "2026-11-26T08:40:04Z",
+  "reviewer": "Production tracker audit",
+  "checks": [
+    {
+      "check_id": "planned_runtime",
+      "result": "pass",
+      "notes": "Nine storyboard scene targets total 300 seconds. This verifies the plan only, not an exported file.",
+      "timecode": null,
+      "evidence_ref": "projects/mother-magpie/project.json"
+    },
+    {
+      "check_id": "scene_order_and_coverage",
+      "result": "pass",
+      "notes": "Nine scenes are present in order and all planned scene durations sum to the five-minute target. No generated scene coverage is registered.",
+      "timecode": null,
+      "evidence_ref": "projects/mother-magpie/storyboard.json"
+    },
+    {
+      "check_id": "character_reference_coverage",
+      "result": "warning",
+      "notes": "Seven character designs and the two-nest layout are described in the prompt pack, but no approved reference-image assets are registered yet.",
+      "timecode": null,
+      "evidence_ref": "projects/mother-magpie/visual-prompts.md"
+    },
+    {
+      "check_id": "asset_inventory",
+      "result": "warning",
+      "notes": "No generated images or videos are registered for this project as of this audit.",
+      "timecode": null,
+      "evidence_ref": "projects/mother-magpie/project.json"
+    },
+    {
+      "check_id": "nest_and_chick_continuity",
+      "result": "not_checked",
+      "notes": "The two-nest layout and four distinct chick identities are specified, but cannot be validated in generated footage until references and clips exist.",
+      "timecode": null,
+      "evidence_ref": "projects/mother-magpie/visual-prompts.md"
+    },
+    {
+      "check_id": "story_fidelity",
+      "result": "not_checked",
+      "notes": "Final sequence-level fidelity review is pending production and source comparison.",
+      "timecode": null,
+      "evidence_ref": null
+    },
+    {
+      "check_id": "full_video_watch",
+      "result": "not_checked",
+      "notes": "No assembled render exists to watch.",
+      "timecode": null,
+      "evidence_ref": null
+    },
+    {
+      "check_id": "runtime_and_resolution",
+      "result": "not_checked",
+      "notes": "Final export properties cannot be checked before rendering.",
+      "timecode": null,
+      "evidence_ref": null
+    },
+    {
+      "check_id": "visual_artifacts",
+      "result": "not_checked",
+      "notes": "No generated footage is available for artifact review.",
+      "timecode": null,
+      "evidence_ref": null
+    },
+    {
+      "check_id": "audio_and_voice",
+      "result": "not_checked",
+      "notes": "Narration, dialogue, mix and synchronization have not been assembled or reviewed.",
+      "timecode": null,
+      "evidence_ref": null
+    },
+    {
+      "check_id": "music_and_sfx",
+      "result": "not_checked",
+      "notes": "Music and sound effects have not been assembled or reviewed.",
+      "timecode": null,
+      "evidence_ref": null
+    },
+    {
+      "check_id": "captions",
+      "result": "not_checked",
+      "notes": "Captions are planned but no timed final caption track is available.",
+      "timecode": null,
+      "evidence_ref": null
+    },
+    {
+      "check_id": "rights_and_licenses",
+      "result": "not_checked",
+      "notes": "Confirm provider terms and rights for all final assets before export/publication.",
+      "timecode": null,
+      "evidence_ref": null
+    },
+    {
+      "check_id": "title_thumbnail_metadata",
+      "result": "not_checked",
+      "notes": "Final packaging has not been prepared.",
+      "timecode": null,
+      "evidence_ref": null
+    }
+  ],
+  "overall_status": "incomplete",
+  "full_watch_completed": false,
+  "approval": {
+    "approved": false,
+    "approved_by": null,
+    "approved_at": null,
+    "notes": "Pre-render baseline only. No final render exists and no publication approval is implied."
+  },
+  "export": null
+}
