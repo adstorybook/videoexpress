@@ -1,6 +1,6 @@
 # Start here — VideoExpress production reset and audit
 
-**Audited:** 2026-11-25  
+**Audited:** 2026-11-26  
 **Active development branch:** `feat/video-pipeline-foundation`  
 **Repository:** https://github.com/adstorybook/videoexpress  
 **Channel:** TheStorybook_ad
@@ -11,7 +11,7 @@ This is the current source of truth for restarting the production workflow from 
 
 - The foundation branch contains story manifests, scripts, storyboards, scene prompts, schemas, validation, tests, workflow documentation, and GitHub Actions.
 - The validator and regression suite were extended on 2026-11-25. The connected GitHub tools do not expose a confirmed push-run result for the current branch head; do not infer CI success from the workflow configuration.
-- **Branch safety:** the development branch is now diverged from `main` (2 commits behind as checked 2026-11-25; 75 commits ahead; the development branch remains ahead and diverged). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
+- **Branch safety:** the development branch is diverged from `main` (the 2026-11-26 pre-update comparison showed 81 commits ahead and 2 behind; subsequent audit commits increase the ahead count). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
 - VideoExpress 3.5 is available through the signed-in browser editor. A field labelled API key is not proof of a documented API; the API integration remains unverified.
 - The original scanned story PDF is not currently available in the Library search. Existing GitHub scripts were previously source-checked; if exact source re-verification is needed, re-upload the PDF.
 - A separate user workflow document contains expanded 14-scene retellings and character names (e.g. Mama Hazel/Pip/Clover/Nutmeg/Grizzle and Mama Nell/Tilly/Dot/Dash/Pebble/Button). It differs from the GitHub drafts' scene counts and some character descriptions. **Do not silently mix these versions.** The GitHub source-checked drafts remain the working canon until the user approves a reconciliation.
@@ -74,4 +74,5 @@ Until VideoExpress provides official API documentation and support confirms the 
 - **Rabbit:** generate the 10-second Wolf-knocking shot next; continue in strict sequence with rabbit reaction, wolf imitation, and refusal. The prompts have been shared, but those clips are not yet received.
 - **Magpie:** begin character references and establishing-tree shot once the character design/canon is reconciled.
 - **Repository:** record every generated/reviewed asset in the manifest and production log; run validation after edits.
-- **Validation:** the manifest validator now checks character reference asset IDs against the asset registry. CI push-run status is not readable through the connected GitHub workflow-run action, so do not assume it passed.
+- **QA baselines:** both projects now have `qa-report.json` linked from their manifests. Both reports are `incomplete`, pre-render only, with `full_watch_completed=false` and `approval.approved=false`.
+- **Validation:** the manifest validator checks character reference asset IDs against the asset registry. No new code/test changes were made in this audit; GitHub Actions push-run status is not confirmed here.
