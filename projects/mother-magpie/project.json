@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "script_draft",
-    "updated_at": "2026-11-24T08:03:53Z",
+    "updated_at": "2026-11-26T08:40:04Z",
     "history": [
       {
         "status": "idea",
@@ -45,6 +45,12 @@
         "status": "script_draft",
         "at": "2026-11-24T08:03:53Z",
         "note": "Prepared a dedicated character and location reference-image prompt sequence and aligned the character bible with the visual prompt pack. No images or videos have been generated; all reference IDs remain unassigned until user-approved assets are received.",
+        "actor": "assistant"
+      },
+      {
+        "status": "script_draft",
+        "at": "2026-11-26T08:40:04Z",
+        "note": "Daily audit: no generated character references, images, or videos are registered yet. Added a pre-render QA baseline and linked it from the project manifest. Next production step remains approving/generating the character and two-nest location reference images before Scene 1 footage.",
         "actor": "assistant"
       }
     ]
@@ -271,7 +277,7 @@
   ],
   "assets": [],
   "corrections_ref": "corrections.json",
-  "qa_report_ref": null,
+  "qa_report_ref": "qa-report.json",
   "render": null,
   "publishing": {
     "approval_required": true,
