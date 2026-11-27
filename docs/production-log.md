@@ -70,3 +70,14 @@ Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress 
 - Created pre-render QA baseline reports for both films and linked them through each manifest's `qa_report_ref`. Both reports are `incomplete`, have `render_id=not-rendered-yet`, no export, no full watch and no approval. They are tracking baselines only.
 - Readback and schema-shape checks are performed after writes. No validator/test code changed in this run, and no CI success is claimed because a current push-run result is not available from the connector.
 - No VideoExpress generation, credit use, final render, merge, deployment, or publication occurred.
+
+
+## 2026-11-27 — Daily status, clip gate and CI verification
+- Re-read both project manifests, both QA reports, both visual prompt packs, schemas, validator, unit tests and GitHub Actions workflow.
+- Live pre-update compare: development branch was **89 commits ahead and 2 behind** `main` (diverged). All changes remain on `feat/video-pipeline-foundation`; no merge or main-branch write.
+- Rabbit remains at four partial generated video clips plus the approved Wolf character reference. The first family opening remains the approved 6.04-second, 1920×1080, 16:9 visual reference. No new knock/reaction/imitation/refusal MP4 was received in this run.
+- Added a precise VideoExpress execution card and clip-level acceptance gate for the 10-second Wolf-knocking shot, including Wolf/cottage reference requirements, three visible knocks, closed-door continuity, artifact checks and metadata verification.
+- Updated Rabbit QA baseline to record this next shot as pending/warning. The report remains incomplete, with no render, full watch or approval.
+- Mother Magpie remains nine planned scenes / 300 seconds with no generated assets; character/location reference images remain the first task.
+- Verified the latest pre-update push-triggered GitHub Actions run for commit `455cbff86d6e808130b8ce2a45454b6c7f91103b` succeeded on 2026-11-26 (run 45785349081). A fresh workflow run is expected for today's commits; do not claim it passed until read back.
+- No VideoExpress generation or credit use, final render, merge, deployment, or publication occurred.
