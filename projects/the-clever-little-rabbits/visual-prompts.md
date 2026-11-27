@@ -28,7 +28,7 @@ Family-friendly cinematic 3D storybook animation, soft fluffy fur, expressive ey
 ## Continuity / editing
 Use consistent cottage door direction, interior layout, outfit colors, and wolf tail. Scene 6 must show rabbits inside and wolf outside. Scene 7 mother is outside. Avoid frightening teeth close-ups. Clip lengths may be 5–10 seconds; use multiple coverage shots per scene and assemble to target timing.
 
-## Shot-level generation queue (audited 2026-11-26)
+## Shot-level generation queue (audited 2026-11-27)
 
 ### Reviewed generated coverage
 - Scene 1: `rabbit-opening-clip-001` — 6.04s family opening reference; approved as reference/partial coverage, not a finished scene.
@@ -64,3 +64,22 @@ Use the three-rabbit reference. The three little white rabbits hear the wolf's r
 
 ### Review gate
 A clip is not a completed scene. Keep every newly generated 5–10 second shot in pending review until the user uploads it and its metadata/frames are inspected. Mark a scene complete only after approved coverage is assembled to its target duration and reviewed in sequence with narration. As of the 2026-11-26 audit, no uploaded clips are logged for the knock, rabbit-reaction, wolf-imitation, or rabbit-refusal queue. The next user action remains generating the 10-second Wolf-knocking shot.
+
+
+### Wolf-knock shot — execution and review gate (2026-11-27)
+
+**VideoExpress UI setup**
+- Create a video clip (not a still image); set manual duration to 10 seconds.
+- Image Type: 3D; Consistent Character: ON; use `wolf-character-reference-001`.
+- If a second reference slot is available, use a still from the approved rabbit-cottage exterior. Do not substitute a different cottage image.
+- Target 1920×1080, 16:9 and 24 fps where the editor exposes those controls. Record the actual exported metadata rather than assuming the requested settings were honored.
+- Keep Public Gallery OFF. Do not add generated dialogue as a dependency; narration and sound are handled in editing.
+
+**Accept the uploaded clip only if**
+1. The wolf remains blue-violet, with the same brown floppy hat, green outfit, face, muzzle, proportions and tail as the approved reference.
+2. The same rabbit cottage exterior and wooden front door are recognizable; door position/orientation and flower-path geography do not jump to a new location.
+3. The wolf visibly raises a paw and makes three distinct knocks on the closed door, then pauses/listens and gives a restrained mischievous expression.
+4. No rabbits, extra characters, open door, frightening close-up, graphic action, text, subtitles, logo or watermark appear.
+5. The clip is technically inspectable: no severe flicker, warped paws/door, abrupt camera teleport, or character redesign; verify duration/resolution/frame rate from the uploaded file.
+
+If the cottage cannot be matched with a second reference, keep the prompt's cottage description conservative and flag the mismatch for review rather than approving location continuity. The shot remains **partial Scene 3 coverage**, even if approved; do not mark Scene 3 complete from this clip alone.
