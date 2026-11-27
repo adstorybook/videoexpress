@@ -1,8 +1,8 @@
 # Production guide and handoff — TheStorybook_ad
 
-**Last audited:** 2026-11-26  
+**Last audited:** 2026-11-27  
 **Active branch:** `feat/video-pipeline-foundation`  
-**Branch relationship:** diverged from `main`; the 2026-11-26 pre-update comparison showed 81 commits ahead and 2 behind. This audit adds further commits, so refresh the live comparison before any integration. No merge or cherry-pick was performed. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
+**Branch relationship:** diverged from `main`; the 2026-11-27 pre-update comparison showed 89 commits ahead and 2 behind. This audit adds further commits, so refresh the live comparison before any integration. No merge or cherry-pick was performed. Do not merge without approval. Main-only commits reviewed and are outside this two-film scope.
 
 See [Start here](start-here.md) for the complete reset audit and next-shot handoff.
 
@@ -85,3 +85,14 @@ Use the signed-in browser editor while API support remains unverified. Do not us
 - Rabbit baseline records four partial video clips plus the approved Wolf reference; the cottage-location mismatch remains a warning. The next required clip is still the 10-second Wolf knock.
 - Magpie baseline records a valid 300-second/9-scene plan but no generated image/video assets; create and approve character/location references before Scene 1 footage.
 - These are pre-render tracking reports, not a claim that a final video has passed QA.
+
+
+## 2026-11-27 audit — next-shot gate and CI readback
+- Re-read both manifests, both QA baselines, both prompt packs, the project validator, unit tests, schemas, and branch workflow.
+- Live branch comparison before today's writes: `feat/video-pipeline-foundation` is **89 commits ahead and 2 behind `main`** (diverged). No integration was attempted.
+- Rabbit inventory is unchanged: four partial video clips and one approved Wolf character reference. No new Wolf-knock, rabbit-reaction, imitation, or refusal clip was received in this audit.
+- Added an execution card and objective acceptance gate for the 10-second Wolf-knock shot: reference image, cottage reference if available, three visible knocks, closed door, continuity checks, and actual-file metadata inspection. Approval remains partial Scene 3 coverage.
+- Rabbit QA baseline now explicitly tracks the next-shot gate as a warning; overall QA remains incomplete and no render or approval is claimed.
+- Verified the latest pre-update GitHub Actions push run for head `455cbff86d6e808130b8ce2a45454b6c7f91103b` completed successfully on 2026-11-26 (run [45785349081](https://github.com/adstorybook/videoexpress/actions/runs/45785349081)). Today's documentation/manifest commits will trigger a new run; its result must be checked separately.
+- Mother Magpie remains at script/storyboard draft with nine scenes and no generated assets. Next task is approved character/location reference images, then the two-nest establishing shot.
+- No VideoExpress generation, credits, final render, merge, deployment, or publication occurred.
