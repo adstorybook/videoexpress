@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "assets_generating",
-    "updated_at": "2026-11-26T08:40:04Z",
+    "updated_at": "2026-11-27T08:17:08Z",
     "history": [
       {
         "status": "idea",
@@ -81,6 +81,12 @@
         "status": "assets_generating",
         "at": "2026-11-26T08:40:04Z",
         "note": "Daily audit: no new Wolf-knock or subsequent rabbit-reaction/imitation/refusal clip was received in this run. Four existing user-generated videos remain partial coverage; the Wolf character reference remains approved. Added a pre-render QA baseline. Next required clip remains the 10-second Wolf knock, using the approved Wolf reference and an established cottage exterior still if available.",
+        "actor": "assistant"
+      },
+      {
+        "status": "assets_generating",
+        "at": "2026-11-27T08:17:08Z",
+        "note": "2026-11-27 audit: GitHub manifest and QA baselines rechecked. No new VideoExpress clip was received; the four registered videos remain partial coverage and the Wolf reference remains the only approved Rabbit character image asset. Added a precise 10-second Wolf-knock execution and acceptance gate. Next shot remains pending user generation; no credits were spent.",
         "actor": "assistant"
       }
     ]
