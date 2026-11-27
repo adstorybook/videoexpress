@@ -1,6 +1,6 @@
 # Start here — VideoExpress production reset and audit
 
-**Audited:** 2026-11-26  
+**Audited:** 2026-11-27  
 **Active development branch:** `feat/video-pipeline-foundation`  
 **Repository:** https://github.com/adstorybook/videoexpress  
 **Channel:** TheStorybook_ad
@@ -10,8 +10,8 @@ This is the current source of truth for restarting the production workflow from 
 ## 0. Project audit
 
 - The foundation branch contains story manifests, scripts, storyboards, scene prompts, schemas, validation, tests, workflow documentation, and GitHub Actions.
-- The validator and regression suite were extended on 2026-11-25. The connected GitHub tools do not expose a confirmed push-run result for the current branch head; do not infer CI success from the workflow configuration.
-- **Branch safety:** the development branch is diverged from `main` (the 2026-11-26 pre-update comparison showed 81 commits ahead and 2 behind; subsequent audit commits increase the ahead count). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
+- The validator and regression suite were extended on 2026-11-25. The latest pre-update push run for head `455cbff86d6e808130b8ce2a45454b6c7f91103b` completed successfully on 2026-11-26 ([run 45785349081](https://github.com/adstorybook/videoexpress/actions/runs/45785349081)). Today's commits require a fresh run readback before claiming CI success.
+- **Branch safety:** the development branch is diverged from `main` (the 2026-11-27 pre-update comparison showed 89 commits ahead and 2 behind; today's audit commits increase the ahead count). The two main-only commits add separate Hare-and-Tortoise workflow notes and a future five-story series handler; these are not part of the current two-film scope. Do not merge or cherry-pick without explicit approval.
 - VideoExpress 3.5 is available through the signed-in browser editor. A field labelled API key is not proof of a documented API; the API integration remains unverified.
 - The original scanned story PDF is not currently available in the Library search. Existing GitHub scripts were previously source-checked; if exact source re-verification is needed, re-upload the PDF.
 - A separate user workflow document contains expanded 14-scene retellings and character names (e.g. Mama Hazel/Pip/Clover/Nutmeg/Grizzle and Mama Nell/Tilly/Dot/Dash/Pebble/Button). It differs from the GitHub drafts' scene counts and some character descriptions. **Do not silently mix these versions.** The GitHub source-checked drafts remain the working canon until the user approves a reconciliation.
@@ -38,7 +38,7 @@ Reviewed partial assets in VideoExpress:
 4. `rabbit-scene3-wolf-arrival-001` — 10.04 sec wolf approaches cottage; partial Scene 3
 5. `wolf-character-reference-001` — approved Wolf reference stored in VideoExpress; original file/checksum unavailable
 
-**Next shot to generate (sequence order):** (1) 10-second Wolf knocks at the cottage door; (2) rabbits hear/react to the knock; (3) Wolf imitates Mother Rabbit's voice; (4) rabbits refuse and recognize the voice. Prompts have been shared for all four, but **no uploaded clips are logged for these shots as of 2026-11-24**. Scene 2 also still needs a clear visual safety-instruction shot. Use the approved Wolf reference for Wolf shots; rabbit group reference for interior reaction shots; if available, add a cottage frame to anchor exterior location. Do not skip the knock/reaction beats.
+**Next shot to generate (sequence order):** (1) 10-second Wolf knocks at the cottage door; (2) rabbits hear/react to the knock; (3) Wolf imitates Mother Rabbit's voice; (4) rabbits refuse and recognize the voice. Prompts have been shared for all four, but **no uploaded clips are logged for these shots as of 2026-11-27**. Scene 2 also still needs a clear visual safety-instruction shot. Use the approved Wolf reference for Wolf shots; rabbit group reference for interior reaction shots; if available, add a cottage frame to anchor exterior location. Do not skip the knock/reaction beats.
 
 The four video clips are partial coverage only. Do not stretch them to fill long scenes or claim any scene is complete.
 
@@ -71,8 +71,12 @@ Until VideoExpress provides official API documentation and support confirms the 
 
 ## 6. Current handoff
 
-- **Rabbit:** generate the 10-second Wolf-knocking shot next; continue in strict sequence with rabbit reaction, wolf imitation, and refusal. The prompts have been shared, but those clips are not yet received.
+- **Rabbit:** generate the 10-second Wolf-knocking shot next. Use `wolf-character-reference-001`; add an established rabbit-cottage exterior still as a second reference if supported. Keep the door closed and show three distinct knocks. The new clip review gate is in `projects/the-clever-little-rabbits/visual-prompts.md`. Continue in strict order with rabbit reaction, Wolf imitation, and refusal. No clips for those beats have been received as of 2026-11-27.
 - **Magpie:** begin character references and establishing-tree shot once the character design/canon is reconciled.
 - **Repository:** record every generated/reviewed asset in the manifest and production log; run validation after edits.
 - **QA baselines:** both projects now have `qa-report.json` linked from their manifests. Both reports are `incomplete`, pre-render only, with `full_watch_completed=false` and `approval.approved=false`.
 - **Validation:** the manifest validator checks character reference asset IDs against the asset registry. No new code/test changes were made in this audit; GitHub Actions push-run status is not confirmed here.
+
+
+## 2026-11-27 handoff note
+The Rabbit knock prompt now includes explicit VideoExpress setup and clip acceptance criteria. The shot is not generated yet. When the user supplies the MP4, inspect frames and actual metadata before registering it; do not promote Scene 3 to complete based on one 10-second clip. The latest pre-update GitHub Actions run passed; the run for today's commits remains pending verification.
