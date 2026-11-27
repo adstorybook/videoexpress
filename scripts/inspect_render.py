@@ -248,6 +248,10 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.duration_tolerance < 0:
             raise ValueError("--duration-tolerance cannot be negative.")
+        if args.output and args.output.resolve() == args.video.resolve():
+            raise ValueError("QA report output must not be the same path as the source video.")
+        if args.output and args.output.exists():
+            raise ValueError(f"Refusing to overwrite existing QA/report file: {args.output}")
         project = load_project(args.project)
         media = probe_media(args.video, args.ffprobe)
         checksum = _sha256(args.video)
