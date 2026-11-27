@@ -1,11 +1,13 @@
 import json
 import tempfile
+import io
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from contextlib import redirect_stderr
 from subprocess import CompletedProcess
 
-from scripts.inspect_render import build_report, probe_media
+from scripts.inspect_render import build_report, main, probe_media
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,6 +89,19 @@ class RenderInspectionTests(unittest.TestCase):
     def test_missing_video_is_rejected(self):
         with self.assertRaisesRegex(ValueError, "does not exist"):
             probe_media(Path(self.temp.name) / "missing.mp4")
+
+    @patch("scripts.inspect_render.load_project", return_value=PROJECT)
+    @patch("scripts.inspect_render.probe_media")
+    @patch("scripts.inspect_render._sha256", return_value="d" * 64)
+    def test_existing_report_is_never_overwritten(self, _project, _probe, _sha):
+        output = Path(self.temp.name) / "existing-report.json"
+        output.write_text("keep this report", encoding="utf-8")
+        errors = io.StringIO()
+        with redirect_stderr(errors):
+            result = main([str(Path(self.temp.name) / "project.json"), str(self.video), "--output", str(output)])
+        self.assertEqual(result, 2)
+        self.assertEqual(output.read_text(encoding="utf-8"), "keep this report")
+        self.assertIn("Refusing to overwrite", errors.getvalue())
 
 
 if __name__ == "__main__":
