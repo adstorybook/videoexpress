@@ -7,6 +7,7 @@ GitHub is the versioned **production brain** for the VideoExpress workflow: stor
 - [Production brain architecture](docs/production-brain.md)
 - [Workflow foundation](docs/workflow-foundation.md)
 - [Channel publishing, QA and feedback](docs/channel-publishing-and-feedback.md)
+- [Export inspection and QA report](docs/render-inspection.md) — inspect final MP4 metadata and checksum with ffprobe
 
 ## Projects
 - [The Clever Little Rabbits](projects/the-clever-little-rabbits/) — source-checked 5-minute draft, 10-scene storyboard and partial generated assets.
@@ -25,7 +26,7 @@ python scripts/validate_project.py projects/mother-magpie/project.json
 python -m unittest discover -s tests -v
 ```
 
-GitHub Actions validates manifests and tests on pushes to the development branch and pull requests to `main`.
+GitHub Actions validates manifests and tests on pushes to feature branches and pull requests to `main` or `feat/video-pipeline-foundation`.
 
 - [Project manifest schema](schemas/project.schema.json)
 - [Correction entry schema](schemas/correction.schema.json)

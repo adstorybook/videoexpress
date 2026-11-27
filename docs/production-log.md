@@ -81,3 +81,14 @@ Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress 
 - Mother Magpie remains nine planned scenes / 300 seconds with no generated assets; character/location reference images remain the first task.
 - Verified the latest pre-update push-triggered GitHub Actions run for commit `455cbff86d6e808130b8ce2a45454b6c7f91103b` succeeded on 2026-11-26 (run 45785349081). A fresh workflow run is expected for today's commits; do not claim it passed until read back.
 - No VideoExpress generation or credit use, final render, merge, deployment, or publication occurred.
+
+
+## 2026-11-27 — MP4 export inspection utility
+- Added `scripts/inspect_render.py`, a local FFprobe-based inspector that reads the project manifest and checks MP4 container, video stream, runtime (default ±1 second), exact target resolution, aspect ratio, audio-stream presence, and SHA-256 checksum.
+- The generated report follows `schemas/qa-report.schema.json`; even when every technical check passes, the report remains `incomplete`, `full_watch_completed=false`, and `approval.approved=false` until a human watches and approves the complete film.
+- The utility refuses to overwrite an existing report or the source video path. It performs no network calls, uses no credentials, does not alter manifests, and spends no generation credits.
+- Added seven unit tests covering valid metadata, invalid JSON, missing ffprobe/file/audio, failed runtime/resolution, schema compatibility, and overwrite protection. Local isolated test run: 7/7 passed.
+- Added usage documentation and expanded GitHub Actions triggers to cover feature branches and pull requests targeting the foundation branch.
+- GitHub Actions push run #95 and PR run #96 both completed successfully for the final branch head. The FFprobe smoke test also passed against a locally generated 1-second 1920×1080 H.264/AAC MP4; all seven technical checks passed while the report correctly remained incomplete and unapproved. Existing expanded-retelling PR #1 remains open but its head is 3 commits ahead and 6 behind the now-advanced foundation branch; it is left untouched and unmerged. Its alternate character canon remains separate from the source-checked project manifests.
+- Runway connection is authenticated; image generation is available, but video, speech, music, and sound-effect models are unavailable in the connected workspace. No saved workflows were found. No Runway generation credits were spent.
+- No VideoExpress generation, final render, merge, deployment, or publishing occurred.
