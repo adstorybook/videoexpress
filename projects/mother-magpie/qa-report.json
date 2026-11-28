@@ -1,8 +1,8 @@
 {
-  "report_id": "magpie-pre-render-baseline-2026-11-26",
+  "report_id": "mother-magpie-pre-render-baseline-2026-11-28",
   "project_id": "mother-magpie",
   "render_id": "not-rendered-yet",
-  "created_at": "2026-11-26T08:40:04Z",
+  "created_at": "2026-11-28T08:45:09Z",
   "reviewer": "Production tracker audit",
   "checks": [
     {
@@ -22,14 +22,14 @@
     {
       "check_id": "character_reference_coverage",
       "result": "warning",
-      "notes": "Seven character designs and the two-nest layout are described in the prompt pack, but no approved reference-image assets are registered yet.",
+      "notes": "Seven character designs and the two-nest layout are documented in the prompt pack, but no approved reference-image assets are registered. Reference images remain the immediate blocker.",
       "timecode": null,
       "evidence_ref": "projects/mother-magpie/visual-prompts.md"
     },
     {
       "check_id": "asset_inventory",
       "result": "warning",
-      "notes": "No generated images or videos are registered for this project as of this audit.",
+      "notes": "No generated character-reference images or video clips are registered as of the 2026-11-28 audit. The seven character designs and two-nest layout remain prompt-only; generate and approve these references before starting scene footage.",
       "timecode": null,
       "evidence_ref": "projects/mother-magpie/project.json"
     },
