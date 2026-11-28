@@ -96,3 +96,11 @@ Use the signed-in browser editor while API support remains unverified. Do not us
 - Verified the latest pre-update GitHub Actions push run for head `455cbff86d6e808130b8ce2a45454b6c7f91103b` completed successfully on 2026-11-26 (run [45785349081](https://github.com/adstorybook/videoexpress/actions/runs/45785349081)). Today's documentation/manifest commits will trigger a new run; its result must be checked separately.
 - Mother Magpie remains at script/storyboard draft with nine scenes and no generated assets. Next task is approved character/location reference images, then the two-nest establishing shot.
 - No VideoExpress generation, credits, final render, merge, deployment, or publication occurred.
+
+
+## 2026-11-28 audit — asset integrity and regression coverage
+- Reconciled the stale Rabbit history note so Mother Rabbit's departure is consistently recorded as Scene 2, not Scene 3.
+- Added regression tests for the approved opening clip's 6-second / 1920×1080 / 16:9 partial-reference contract and for the Scene 2 departure / Scene 3 Wolf-arrival mapping.
+- Added an explicit Scene 2 safety-instruction pickup prompt. It remains required before final assembly; the active next-generation sequence remains Wolf knock → rabbit reaction → Wolf imitation → rabbit refusal.
+- Refreshed both QA baseline timestamps. Rabbit QA remains incomplete with no render/export/approval; Magpie QA remains incomplete with no generated references or footage.
+- Verified the previous branch-head Actions run 45964657962 for commit 6fbcf00 succeeded before this update. The current commit's push validation must be read back separately.
