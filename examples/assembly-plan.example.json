@@ -1,0 +1,12 @@
+{
+  "project_manifest": "../projects/the-clever-little-rabbits/project.json",
+  "output": "../renders/rabbits-preview.mp4",
+  "clips": [
+    {"path": "../media/rabbit-scene-01.mp4"},
+    {"path": "../media/rabbit-scene-02.mp4", "start_seconds": 0.5, "duration_seconds": 18.0}
+  ],
+  "audio_tracks": [
+    {"path": "../audio/rabbits-narration.wav", "gain": 1.0, "label": "narration"},
+    {"path": "../audio/woodland-music.wav", "gain": 0.12, "loop": true, "label": "music"}
+  ]
+}

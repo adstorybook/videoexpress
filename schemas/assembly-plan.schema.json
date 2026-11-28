@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/adstorybook/videoexpress/schemas/assembly-plan.schema.json",
+  "title": "VideoExpress local video assembly plan",
+  "type": "object",
+  "required": ["project_manifest", "clips"],
+  "properties": {
+    "project_manifest": {"type": "string", "minLength": 1},
+    "output": {"type": "string", "minLength": 1},
+    "clips": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["path"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "start_seconds": {"type": "number", "minimum": 0},
+          "duration_seconds": {"type": "number", "exclusiveMinimum": 0}
+        },
+        "additionalProperties": false
+      }
+    },
+    "audio_tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "start_seconds": {"type": "number", "minimum": 0},
+          "gain": {"type": "number", "minimum": 0, "maximum": 2},
+          "loop": {"type": "boolean"},
+          "label": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

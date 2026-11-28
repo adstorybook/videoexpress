@@ -7,6 +7,7 @@ GitHub is the versioned **production brain** for the VideoExpress workflow: stor
 - [Production brain architecture](docs/production-brain.md)
 - [Workflow foundation](docs/workflow-foundation.md)
 - [Channel publishing, QA and feedback](docs/channel-publishing-and-feedback.md)
+- [Local draft video assembly](docs/video-assembly.md) — concatenate generated clips and mix narration/music with FFmpeg
 - [Export inspection and QA report](docs/render-inspection.md) — inspect final MP4 metadata and checksum with ffprobe
 
 ## Projects
@@ -19,20 +20,19 @@ The original scanned storybook was inspected previously, but the source PDF is n
 ## Validation
 Python 3.12+:
 
-```bash
-python -m pip install -r requirements.txt
-python scripts/validate_project.py projects/the-clever-little-rabbits/project.json
-python scripts/validate_project.py projects/mother-magpie/project.json
-python -m unittest discover -s tests -v
-```
+    python -m pip install -r requirements.txt
+    python scripts/validate_project.py projects/the-clever-little-rabbits/project.json
+    python scripts/validate_project.py projects/mother-magpie/project.json
+    python -m unittest discover -s tests -v
 
-GitHub Actions validates manifests and tests on pushes to feature branches and pull requests to `main` or `feat/video-pipeline-foundation`.
+GitHub Actions validates manifests and tests on pushes to feature branches and pull requests to main, feat/video-pipeline-foundation, or feat/render-qa-inspector.
 
 - [Project manifest schema](schemas/project.schema.json)
 - [Correction entry schema](schemas/correction.schema.json)
 - [QA report schema](schemas/qa-report.schema.json)
+- [Assembly plan schema](schemas/assembly-plan.schema.json)
 
 ## Scope and safety
-This repository is not yet a working web app or automatic VideoExpress renderer. VideoExpress API availability is unverified. Use the signed-in browser editor unless official API documentation/support confirms a supported integration. Store large media outside Git and reference them with metadata/checksums. Never commit credentials.
+This repository includes a local FFmpeg draft-assembly utility, but it is not an automatic VideoExpress renderer. VideoExpress API availability is unverified. Use the signed-in browser editor unless official API documentation/support confirms a supported integration. Store large media outside Git and reference them with metadata/checksums. Never commit credentials.
 
 The final video must be watched end-to-end and checked before approval. Publishing, visibility, or scheduling require explicit user approval and upload readback verification.
