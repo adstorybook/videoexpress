@@ -81,3 +81,14 @@ Generate the **10-second Wolf knocks at the cottage door** clip in VideoExpress 
 - Mother Magpie remains nine planned scenes / 300 seconds with no generated assets; character/location reference images remain the first task.
 - Verified the latest pre-update push-triggered GitHub Actions run for commit `455cbff86d6e808130b8ce2a45454b6c7f91103b` succeeded on 2026-11-26 (run 45785349081). A fresh workflow run is expected for today's commits; do not claim it passed until read back.
 - No VideoExpress generation or credit use, final render, merge, deployment, or publication occurred.
+
+
+## 2026-11-28 — Daily asset reconciliation, regression tests and CI readback
+- Re-read both project manifests, both QA reports, both visual prompt packs, validator, unit tests, start-here guide, production guide and CI workflow.
+- Pre-update branch comparison: `feat/video-pipeline-foundation` was **95 commits ahead and 2 behind** `main` (diverged). All new work is committed only to the development branch; no merge or main-branch write.
+- Verified branch head `6fbcf00a4203fe98e17ef31fc1f550bca158f65e`; its GitHub Actions push validation run [45964657962](https://github.com/adstorybook/videoexpress/actions/runs/45964657962) completed successfully.
+- Rabbit inventory remains four partial videos plus the approved Wolf character reference. Opening clip: 6.041667s, 1920×1080, 16:9, partial Scene 1 visual reference. Scene 2 has hug and departure partial clips; Scene 3 has Wolf-arrival partial clip. No new user-uploaded MP4 was present for the Wolf knock, rabbit reaction, imitation or refusal.
+- Corrected a stale history sentence that had labelled the mother-departure clip as Scene 3; the manifest now consistently maps it to Scene 2. Added tests protecting the opening-reference metadata/partial status and the Scene 2 departure / Scene 3 Wolf-arrival mapping.
+- Added a dedicated 8–10 second Scene 2 safety-instruction pickup prompt. It remains required before final assembly but does not change the active Scene 3 generation sequence.
+- Refreshed Rabbit and Magpie QA baseline timestamps. Rabbit remains incomplete with no render/export/full watch/approval. Magpie remains nine scenes / 300 seconds with seven character designs and no generated reference images or footage.
+- No VideoExpress generation or credit use, final render, merge, deployment, or publication occurred.
