@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "script_draft",
-    "updated_at": "2026-11-26T08:40:04Z",
+    "updated_at": "2026-11-28T08:45:09Z",
     "history": [
       {
         "status": "idea",
@@ -51,6 +51,12 @@
         "status": "script_draft",
         "at": "2026-11-26T08:40:04Z",
         "note": "Daily audit: no generated character references, images, or videos are registered yet. Added a pre-render QA baseline and linked it from the project manifest. Next production step remains approving/generating the character and two-nest location reference images before Scene 1 footage.",
+        "actor": "assistant"
+      },
+      {
+        "status": "script_draft",
+        "at": "2026-11-28T08:45:09Z",
+        "note": "2026-11-28 audit: nine-scene storyboard remains 300 seconds; seven character designs and the two-nest location are documented, but no approved reference images or generated video assets have been received or registered. Next step remains generating and approving the two mothers, two chick pairs, eagle and two-nest tree reference images before the establishing shot. No paid generation was initiated.",
         "actor": "assistant"
       }
     ]
