@@ -83,5 +83,28 @@ class ProjectManifestTests(unittest.TestCase):
             temporary.unlink(missing_ok=True)
 
 
+    def test_rabbit_opening_clip_remains_full_hd_partial_reference(self):
+        source = ROOT / "projects" / "the-clever-little-rabbits" / "project.json"
+        project = json.loads(source.read_text(encoding="utf-8"))
+        opening = next(
+            asset for asset in project["assets"]
+            if asset["asset_id"] == "rabbit-opening-clip-001"
+        )
+        self.assertEqual(opening["type"], "video")
+        self.assertIn("partial", opening["status"])
+        self.assertGreaterEqual(opening["duration_seconds"], 5.5)
+        self.assertLessEqual(opening["duration_seconds"], 6.5)
+        self.assertEqual(opening["resolution"], "1920x1080")
+        self.assertEqual(opening["aspect_ratio"], "16:9")
+
+    def test_rabbit_departure_and_wolf_arrival_scene_mapping(self):
+        source = ROOT / "projects" / "the-clever-little-rabbits" / "project.json"
+        project = json.loads(source.read_text(encoding="utf-8"))
+        scenes = {scene["scene_id"]: set(scene["asset_ids"]) for scene in project["scenes"]}
+        self.assertIn("rabbit-scene2-departure-001", scenes["scene-02"])
+        self.assertNotIn("rabbit-scene2-departure-001", scenes["scene-03"])
+        self.assertIn("rabbit-scene3-wolf-arrival-001", scenes["scene-03"])
+        self.assertNotIn("rabbit-scene3-wolf-arrival-001", scenes["scene-02"])
+
 if __name__ == "__main__":
     unittest.main()
