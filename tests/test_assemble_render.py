@@ -92,7 +92,7 @@ class AssemblyPlanTests(unittest.TestCase):
         rendered = " ".join(command)
         self.assertIn("concat=n=2:v=1:a=0", rendered)
         self.assertIn("adelay=delays=250:all=1", rendered)
-        self.assertIn("anull[aout]", rendered)
+        self.assertIn("alimiter=limit=0.95[aout]", rendered)
         self.assertIn("-n", command)
         self.assertIn("libx264", command)
         self.assertIn("-map", command)
