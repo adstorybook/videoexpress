@@ -83,3 +83,17 @@ A clip is not a completed scene. Keep every newly generated 5–10 second shot i
 5. The clip is technically inspectable: no severe flicker, warped paws/door, abrupt camera teleport, or character redesign; verify duration/resolution/frame rate from the uploaded file.
 
 If the cottage cannot be matched with a second reference, keep the prompt's cottage description conservative and flag the mismatch for review rather than approving location continuity. The shot remains **partial Scene 3 coverage**, even if approved; do not mark Scene 3 complete from this clip alone.
+
+
+## Scene 2 pickup — explicit safety instruction (8–10 seconds; required before final assembly)
+
+This is a missing visual coverage beat, not a replacement for the existing hug or departure clips. Generate it after the active Scene 3 knock/reaction sequence and before final assembly.
+
+**VideoExpress prompt**
+
+Cinematic family-friendly 3D storybook animation inside the same cozy wooden rabbit cottage. Mother Rabbit, the same adult white rabbit in her blue puff-sleeve dress and cream apron, crouches to the children's eye level beside the closed front door. She gently points to the door and clearly explains that the three little white rabbits must stay safely inside and must never open the door to anyone while she is away. The three siblings in their exact red-orange, yellow and green outfits listen carefully and each nods. Mother gives them a reassuring smile before the shot ends. Medium interior shot, warm morning light, soft fluffy fur, expressive eyes, calm protective mood, polished animated-film quality. Preserve the approved character designs, outfit colors, cottage interior and door geography. The door remains closed; no wolf or extra character appears. No generated text, subtitles, logos or watermark.
+
+**Reference and review**
+- Use the approved rabbit-family opening reference and the clearest available mother/rabbit group reference; keep the mother blue dress/cream apron and sibling outfit colors unchanged.
+- Accept only if the mother visibly communicates the stay-inside / do-not-open-to-strangers rule and all three children visibly listen.
+- Keep as partial Scene 2 coverage. Do not mark Scene 2 complete until its coverage is assembled to 30 seconds and reviewed with narration.
