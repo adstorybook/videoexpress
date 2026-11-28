@@ -199,10 +199,10 @@ def build_ffmpeg_command(
             chain = f"[{input_index}:a:0]volume={track['gain']:.6f}"
             if delay_ms:
                 chain += f",adelay=delays={delay_ms}:all=1"
-            chain += f",apad,atrim=duration={duration:.6f},asetpts=PTS-STARTPTS[{label}]"
+            chain += f",aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,apad,atrim=duration={duration:.6f},asetpts=PTS-STARTPTS[{label}]"
             filters.append(chain)
         if len(audio_labels) == 1:
-            filters.append(f"{audio_labels[0]}anull[aout]")
+            filters.append(f"{audio_labels[0]}alimiter=limit=0.95[aout]")
         else:
             filters.append(
                 f"{''.join(audio_labels)}amix=inputs={len(audio_labels)}:duration=longest:"
