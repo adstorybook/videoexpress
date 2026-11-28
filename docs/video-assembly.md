@@ -43,7 +43,7 @@ The checked-in example contains placeholder media paths; copy it and replace the
 
 - Video is scaled to fit the manifest resolution, letterboxed with black padding if needed, converted to the manifest frame rate, and normalised to square pixels/yuv420p before concatenation.
 - Source clip audio is not carried through. Add narration and music as explicit audio_tracks so the mix is intentional.
-- Audio tracks are volume-adjusted, optionally delayed/looped, padded, trimmed to the assembled duration, and mixed. Keep music gain low enough for narration to remain intelligible.
+- Audio tracks are volume-adjusted, resampled to 48 kHz stereo, optionally delayed/looped, padded, trimmed to the assembled duration, mixed, and peak-limited. Keep music gain low enough for narration to remain intelligible.
 - This is a linear assembly utility, not a nonlinear editor: no transitions, per-scene crossfades, captions, or visual effects are added. Add those in VideoExpress or a dedicated editor before final export.
 - The tool only creates a local draft MP4. Run scripts/inspect_render.py afterwards, then watch the entire movie and record human QA/approval separately. Automated metadata checks never approve a film.
 - Generated media should remain outside Git; store only manifests, prompts, metadata, and checksums in the repository.
