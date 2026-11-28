@@ -24,13 +24,17 @@ Files:
 
 - Eight local unit/integration tests passed.
 - A real FFmpeg smoke test generated two test clips and separate voice/music WAV tracks, assembled them into a 4-second 1920×1080 MP4, and verified the resulting video dimensions, audio stream, and duration with ffprobe.
+- GitHub Actions pull-request run #101 succeeded for commit 8dbf05bf6ee4d05de97ab72d4e45697792bb74c0: dependency installation, all unit/integration tests, and both canonical project-manifest validations passed.
 - No production media was generated or changed; no VideoExpress or Runway credits were spent.
-- GitHub Actions must be read back for the pushed branch/PR before claiming CI success.
+
+## Provider availability
+
+- Runway authentication is active. The connected Free workspace currently exposes image models, but no video, speech, music, or sound-effect models; no saved Runway workflows are present.
+- VideoExpress official API access is still unverified; use the signed-in editor for generation.
 
 ## Limitations / next work
 
 - This is a local linear assembly utility, not a nonlinear editor. Transitions, captions, per-scene audio edits and visual effects remain in VideoExpress or another editor.
-- VideoExpress official API access is still unverified; use the signed-in editor for generation.
 - The next production action remains the 10-second Rabbit Wolf-knocking shot. Once approved clip exports and narration/music files are available locally, create a real assembly plan and build a preview.
 - Mother Magpie still needs approved master character/location references before generating Scene 1.
 - No merge, deployment, upload or publishing was performed.
