@@ -38,7 +38,7 @@ Reviewed partial assets in VideoExpress:
 4. `rabbit-scene3-wolf-arrival-001` — 10.04 sec wolf approaches cottage; partial Scene 3
 5. `wolf-character-reference-001` — approved Wolf reference stored in VideoExpress; original file/checksum unavailable
 
-**Next shot to generate (sequence order):** (1) 10-second Wolf knocks at the cottage door; (2) rabbits hear/react to the knock; (3) Wolf imitates Mother Rabbit's voice; (4) rabbits refuse and recognize the voice. Prompts have been shared for all four, but **no uploaded clips are logged for these shots as of 2026-11-27**. Scene 2 also still needs a clear visual safety-instruction shot. Use the approved Wolf reference for Wolf shots; rabbit group reference for interior reaction shots; if available, add a cottage frame to anchor exterior location. Do not skip the knock/reaction beats.
+**Next shot to generate (sequence order):** (1) 10-second Wolf knocks at the cottage door; (2) rabbits hear/react to the knock; (3) Wolf imitates Mother Rabbit's voice; (4) rabbits refuse and recognize the voice. Prompts have been shared for all four, but **no uploaded clips are logged for these shots as of 2026-11-28**. Scene 2 also still needs a clear visual safety-instruction shot. Use the approved Wolf reference for Wolf shots; rabbit group reference for interior reaction shots; if available, add a cottage frame to anchor exterior location. Do not skip the knock/reaction beats.
 
 The four video clips are partial coverage only. Do not stretch them to fill long scenes or claim any scene is complete.
 
@@ -71,7 +71,7 @@ Until VideoExpress provides official API documentation and support confirms the 
 
 ## 6. Current handoff
 
-- **Rabbit:** generate the 10-second Wolf-knocking shot next. Use `wolf-character-reference-001`; add an established rabbit-cottage exterior still as a second reference if supported. Keep the door closed and show three distinct knocks. The new clip review gate is in `projects/the-clever-little-rabbits/visual-prompts.md`. Continue in strict order with rabbit reaction, Wolf imitation, and refusal. No clips for those beats have been received as of 2026-11-27.
+- **Rabbit:** generate the 10-second Wolf-knocking shot next. Use `wolf-character-reference-001`; add an established rabbit-cottage exterior still as a second reference if supported. Keep the door closed and show three distinct knocks. The new clip review gate is in `projects/the-clever-little-rabbits/visual-prompts.md`. Continue in strict order with rabbit reaction, Wolf imitation, and refusal. No clips for those beats have been received as of 2026-11-28.
 - **Magpie:** begin character references and establishing-tree shot once the character design/canon is reconciled.
 - **Repository:** record every generated/reviewed asset in the manifest and production log; run validation after edits.
 - **QA baselines:** both projects now have `qa-report.json` linked from their manifests. Both reports are `incomplete`, pre-render only, with `full_watch_completed=false` and `approval.approved=false`.
@@ -80,3 +80,12 @@ Until VideoExpress provides official API documentation and support confirms the 
 
 ## 2026-11-27 handoff note
 The Rabbit knock prompt now includes explicit VideoExpress setup and clip acceptance criteria. The shot is not generated yet. When the user supplies the MP4, inspect frames and actual metadata before registering it; do not promote Scene 3 to complete based on one 10-second clip. The latest pre-update GitHub Actions run passed; the run for today's commits remains pending verification.
+
+
+## 2026-11-28 handoff note
+- Pre-update live comparison: `feat/video-pipeline-foundation` was **95 commits ahead and 2 behind** `main`; the branch remains diverged. Do not merge or modify `main` without explicit approval.
+- The pre-update branch-head validation run for `6fbcf00a4203fe98e17ef31fc1f550bca158f65e` succeeded (GitHub Actions run [45964657962](https://github.com/adstorybook/videoexpress/actions/runs/45964657962)). The current audit commit triggers a new push validation.
+- Rabbit: four partial video clips plus one approved Wolf reference. The opening reference is 6.04 seconds, 1920×1080, 16:9. Mother departure is Scene 2; Wolf arrival is Scene 3. The 10-second Wolf knock remains the next user-generated shot.
+- Scene 2 also needs an explicit safety-instruction pickup before final assembly; its new prompt is in `visual-prompts.md`. Keep it on the backlog after the active Scene 3 knock/reaction/imitation/refusal sequence.
+- Magpie: nine planned scenes / 300 seconds, seven character designs, no generated reference images or footage. Approve character and two-nest location references before the establishing shot.
+- Both QA reports remain pre-render and incomplete. No final render, full watch, publication approval or upload is recorded.
