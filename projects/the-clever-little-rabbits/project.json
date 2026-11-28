@@ -27,7 +27,7 @@
   },
   "workflow": {
     "status": "assets_generating",
-    "updated_at": "2026-11-27T08:17:08Z",
+    "updated_at": "2026-11-28T08:45:09Z",
     "history": [
       {
         "status": "idea",
@@ -56,7 +56,7 @@
       {
         "status": "assets_generating",
         "at": "2026-11-21T16:43:00Z",
-        "note": "Third user-uploaded Rabbit clip reviewed: mother walks away from the cottage while the three children wave; 6.04s, 1920x1080, 24fps. Logged as partial coverage of Scene 3.",
+        "note": "Third user-uploaded Rabbit clip reviewed: mother walks away from the cottage while the three children wave; 6.04s, 1920x1080, 24fps. Logged as partial coverage of Scene 2.",
         "actor": "assistant"
       },
       {
@@ -87,6 +87,12 @@
         "status": "assets_generating",
         "at": "2026-11-27T08:17:08Z",
         "note": "2026-11-27 audit: GitHub manifest and QA baselines rechecked. No new VideoExpress clip was received; the four registered videos remain partial coverage and the Wolf reference remains the only approved Rabbit character image asset. Added a precise 10-second Wolf-knock execution and acceptance gate. Next shot remains pending user generation; no credits were spent.",
+        "actor": "assistant"
+      },
+      {
+        "status": "assets_generating",
+        "at": "2026-11-28T08:45:09Z",
+        "note": "2026-11-28 audit: corrected the historical mother-departure entry to Scene 2. Inventory remains four partial user-generated videos plus the approved Wolf image reference; no new knock/reaction/imitation/refusal MP4 was received. The first opening reference remains 6.04 seconds, 1920x1080, 16:9 and partial Scene 1 coverage. Pre-update branch comparison was 95 ahead and 2 behind main; branch-head Actions run 45964657962 completed successfully. No VideoExpress credits were spent.",
         "actor": "assistant"
       }
     ]
