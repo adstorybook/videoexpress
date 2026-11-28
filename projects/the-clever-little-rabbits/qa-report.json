@@ -1,8 +1,8 @@
 {
-  "report_id": "rabbits-pre-render-baseline-2026-11-27",
+  "report_id": "rabbits-pre-render-baseline-2026-11-28",
   "project_id": "clever-little-rabbits",
   "render_id": "not-rendered-yet",
-  "created_at": "2026-11-27T08:17:08Z",
+  "created_at": "2026-11-28T08:45:09Z",
   "reviewer": "Production tracker audit",
   "checks": [
     {
@@ -15,7 +15,14 @@
     {
       "check_id": "asset_inventory",
       "result": "pass",
-      "notes": "Four partial video clips and one approved Wolf character reference remain registered. No new Wolf-knock or later sequence clip was present in this audit.",
+      "notes": "Four partial user-generated video clips and one approved Wolf character reference remain registered. The opening reference is 6.04 seconds, 1920x1080, 16:9 and explicitly partial Scene 1 coverage. No new Wolf-knock or later sequence clip was received in this audit.",
+      "timecode": null,
+      "evidence_ref": "projects/the-clever-little-rabbits/project.json"
+    },
+    {
+      "check_id": "scene_asset_mapping",
+      "result": "pass",
+      "notes": "Mother departure asset rabbit-scene2-departure-001 is attached to Scene 2 only; wolf arrival asset rabbit-scene3-wolf-arrival-001 is attached to Scene 3. Regression tests protect this mapping.",
       "timecode": null,
       "evidence_ref": "projects/the-clever-little-rabbits/project.json"
     },
@@ -29,7 +36,7 @@
     {
       "check_id": "scene_coverage",
       "result": "warning",
-      "notes": "Scenes 1–3 have partial coverage only. No scene is complete; the Wolf knock, rabbit reaction, imitation and refusal clips remain pending.",
+      "notes": "Scenes 1–3 have partial coverage only. Scene 2 still needs a clear visual safety-instruction pickup before assembly. Scene 3 still needs the Wolf knock, rabbit reaction, imitation and refusal clips. No scene is complete.",
       "timecode": null,
       "evidence_ref": "projects/the-clever-little-rabbits/visual-prompts.md"
     },
